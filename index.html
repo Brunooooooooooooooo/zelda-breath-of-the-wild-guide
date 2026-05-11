@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>塞尔达传说：旷野之息 攻略站 | 海拉鲁冒险指南</title>
+  <meta name="description" content="最全面的《塞尔达传说：旷野之息》中文攻略站 - 神庙位置、主线任务、BOSS打法、装备收集、料理配方">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/material.css">
+  <link rel="stylesheet" href="css/illustrations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">▲</span>
+        <span class="logo-text">荒野之息<span class="logo-sub">攻略站</span></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link active">首页</a></li>
+        <li><a href="guides/great-plateau.html" class="nav-link">新手入门</a></li>
+        <li><a href="guides/divine-beasts.html" class="nav-link">主线攻略</a></li>
+        <li><a href="guides/shrines.html" class="nav-link">神庙攻略</a></li>
+        <li><a href="guides/equipment.html" class="nav-link">装备图鉴</a></li>
+        <li><a href="guides/bosses.html" class="nav-link">BOSS指南</a></li>
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link nav-more">更多 ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="guides/korok-seeds.html">🌱 呀哈哈全收集</a></li>
+            <li><a href="guides/cooking.html">🍲 料理配方大全</a></li>
+            <li><a href="guides/secrets.html">🔍 隐藏要素</a></li>
+            <li><a href="guides/regions.html">🗺️ 区域攻略</a>
+            <li><a href="guides/locations.html">📍 重要地点</a></li></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="nav-search">
+        <input type="text" placeholder="搜索攻略..." id="searchInput">
+        <button class="search-btn" id="searchBtn">🔍</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- 主视觉区 -->
+  <section class="hero">
+    <img src="images/hyrule-landscape.svg" alt="海拉鲁全景" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.6;pointer-events:none;z-index:0">
+    <!-- 几何装饰 -->
+    <div class="geometric-lines"></div>
+    <!-- 粒子动画 -->
+    <div class="glow-particles">
+      <div class="glow-particle"></div>
+      <div class="glow-particle"></div>
+      <div class="glow-particle"></div>
+      <div class="glow-particle"></div>
+      <div class="glow-particle"></div>
+      <div class="glow-particle"></div>
+      <div class="glow-particle"></div>
+      <div class="glow-particle"></div>
+    </div>
+    <!-- 像素装饰 -->
+    <div class="pixel-decoration"></div>
+    <div class="pixel-decoration"></div>
+    <div class="pixel-decoration"></div>
+    <div class="pixel-decoration"></div>
+    <div class="pixel-decoration"></div>
+    <div class="pixel-decoration"></div>
+    <div class="hero-content">
+      <div class="triforce">▲</div>
+      <h1 class="hero-title">海拉鲁冒险指南</h1>
+      <p class="hero-subtitle">《塞尔达传说：旷野之息》最全面的中文攻略站</p>
+      <p class="hero-desc">神庙 · 主线 · 装备 · 料理 · BOSS · 隐藏要素 — 助你成为真正的勇者</p>
+      <div class="hero-cta">
+        <a href="#guides" class="btn btn-primary">开始冒险</a>
+        <a href="guides/regions.html" class="btn btn-outline">查看地图</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">120</span>
+          <span class="stat-label">神庙</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">15</span>
+          <span class="stat-label">主线任务</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">900</span>
+          <span class="stat-label">呀哈哈</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">4</span>
+          <span class="stat-label">神兽</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 装饰分割线 -->
+  <div class="decorative-divider"></div>
+
+  <!-- 快速导航卡片 -->
+  <section class="quick-nav">
+    <div class="container">
+      <div class="quick-cards">
+        <a href="guides/great-plateau.html" class="quick-card">
+          <div class="card-icon">🏔️</div>
+          <h3>新手入门</h3>
+          <p>初始台地全教学 · 基础操作 · 四座神庙</p>
+        </a>
+        <a href="guides/divine-beasts.html" class="quick-card">
+          <div class="card-icon">🗡️</div>
+          <h3>主线攻略</h3>
+          <p>解放四神兽 · 讨伐灾厄盖侬 · 回忆之旅</p>
+        </a>
+        <a href="guides/shrines.html" class="quick-card">
+          <div class="card-icon">🏛️</div>
+          <h3>神庙攻略</h3>
+          <p>120座神庙完整解法 · 位置地图 · 宝箱收集</p>
+        </a>
+        <a href="guides/equipment.html" class="quick-card">
+          <div class="card-icon">⚔️</div>
+          <h3>装备图鉴</h3>
+          <p>武器 · 盾牌 · 弓箭 · 防具套装全收集</p>
+        </a>
+        <a href="guides/bosses.html" class="quick-card">
+          <div class="card-icon">👹</div>
+          <h3>BOSS指南</h3>
+          <p>神兽BOSS · 人马莱尼尔 · 守护者攻略</p>
+        </a>
+        <a href="guides/korok-seeds.html" class="quick-card">
+          <div class="card-icon">🌱</div>
+          <h3>呀哈哈收集</h3>
+          <p>900个克洛格种子 · 谜题类型 · 博库林</p>
+        </a>
+        <a href="guides/cooking.html" class="quick-card">
+          <div class="card-icon">🍲</div>
+          <h3>料理大全</h3>
+          <p>50+配方 · 属性药剂 · 采集地点</p>
+        </a>
+        <a href="guides/locations.html" class="quick-card">
+          <div class="card-icon">📍</div>
+          <h3>重要地点</h3>
+          <p>希卡塔 · 驿站 · 精灵之泉 · 马神</p>
+        </a>
+        <a href="guides/secrets.html" class="quick-card">
+          <div class="card-icon">🔍</div>
+          <h3>隐藏要素</h3>
+          <p>龙之所在 · 海利亚盾 · 彩蛋全公开</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 装饰分割线 -->
+  <div class="decorative-divider"></div>
+
+  <!-- 热门攻略 -->
+  <section class="popular-guides" id="guides">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-icon">⭐</span>
+        热门攻略
+      </h2>
+      <div class="guides-grid">
+        <a href="guides/divine-beasts.html" style="display:block;color:inherit;text-decoration:none">
+        <article class="guide-card">
+          <div class="guide-tag tag-main">主线</div>
+          <h3 class="guide-title">解放四神兽完整攻略</h3>
+          <p class="guide-excerpt">瓦·梅德、瓦·露塔、瓦·鲁达尼亚、瓦·娜波力斯 — 四大神兽完整攻略路线与BOSS打法。</p>
+          <div class="guide-meta"><span>🔥 热门</span><span>📖 15分钟</span></div>
+        </article></a>
+        <a href="guides/shrines.html" style="display:block;color:inherit;text-decoration:none">
+        <article class="guide-card">
+          <div class="guide-tag tag-shrine">神庙</div>
+          <h3 class="guide-title">全120座神庙位置与解法</h3>
+          <p class="guide-excerpt">按区域分类，包含详细解谜步骤、宝箱位置和通关技巧，助你集齐全部试炼通过证。</p>
+          <div class="guide-meta"><span>🔥 热门</span><span>📖 30分钟</span></div>
+        </article></a>
+        <a href="guides/equipment.html" style="display:block;color:inherit;text-decoration:none">
+        <article class="guide-card">
+          <div class="guide-tag tag-gear">装备</div>
+          <h3 class="guide-title">大师之剑获取全流程</h3>
+          <p class="guide-excerpt">需要13颗心才能拔出大师之剑！详细位置、前置条件与升级路径完整指南。</p>
+          <div class="guide-meta"><span>🔥 热门</span><span>📖 8分钟</span></div>
+        </article></a>
+        <a href="guides/bosses.html" style="display:block;color:inherit;text-decoration:none">
+        <article class="guide-card">
+          <div class="guide-tag tag-boss">BOSS</div>
+          <h3 class="guide-title">白银人马莱尼尔速杀技巧</h3>
+          <p class="guide-excerpt">林克时间触发时机、盾反教学、最佳武器推荐，轻松刷取强力装备。</p>
+          <div class="guide-meta"><span>📌 推荐</span><span>📖 10分钟</span></div>
+        </article></a>
+        <a href="guides/korok-seeds.html" style="display:block;color:inherit;text-decoration:none">
+        <article class="guide-card">
+          <div class="guide-tag tag-secret">收集</div>
+          <h3 class="guide-title">900个呀哈哈全收集指南</h3>
+          <p class="guide-excerpt">15种谜题类型详解、博库林3阶段位置、8区域重点种子分布。</p>
+          <div class="guide-meta"><span>📌 推荐</span><span>📖 15分钟</span></div>
+        </article></a>
+        <a href="guides/locations.html" style="display:block;color:inherit;text-decoration:none">
+        <article class="guide-card">
+          <div class="guide-tag tag-main">地点</div>
+          <h3 class="guide-title">15座希卡塔全解锁攻略</h3>
+          <p class="guide-excerpt">15座塔的激活挑战、15个驿站分布、4处大精灵之泉与新手推荐路线。</p>
+          <div class="guide-meta"><span>🆕 新增</span><span>📖 20分钟</span></div>
+        </article></a>
+        <a href="guides/cooking.html" style="display:block;color:inherit;text-decoration:none">
+        <article class="guide-card">
+          <div class="guide-tag tag-cook">料理</div>
+          <h3 class="guide-title">最佳料理搭配推荐</h3>
+          <p class="guide-excerpt">攻击力提升、潜行、耐寒耐热 — 所有属性料理配方及材料获取地点。</p>
+          <div class="guide-meta"><span>📌 推荐</span><span>📖 6分钟</span></div>
+        </article></a>
+        <a href="guides/secrets.html" style="display:block;color:inherit;text-decoration:none">
+        <article class="guide-card">
+          <div class="guide-tag tag-secret">隐藏</div>
+          <h3 class="guide-title">全部隐藏要素大公开</h3>
+          <p class="guide-excerpt">龙之所在地、秘密温泉、幻影铠甲、海利亚盾 — 你可能错过的重要隐藏内容。</p>
+          <div class="guide-meta"><span>🆕 新</span><span>📖 12分钟</span></div>
+        </article></a>
+        <a href="guides/great-plateau.html" style="display:block;color:inherit;text-decoration:none">
+        <article class="guide-card">
+          <div class="guide-tag tag-main">新手</div>
+          <h3 class="guide-title">初始台地完全教学指南</h3>
+          <p class="guide-excerpt">从苏醒到离开 — 四座神庙解谜、防寒服获取、滑翔伞、新手常见问题。</p>
+          <div class="guide-meta"><span>🆕 新增</span><span>📖 10分钟</span></div>
+        </article></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 装饰分割线 -->
+  <div class="decorative-divider"></div>
+
+  <!-- 区域导航 -->
+  <section class="regions">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-icon">🗺️</span>
+        区域攻略
+      </h2>
+      <div class="region-grid">
+        <a href="guides/regions.html#central" class="region-card">🏰 中央海拉鲁</a>
+        <a href="guides/regions.html#hebra" class="region-card">❄️ 海布拉地区</a>
+        <a href="guides/regions.html#eldin" class="region-card">🌋 奥尔汀地区</a>
+        <a href="guides/regions.html#lanayru" class="region-card">🌊 拉聂尔地区</a>
+        <a href="guides/regions.html#akkala" class="region-card">🍂 阿卡莱地区</a>
+        <a href="guides/regions.html#faron" class="region-card">🌴 费罗尼地区</a>
+        <a href="guides/regions.html#gerudo" class="region-card">🏜️ 格鲁德地区</a>
+        <a href="guides/regions.html#hateno" class="region-card">🌾 哈特诺地区</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 装饰分割线 -->
+  <div class="decorative-divider"></div>
+
+  <!-- 新手引导 -->
+  <section class="beginner-guide">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-icon">🌱</span>
+        新手指南
+      </h2>
+      <div class="beginner-steps">
+        <a href="guides/great-plateau.html" class="step">
+          <div class="step-num">01</div>
+          <h3>初始台地</h3>
+          <p>四座神庙解谜 · 滑翔伞获取 · 基础操作教学</p>
+        </a>
+        <span class="step-arrow">→</span>
+        <a href="guides/equipment.html" class="step">
+          <div class="step-num">02</div>
+          <h3>踏上旅途</h3>
+          <p>前往卡卡利科村 · 开启希卡感应器 · 提升装备</p>
+        </a>
+        <span class="step-arrow">→</span>
+        <a href="guides/divine-beasts.html" class="step">
+          <div class="step-num">03</div>
+          <h3>解放神兽</h3>
+          <p>四大神兽推荐顺序 · 英杰技能获取 · 心之容器扩充</p>
+        </a>
+        <span class="step-arrow">→</span>
+        <a href="guides/bosses.html" class="step">
+          <div class="step-num">04</div>
+          <h3>挑战盖侬</h3>
+          <p>海拉鲁城堡攻略 · 灾厄盖侬打法 · 真结局触发条件</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">▲</span>
+          <span>荒野之息攻略站</span>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>攻略分类</h4>
+            <a href="guides/divine-beasts.html">主线任务</a>
+            <a href="guides/shrines.html">神庙攻略</a>
+            <a href="guides/bosses.html">BOSS指南</a>
+            <a href="guides/secrets.html">隐藏要素</a>
+          </div>
+          <div class="footer-col">
+            <h4>装备系统</h4>
+            <a href="guides/equipment.html">武器图鉴</a>
+            <a href="guides/equipment.html">盾牌图鉴</a>
+            <a href="guides/equipment.html">防具套装</a>
+            <a href="guides/cooking.html">料理配方</a>
+          </div>
+          <div class="footer-col">
+            <h4>关于本站</h4>
+            <a href="about.html">关于我们</a>
+            <a href="about.html#contribute">贡献攻略</a>
+            <a href="#">GitHub</a>
+            <a href="about.html#feedback">反馈建议</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 荒野之息攻略站 · 游戏版权归任天堂所有 · 本站为玩家自发攻略分享</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
