@@ -6,6 +6,8 @@
 
 部署后访问：`https://你的用户名.github.io/zelda-breath-of-the-wild-guide/`
 
+项目示例：https://brunooooooooooooooo.github.io/zelda-breath-of-the-wild-guide/index.html
+
 ## 项目结构
 
 ```
