@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgCook" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1208"/><stop offset="100%" stop-color="#0d0804"/></linearGradient>
+    <radialGradient id="fireGlow"><stop offset="0%" stop-color="#ff6600" stop-opacity="0.5"/><stop offset="100%" stop-color="#ff6600" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect fill="url(#bgCook)" width="800" height="400"/>
+  <!-- 火焰光晕 -->
+  <ellipse cx="400" cy="280" rx="100" ry="60" fill="url(#fireGlow)"/>
+  <!-- 篝火 -->
+  <g transform="translate(400,270)">
+    <!-- 木柴 -->
+    <rect x="-30" y="0" width="60" height="8" rx="4" fill="#4a3020"/>
+    <rect x="-25" y="-6" width="50" height="7" rx="3" fill="#5a3a20" transform="rotate(-10)"/>
+    <!-- 火焰 -->
+    <ellipse cx="0" cy="-15" rx="12" ry="20" fill="#ff6600" opacity="0.8"/>
+    <ellipse cx="0" cy="-20" rx="8" ry="15" fill="#ff9900" opacity="0.9"/>
+    <ellipse cx="-2" cy="-25" rx="5" ry="10" fill="#ffcc00" opacity="0.9"/>
+  </g>
+  <!-- 烹饪锅 -->
+  <g transform="translate(400,255)">
+    <path d="M-20,-35 Q-25,-5 0,0 Q25,-5 20,-35" fill="#3a3a4a" stroke="#5a5a6a" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-35" rx="20" ry="6" fill="#4a4a5a"/>
+    <!-- 锅里的内容 -->
+    <ellipse cx="0" cy="-33" rx="16" ry="4" fill="#2ecc71" opacity="0.7"/>
+  </g>
+  <!-- 食材 -->
+  <g transform="translate(300,285)">
+    <circle cx="0" cy="0" r="6" fill="#ff4444"/>
+    <ellipse cx="-20" cy="5" rx="8" ry="5" fill="#8B4513"/>
+    <path d="M15,-5 Q20,-15 25,-5 Z" fill="#2ecc71"/>
+  </g>
+  <!-- 瓶子 -->
+  <g transform="translate(520,275)" opacity="0.5">
+    <rect x="-6" y="-15" width="12" height="20" rx="3" fill="none" stroke="#4fc3f7" stroke-width="1.5"/>
+    <rect x="-3" y="-12" width="6" height="12" rx="2" fill="#4fc3f7" opacity="0.3"/>
+    <rect x="-2" y="-18" width="4" height="4" rx="1" fill="#8B4513"/>
+  </g>
+  <text x="400" y="350" text-anchor="middle" fill="#ff9900" font-size="16" opacity="0.5">🍲  C O O K I N G  🍲</text>
+</svg>

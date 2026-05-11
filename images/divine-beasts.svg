@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="dbBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a0e17"/><stop offset="100%" stop-color="#1a1530"/></linearGradient>
+    <radialGradient id="dbGlow"><stop offset="0%" stop-color="#c9a84c" stop-opacity="0.2"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+  </defs>
+  <rect fill="url(#dbBg)" width="800" height="400"/>
+  <circle cx="400" cy="200" r="200" fill="url(#dbGlow)"/>
+  <!-- 四神兽剪影 -->
+  <!-- 瓦·露塔(象) -->
+  <g transform="translate(150,200)" fill="none" stroke="#3498db" stroke-width="2" opacity="0.7">
+    <ellipse cx="0" cy="0" rx="35" ry="25"/>
+    <ellipse cx="40" cy="-5" rx="15" ry="10"/>
+    <path d="M40,-5 Q60,-20 70,-15"/>
+    <rect x="-10" y="20" width="10" height="15"/>
+    <rect x="5" y="20" width="10" height="15"/>
+  </g>
+  <!-- 瓦·梅德(鸟) -->
+  <g transform="translate(320,150)" fill="none" stroke="#2ecc71" stroke-width="2" opacity="0.7">
+    <path d="M-30,0 Q0,-30 30,0 Q0,-10 -30,0" />
+    <path d="M-20,5 Q0,25 20,5"/>
+    <path d="M-25,-5 Q-40,-15 -45,-5"/>
+  </g>
+  <!-- 瓦·鲁达尼亚(蜥蜴) -->
+  <g transform="translate(500,200)" fill="none" stroke="#e67e22" stroke-width="2" opacity="0.7">
+    <ellipse cx="0" cy="0" rx="30" ry="20"/>
+    <circle cx="-30" cy="-5" r="12"/>
+    <path d="M15,10 Q30,20 35,25"/>
+    <path d="M-15,10 Q-30,20 -35,25"/>
+  </g>
+  <!-- 瓦·娜波力斯(骆驼) -->
+  <g transform="translate(660,200)" fill="none" stroke="#9b59b6" stroke-width="2" opacity="0.7">
+    <ellipse cx="0" cy="0" rx="30" ry="20"/>
+    <ellipse cx="-5" cy="-25" rx="10" ry="12"/>
+    <ellipse cx="5" cy="-18" rx="12" ry="8"/>
+    <rect x="-15" y="15" width="6" height="15"/>
+    <rect x="10" y="15" width="6" height="15"/>
+  </g>
+  <text x="400" y="350" text-anchor="middle" fill="#c9a84c" font-size="14" opacity="0.4">D I V I N E   B E A S T S</text>
+</svg>

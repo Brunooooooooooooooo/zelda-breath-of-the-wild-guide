@@ -1,0 +1,1234 @@
+/* ============================================================
+   illustrations.css — BOTW Guide CSS-Only Visual Enhancements
+   All decorations: pointer-events: none
+   All animations: respect prefers-reduced-motion
+   ============================================================ */
+
+/* ============================================================
+   1. HERO BANNER BACKGROUNDS
+   ============================================================ */
+
+/* --- Forest (green/teal gradient with leaf-like patterns) --- */
+.illus-hero-forest {
+  background:
+    /* leaf-dapple overlay */
+    radial-gradient(circle at 15% 30%, rgba(46,204,113,0.08) 0%, transparent 18%),
+    radial-gradient(circle at 75% 20%, rgba(46,204,113,0.06) 0%, transparent 14%),
+    radial-gradient(circle at 40% 70%, rgba(46,204,113,0.07) 0%, transparent 20%),
+    radial-gradient(circle at 85% 60%, rgba(46,204,113,0.05) 0%, transparent 16%),
+    radial-gradient(circle at 20% 85%, rgba(46,204,113,0.06) 0%, transparent 18%),
+    radial-gradient(circle at 60% 45%, rgba(79,195,247,0.05) 0%, transparent 15%),
+    /* central glow */
+    radial-gradient(ellipse 60% 50% at 50% 40%, rgba(46,204,113,0.12) 0%, rgba(79,195,247,0.04) 40%, transparent 70%),
+    /* base gradient */
+    linear-gradient(180deg, #071a0f 0%, #0d2818 25%, #0f2e1c 50%, #0b2315 75%, #06140a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.illus-hero-forest::before {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none;
+  /* Sheikah leaf-grid pattern */
+  background:
+    radial-gradient(circle at 20px 20px, rgba(46,204,113,0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 45%, black 40%, transparent 70%);
+}
+
+.illus-hero-forest::after {
+  content: '';
+  position: absolute;
+  top: 20%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px; height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(46,204,113,0.2) 0%, rgba(79,195,247,0.06) 35%, transparent 65%);
+  pointer-events: none;
+}
+
+/* --- Desert (warm sand/orange gradient) --- */
+.illus-hero-desert {
+  background:
+    /* sand dune dapples */
+    radial-gradient(circle at 20% 25%, rgba(230,126,34,0.06) 0%, transparent 18%),
+    radial-gradient(circle at 70% 30%, rgba(243,156,18,0.05) 0%, transparent 15%),
+    radial-gradient(circle at 45% 65%, rgba(230,126,34,0.07) 0%, transparent 20%),
+    radial-gradient(circle at 80% 75%, rgba(201,168,76,0.05) 0%, transparent 16%),
+    radial-gradient(circle at 10% 80%, rgba(230,126,34,0.04) 0%, transparent 14%),
+    /* heat shimmer center */
+    radial-gradient(ellipse 55% 45% at 50% 35%, rgba(230,126,34,0.15) 0%, rgba(243,156,18,0.05) 40%, transparent 70%),
+    /* base gradient */
+    linear-gradient(180deg, #1a140c 0%, #2a1f10 25%, #3d2a14 50%, #2a1f10 75%, #1a140c 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.illus-hero-desert::before {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none;
+  /* sand-dot grid */
+  background:
+    radial-gradient(circle at 24px 24px, rgba(243,156,18,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 65% 55% at 50% 40%, black 35%, transparent 65%);
+}
+
+.illus-hero-desert::after {
+  content: '';
+  position: absolute;
+  top: 25%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(230,126,34,0.22) 0%, rgba(243,156,18,0.06) 40%, transparent 65%);
+  pointer-events: none;
+}
+
+/* --- Mountain (cool blue/white snow gradient) --- */
+.illus-hero-mountain {
+  background:
+    /* snow peaks / clouds */
+    radial-gradient(ellipse 30% 15% at 25% 30%, rgba(255,255,255,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 25% 12% at 70% 35%, rgba(255,255,255,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 20% at 50% 55%, rgba(79,195,247,0.07) 0%, transparent 55%),
+    radial-gradient(ellipse 20% 10% at 40% 70%, rgba(255,255,255,0.03) 0%, transparent 60%),
+    /* central icy glow */
+    radial-gradient(ellipse 55% 50% at 50% 40%, rgba(79,195,247,0.14) 0%, rgba(255,255,255,0.03) 45%, transparent 70%),
+    /* base gradient */
+    linear-gradient(180deg, #0a1225 0%, #0e1a38 25%, #152448 50%, #0e1a38 75%, #0a1225 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.illus-hero-mountain::before {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(circle at 30px 30px, rgba(79,195,247,0.07) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 70% 58% at 50% 42%, black 38%, transparent 68%);
+}
+
+.illus-hero-mountain::after {
+  content: '';
+  position: absolute;
+  top: 22%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px; height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(79,195,247,0.2) 0%, rgba(255,255,255,0.04) 40%, transparent 65%);
+  pointer-events: none;
+}
+
+/* --- Volcano (red/orange with flicker effect) --- */
+.illus-hero-volcano {
+  background:
+    /* ember dapples */
+    radial-gradient(circle at 30% 20%, rgba(231,76,60,0.07) 0%, transparent 12%),
+    radial-gradient(circle at 65% 25%, rgba(230,126,34,0.06) 0%, transparent 14%),
+    radial-gradient(circle at 40% 50%, rgba(231,76,60,0.08) 0%, transparent 16%),
+    radial-gradient(circle at 75% 60%, rgba(231,76,60,0.05) 0%, transparent 13%),
+    radial-gradient(circle at 20% 70%, rgba(230,126,34,0.06) 0%, transparent 15%),
+    radial-gradient(circle at 55% 80%, rgba(231,76,60,0.04) 0%, transparent 12%),
+    /* magma center */
+    radial-gradient(ellipse 50% 40% at 50% 55%, rgba(231,76,60,0.18) 0%, rgba(230,126,34,0.06) 45%, transparent 70%),
+    /* base gradient */
+    linear-gradient(180deg, #1a0c0a 0%, #2a120d 25%, #3d1810 50%, #2a120d 75%, #1a0c0a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.illus-hero-volcano::before {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(circle at 28px 28px, rgba(231,76,60,0.08) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(ellipse 60% 50% at 50% 55%, black 30%, transparent 60%);
+}
+
+.illus-hero-volcano::after {
+  content: '';
+  position: absolute;
+  bottom: 18%; left: 50%;
+  transform: translate(-50%, 50%);
+  width: 250px; height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(231,76,60,0.3) 0%, rgba(230,126,34,0.12) 35%, transparent 65%);
+  pointer-events: none;
+  animation: volcanoFlicker 3s ease-in-out infinite;
+}
+
+@keyframes volcanoFlicker {
+  0%, 100% { opacity: 0.6; transform: translate(-50%, 50%) scale(1); }
+  30% { opacity: 1; transform: translate(-50%, 50%) scale(1.15); }
+  60% { opacity: 0.7; transform: translate(-50%, 50%) scale(1.05); }
+  80% { opacity: 0.9; transform: translate(-50%, 50%) scale(1.1); }
+}
+
+/* --- Castle (dark purple with glowing accents) --- */
+.illus-hero-castle {
+  background:
+    /* malice-like purple dapples */
+    radial-gradient(circle at 25% 20%, rgba(155,89,182,0.06) 0%, transparent 14%),
+    radial-gradient(circle at 70% 18%, rgba(126,34,206,0.05) 0%, transparent 12%),
+    radial-gradient(circle at 50% 40%, rgba(155,89,182,0.08) 0%, transparent 18%),
+    radial-gradient(circle at 30% 60%, rgba(126,34,206,0.05) 0%, transparent 15%),
+    radial-gradient(circle at 75% 55%, rgba(155,89,182,0.04) 0%, transparent 13%),
+    radial-gradient(circle at 45% 75%, rgba(231,76,60,0.04) 0%, transparent 16%),
+    /* central dark glow */
+    radial-gradient(ellipse 50% 45% at 50% 40%, rgba(155,89,182,0.15) 0%, rgba(231,76,60,0.04) 40%, transparent 70%),
+    /* base gradient */
+    linear-gradient(180deg, #0e0818 0%, #180f28 25%, #241438 50%, #180f28 75%, #0e0818 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.illus-hero-castle::before {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(circle at 32px 32px, rgba(155,89,182,0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 65% 55% at 50% 42%, black 35%, transparent 65%);
+}
+
+.illus-hero-castle::after {
+  content: '';
+  position: absolute;
+  top: 28%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px; height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(155,89,182,0.2) 0%, rgba(231,76,60,0.06) 35%, transparent 60%);
+  pointer-events: none;
+  animation: castleglow 8s ease-in-out infinite;
+}
+
+@keyframes castleglow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.85; }
+}
+
+
+/* ============================================================
+   2. DECORATIVE SECTION BANNERS (::before decorations)
+   ============================================================ */
+
+/* --- Shrine Banner (blue geometric) --- */
+.illus-banner-shrine {
+  position: relative;
+}
+.illus-banner-shrine::before {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(135deg, rgba(52,152,219,0.06) 0%, transparent 40%, rgba(79,195,247,0.04) 80%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 8px,
+      rgba(52,152,219,0.04) 8px,
+      rgba(52,152,219,0.04) 9px
+    );
+  clip-path: polygon(
+    0% 0%, 100% 0%, 100% 100%, 0% 100%
+  );
+}
+
+.illus-banner-shrine::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px; pointer-events: none;
+  background: linear-gradient(90deg, transparent, var(--blue-sheikah), transparent);
+  opacity: 0.8; z-index: 1;
+}
+
+/* --- Equipment Banner (gold metallic) --- */
+.illus-banner-equip {
+  position: relative;
+}
+.illus-banner-equip::before {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(135deg, rgba(201,168,76,0.07) 0%, transparent 35%, rgba(232,212,139,0.04) 70%, transparent 100%),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 6px,
+      rgba(201,168,76,0.05) 6px,
+      rgba(201,168,76,0.05) 7px
+    );
+}
+
+.illus-banner-equip::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px; pointer-events: none;
+  background: linear-gradient(90deg, transparent, var(--gold), var(--gold-light), var(--gold), transparent);
+  opacity: 0.7; z-index: 1;
+}
+
+/* --- Cooking Banner (warm orange with sparkle) --- */
+.illus-banner-cook {
+  position: relative;
+}
+.illus-banner-cook::before {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(46,204,113,0.08) 0%, transparent 25%),
+    radial-gradient(circle at 80% 30%, rgba(243,156,18,0.06) 0%, transparent 20%),
+    radial-gradient(circle at 50% 80%, rgba(46,204,113,0.05) 0%, transparent 25%),
+    linear-gradient(180deg, rgba(46,204,113,0.03) 0%, transparent 50%, rgba(243,156,18,0.03) 100%);
+}
+
+.illus-banner-cook::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px; pointer-events: none;
+  background: linear-gradient(90deg, transparent, var(--tag-cook), var(--tag-secret), transparent);
+  opacity: 0.7; z-index: 1;
+}
+
+/* Sparkle overlay particles for cook banner */
+.illus-banner-cook .sparkle-dots {
+  pointer-events: none;
+  position: absolute; inset: 0; z-index: 1;
+}
+.illus-banner-cook .sparkle-dots::before,
+.illus-banner-cook .sparkle-dots::after {
+  content: '';
+  position: absolute;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--gold-light);
+  pointer-events: none;
+}
+.illus-banner-cook .sparkle-dots::before {
+  top: 25%; right: 15%;
+  animation: cookSparkle 2s ease-in-out infinite;
+}
+.illus-banner-cook .sparkle-dots::after {
+  top: 40%; right: 25%;
+  animation: cookSparkle 2s ease-in-out 0.8s infinite;
+}
+
+@keyframes cookSparkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 0.9; transform: scale(1.3); }
+}
+
+/* --- Boss Banner (red ominous) --- */
+.illus-banner-boss {
+  position: relative;
+}
+.illus-banner-boss::before {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(ellipse 40% 80% at 50% 50%, rgba(231,76,60,0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 20% 60% at 30% 40%, rgba(231,76,60,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 20% 60% at 70% 40%, rgba(231,76,60,0.04) 0%, transparent 60%),
+    /* vertical malice lines */
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 30px,
+      rgba(231,76,60,0.03) 30px,
+      rgba(231,76,60,0.03) 31px
+    );
+}
+
+.illus-banner-boss::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px; pointer-events: none;
+  background: linear-gradient(90deg, transparent, var(--tag-main), #ff4444, var(--tag-main), transparent);
+  opacity: 0.9; z-index: 1;
+}
+
+/* --- Secret Banner (purple mysterious) --- */
+.illus-banner-secret {
+  position: relative;
+}
+.illus-banner-secret::before {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(ellipse 35% 90% at 50% 50%, rgba(155,89,182,0.07) 0%, transparent 60%),
+    radial-gradient(circle at 20% 30%, rgba(79,195,247,0.04) 0%, transparent 20%),
+    radial-gradient(circle at 80% 60%, rgba(155,89,182,0.05) 0%, transparent 20%),
+    /* mystery diamond grid */
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 12px,
+      rgba(155,89,182,0.03) 12px,
+      rgba(155,89,182,0.03) 13px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 12px,
+      rgba(155,89,182,0.03) 12px,
+      rgba(155,89,182,0.03) 13px
+    );
+}
+
+.illus-banner-secret::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px; pointer-events: none;
+  background: linear-gradient(90deg, transparent, var(--tag-boss), var(--blue-sheikah), transparent);
+  opacity: 0.7; z-index: 1;
+}
+
+
+/* ============================================================
+   3. GAME-THEMED CSS ART ELEMENTS
+   ============================================================ */
+
+/* --- Triforce Emblem (3 CSS triangles) --- */
+.illus-triforce {
+  position: relative;
+  width: 80px; height: 70px;
+  display: inline-block;
+  pointer-events: none;
+}
+
+/* Bottom-left triangle */
+.illus-triforce::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 0;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-bottom: 38px solid var(--gold);
+  filter: drop-shadow(0 0 8px rgba(201,168,76,0.4));
+  pointer-events: none;
+}
+
+/* Bottom-right triangle */
+.illus-triforce::after {
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 0; height: 0;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-bottom: 38px solid var(--gold);
+  filter: drop-shadow(0 0 8px rgba(201,168,76,0.4));
+  pointer-events: none;
+}
+
+/* Top triangle (needs a child element or wrapper) */
+.illus-triforce-top {
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 0; height: 0;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-bottom: 38px solid var(--gold-light);
+  filter: drop-shadow(0 0 12px rgba(201,168,76,0.5));
+  pointer-events: none;
+}
+
+/* --- Master Sword Silhouette --- */
+.illus-master-sword {
+  position: relative;
+  width: 24px; height: 80px;
+  display: inline-block;
+  pointer-events: none;
+}
+
+/* Blade */
+.illus-master-sword::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 8px; height: 60px;
+  background: linear-gradient(180deg,
+    var(--blue-sheikah) 0%,
+    rgba(79,195,247,0.8) 40%,
+    var(--gold-light) 70%,
+    var(--gold) 100%
+  );
+  clip-path: polygon(50% 0%, 100% 30%, 70% 100%, 50% 100%, 30% 100%, 0% 30%);
+  filter: drop-shadow(0 0 6px rgba(79,195,247,0.4));
+  pointer-events: none;
+}
+
+/* Winged cross-guard */
+.illus-master-sword::after {
+  content: '';
+  position: absolute;
+  top: 55px; left: 50%;
+  transform: translateX(-50%);
+  width: 20px; height: 8px;
+  background: var(--gold);
+  border-radius: 2px;
+  clip-path: polygon(0% 40%, 35% 0%, 50% 30%, 65% 0%, 100% 40%, 70% 100%, 30% 100%);
+  filter: drop-shadow(0 0 4px rgba(201,168,76,0.4));
+  pointer-events: none;
+}
+
+/* --- Shield Icon --- */
+.illus-shield {
+  position: relative;
+  width: 50px; height: 56px;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.illus-shield::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--blue-sheikah), #1a6faa);
+  clip-path: polygon(50% 0%, 100% 12%, 100% 45%, 70% 100%, 50% 85%, 30% 100%, 0% 45%, 0% 12%);
+  pointer-events: none;
+}
+
+.illus-shield::after {
+  content: '';
+  position: absolute;
+  top: 25%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0; height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 18px solid var(--gold);
+  filter: drop-shadow(0 0 6px rgba(201,168,76,0.5));
+  pointer-events: none;
+}
+
+/* --- Heart Container (3/4 circle + triangle tail) --- */
+.illus-heart {
+  position: relative;
+  width: 36px; height: 36px;
+  display: inline-block;
+  pointer-events: none;
+}
+
+/* Main heart shape via two overlapping circles + rotated square */
+.illus-heart::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 20px; height: 20px;
+  background: var(--tag-main);
+  border-radius: 2px 0 2px 2px;
+  pointer-events: none;
+  filter: drop-shadow(0 0 6px rgba(231,76,60,0.5));
+}
+
+/* Left lobe */
+.illus-heart::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 8px;
+  width: 12px; height: 12px;
+  background: var(--tag-main);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: drop-shadow(0 0 6px rgba(231,76,60,0.5));
+}
+
+/* Right lobe (needs wrapper/extra element) */
+.illus-heart-lobe {
+  position: absolute;
+  top: 0; right: 8px;
+  width: 12px; height: 12px;
+  background: var(--tag-main);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: drop-shadow(0 0 6px rgba(231,76,60,0.5));
+}
+
+/* Animated heart variant */
+.illus-heart-animated::before,
+.illus-heart-animated::after {
+  animation: heartPulse 1.2s ease-in-out infinite;
+}
+
+@keyframes heartPulse {
+  0%, 100% { transform: translateX(-50%) rotate(45deg) scale(1); }
+  15% { transform: translateX(-50%) rotate(45deg) scale(1.15); }
+  30% { transform: translateX(-50%) rotate(45deg) scale(1); }
+  45% { transform: translateX(-50%) rotate(45deg) scale(1.1); }
+  60% { transform: translateX(-50%) rotate(45deg) scale(1); }
+}
+
+/* --- Stamina Wheel Arc --- */
+.illus-stamina-wheel {
+  position: relative;
+  width: 60px; height: 60px;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.illus-stamina-wheel::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: var(--tag-cook);
+  border-right-color: var(--tag-cook);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  pointer-events: none;
+  animation: staminaSpin 3s linear infinite;
+  filter: drop-shadow(0 0 4px rgba(46,204,113,0.4));
+}
+
+.illus-stamina-wheel::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  border: 2px solid rgba(46,204,113,0.3);
+  pointer-events: none;
+}
+
+@keyframes staminaSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Stamina wheel segments (5 segments = 5 stamina upgrades) */
+.stamina-segments {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.stamina-segments span {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 2px; height: 22px;
+  background: rgba(46,204,113,0.2);
+  pointer-events: none;
+}
+
+.stamina-segments span:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg) translateY(-12px); }
+.stamina-segments span:nth-child(2) { transform: translate(-50%, -50%) rotate(72deg) translateY(-12px); }
+.stamina-segments span:nth-child(3) { transform: translate(-50%, -50%) rotate(144deg) translateY(-12px); }
+.stamina-segments span:nth-child(4) { transform: translate(-50%, -50%) rotate(216deg) translateY(-12px); }
+.stamina-segments span:nth-child(5) { transform: translate(-50%, -50%) rotate(288deg) translateY(-12px); }
+
+
+/* ============================================================
+   4. SHEIKAH-INSPIRED DECORATIVE BORDER PATTERNS
+   ============================================================ */
+
+/* --- Sheikah Border: Top accent line with dots --- */
+.illus-border-sheikah {
+  position: relative;
+  border: 1px solid var(--border);
+}
+
+.illus-border-sheikah::before {
+  content: '';
+  position: absolute; top: -1px; left: 10%; right: 10%; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--blue-sheikah), var(--gold), var(--blue-sheikah), transparent);
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Corner accent dots */
+.illus-border-sheikah::after {
+  content: '';
+  position: absolute; inset: -1px;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 10px 10px, var(--blue-sheikah) 2px, transparent 2px),
+    radial-gradient(circle at calc(100% - 10px) 10px, var(--blue-sheikah) 2px, transparent 2px),
+    radial-gradient(circle at 10px calc(100% - 10px), var(--blue-sheikah) 2px, transparent 2px),
+    radial-gradient(circle at calc(100% - 10px) calc(100% - 10px), var(--blue-sheikah) 2px, transparent 2px);
+  opacity: 0.4;
+}
+
+/* --- Sheikah Dot Border (repeating dots along edges) --- */
+.illus-border-dots {
+  position: relative;
+  border: 1px solid var(--border);
+}
+
+.illus-border-dots::before {
+  content: '';
+  position: absolute; inset: -2px;
+  pointer-events: none;
+  background:
+    radial-gradient(circle 2px, var(--blue-sheikah) 100%, transparent 100%);
+  background-size: 16px 16px;
+  background-position: 0 0;
+  opacity: 0.2;
+  mask-image: linear-gradient(to bottom,
+    black 2px, transparent 2px,
+    transparent calc(100% - 2px), black calc(100% - 2px)
+  ),
+  linear-gradient(to right,
+    black 2px, transparent 2px,
+    transparent calc(100% - 2px), black calc(100% - 2px)
+  );
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
+}
+
+/* --- Sheikah Rune Border (glowing rune-like edge) --- */
+.illus-border-rune {
+  position: relative;
+  border: 1px solid rgba(79,195,247,0.15);
+}
+
+.illus-border-rune::before {
+  content: '';
+  position: absolute; inset: -4px; border-radius: inherit;
+  padding: 4px;
+  background: linear-gradient(
+    135deg,
+    rgba(79,195,247,0.2),
+    transparent 30%,
+    transparent 70%,
+    rgba(79,195,247,0.15)
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
+/* --- Corner Rune Marks --- */
+.illus-border-corners {
+  position: relative;
+}
+
+.illus-border-corners::before {
+  content: '';
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background:
+    /* top-left corner rune */
+    linear-gradient(90deg, var(--blue-sheikah) 4px, transparent 4px),
+    linear-gradient(180deg, var(--blue-sheikah) 4px, transparent 4px),
+    /* top-right corner rune */
+    linear-gradient(270deg, var(--blue-sheikah) 4px, transparent 4px),
+    linear-gradient(180deg, var(--blue-sheikah) 4px, transparent 4px),
+    /* bottom-left corner rune */
+    linear-gradient(90deg, var(--blue-sheikah) 4px, transparent 4px),
+    linear-gradient(0deg, var(--blue-sheikah) 4px, transparent 4px),
+    /* bottom-right corner rune */
+    linear-gradient(270deg, var(--blue-sheikah) 4px, transparent 4px),
+    linear-gradient(0deg, var(--blue-sheikah) 4px, transparent 4px);
+  background-size:
+    12px 1px, 1px 12px,
+    12px 1px, 1px 12px,
+    12px 1px, 1px 12px,
+    12px 1px, 1px 12px;
+  background-position:
+    top 8px left 8px, top 8px left 8px,
+    top 8px right 8px, top 8px right 8px,
+    bottom 8px left 8px, bottom 8px left 8px,
+    bottom 8px right 8px, bottom 8px right 8px;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+
+/* ============================================================
+   5. IMAGE PLACEHOLDER ENHANCEMENT (.guide-hero-image)
+   ============================================================ */
+
+/* Enhanced framed screenshot appearance */
+.guide-hero-image {
+  position: relative;
+}
+
+/* Decorative frame border */
+.guide-hero-image::before {
+  content: '';
+  position: absolute; inset: 4px;
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 12px;
+  pointer-events: none; z-index: 2;
+}
+
+/* Scanline overlay (Sheikah Slate view effect) */
+.guide-hero-image .scanlines {
+  position: absolute; inset: 0; z-index: 3;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.03) 2px,
+    rgba(0,0,0,0.03) 4px
+  );
+  border-radius: 16px;
+}
+
+/* Glowing Sheikah rune in corner */
+.guide-hero-image .sheikah-rune {
+  position: absolute;
+  bottom: 16px; right: 16px;
+  width: 32px; height: 32px; z-index: 4;
+  pointer-events: none;
+}
+
+.guide-hero-image .sheikah-rune::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(79,195,247,0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: runePulse 3s ease-in-out infinite;
+}
+
+.guide-hero-image .sheikah-rune::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px; height: 8px;
+  background: var(--blue-sheikah);
+  pointer-events: none;
+  animation: runePulse 3s ease-in-out infinite;
+}
+
+@keyframes runePulse {
+  0%, 100% { opacity: 0.3; box-shadow: 0 0 4px rgba(79,195,247,0.3); }
+  50% { opacity: 0.9; box-shadow: 0 0 16px rgba(79,195,247,0.7); }
+}
+
+/* Enhanced guide image with frame shadow */
+.guide-image-framed {
+  border: 3px solid var(--border);
+  box-shadow:
+    0 0 0 1px var(--bg-dark),
+    0 0 0 4px rgba(201,168,76,0.15),
+    0 8px 32px rgba(0,0,0,0.4);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.guide-image-framed::before {
+  content: '';
+  position: absolute; inset: 0; border-radius: 13px;
+  pointer-events: none; z-index: 2;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.04) 2px,
+      rgba(0,0,0,0.04) 4px
+    );
+}
+
+/* Corner rune decorations on framed images */
+.guide-image-framed::after {
+  content: '';
+  position: absolute; inset: 0;
+  pointer-events: none; z-index: 3;
+  background:
+    /* top-left rune */
+    linear-gradient(45deg, var(--blue-sheikah) 3px, transparent 3px) top left / 8px 8px no-repeat,
+    /* top-right rune */
+    linear-gradient(-45deg, var(--blue-sheikah) 3px, transparent 3px) top right / 8px 8px no-repeat,
+    /* bottom-left rune */
+    linear-gradient(-45deg, var(--blue-sheikah) 3px, transparent 3px) bottom left / 8px 8px no-repeat,
+    /* bottom-right rune */
+    linear-gradient(45deg, var(--blue-sheikah) 3px, transparent 3px) bottom right / 8px 8px no-repeat;
+  opacity: 0.5;
+}
+
+
+/* ============================================================
+   6. PARALLAX-LIKE GRADIENT BACKGROUNDS (depth layers)
+   ============================================================ */
+
+/* Deep parallax layer system */
+.illus-parallax-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Far background - deep atmosphere */
+.illus-parallax-far {
+  position: absolute; inset: 0; z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg,
+      var(--bg-dark) 0%,
+      #0d1528 30%,
+      #111d36 50%,
+      #0d1528 70%,
+      var(--bg-dark) 100%
+    );
+}
+
+/* Mid layer - ambient light */
+.illus-parallax-mid {
+  position: absolute; inset: 0; z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 60% 40% at 30% 20%, rgba(79,195,247,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 35% at 70% 60%, rgba(201,168,76,0.05) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 30% at 50% 85%, rgba(155,89,182,0.04) 0%, transparent 50%);
+}
+
+/* Near layer - foreground depth mist */
+.illus-parallax-near {
+  position: absolute; inset: 0; z-index: 2;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg,
+      transparent 0%,
+      rgba(10,14,23,0.3) 40%,
+      rgba(10,14,23,0.6) 70%,
+      var(--bg-dark) 100%
+    );
+}
+
+/* --- Specific Parallax Themes --- */
+
+/* Forest depth */
+.illus-depth-forest {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(46,204,113,0.04) 0%, transparent 30%),
+    radial-gradient(circle at 65% 40%, rgba(46,204,113,0.03) 0%, transparent 25%),
+    radial-gradient(circle at 40% 70%, rgba(46,204,113,0.05) 0%, transparent 35%),
+    linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.4) 80%, rgba(0,0,0,0.7) 100%);
+}
+
+/* Desert heat shimmer */
+.illus-depth-desert {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg,
+      transparent 0%,
+      rgba(230,126,34,0.04) 30%,
+      rgba(243,156,18,0.06) 50%,
+      rgba(230,126,34,0.04) 70%,
+      transparent 100%
+    ),
+    linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.5) 85%, rgba(0,0,0,0.8) 100%);
+}
+
+/* Snow peak depth */
+.illus-depth-mountain {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 30% 20% at 50% 30%, rgba(255,255,255,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 25% 15% at 50% 50%, rgba(79,195,247,0.05) 0%, transparent 55%),
+    linear-gradient(180deg, transparent 0%, rgba(10,20,40,0.5) 75%, rgba(5,10,25,0.9) 100%);
+}
+
+/* Volcanic depth */
+.illus-depth-volcano {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 40% 25% at 50% 60%, rgba(231,76,60,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 20% 15% at 50% 65%, rgba(230,126,34,0.1) 0%, transparent 50%),
+    linear-gradient(180deg, transparent 0%, rgba(231,76,60,0.06) 40%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.85) 100%);
+}
+
+/* Castle malice depth */
+.illus-depth-castle {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 35% 30% at 50% 45%, rgba(155,89,182,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 20% 15% at 50% 50%, rgba(231,76,60,0.05) 0%, transparent 50%),
+    linear-gradient(180deg, transparent 0%, rgba(20,8,35,0.6) 75%, rgba(10,4,20,0.9) 100%);
+}
+
+
+/* ============================================================
+   7. ANIMATION UTILITIES
+   ============================================================ */
+
+/* Slow float animation for icons */
+.illus-float {
+  animation: illusFloat 4s ease-in-out infinite;
+}
+
+@keyframes illusFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Glow pulse */
+.illus-glow-pulse {
+  animation: illusGlowPulse 3s ease-in-out infinite;
+}
+
+@keyframes illusGlowPulse {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(201,168,76,0.3)); }
+  50% { filter: drop-shadow(0 0 12px rgba(201,168,76,0.7)); }
+}
+
+/* Rotate slowly (for decorative elements) */
+.illus-rotate-slow {
+  animation: illusRotate 20s linear infinite;
+}
+
+@keyframes illusRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/* ============================================================
+   8. REDUCED MOTION: Disable all animations
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .illus-float,
+  .illus-glow-pulse,
+  .illus-rotate-slow {
+    animation: none;
+  }
+
+  .illus-heart-animated::before,
+  .illus-heart-animated::after {
+    animation: none;
+  }
+
+  .illus-stamina-wheel::before {
+    animation: none;
+  }
+}
+
+
+/* ============================================================
+   9. ADDITIONAL DECORATIVE UTILITIES
+   ============================================================ */
+
+/* Gold accent divider line */
+.illus-divider {
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.illus-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  pointer-events: none;
+}
+
+.illus-divider::after {
+  content: '◆';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--gold);
+  font-size: 0.5rem;
+  pointer-events: none;
+}
+
+/* Blue Sheikah divider */
+.illus-divider-sheikah {
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.illus-divider-sheikah::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--blue-sheikah), transparent);
+  pointer-events: none;
+}
+
+.illus-divider-sheikah::after {
+  content: '●';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--blue-sheikah);
+  font-size: 0.4rem;
+  pointer-events: none;
+}
+
+
+/* ============================================================
+   10. SHEIKAH RUNE DECORATIVE ELEMENT
+   ============================================================ */
+
+/* Large decorative Sheikah eye symbol (simplified CSS) */
+.illus-sheikah-eye {
+  position: relative;
+  width: 40px; height: 40px;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.illus-sheikah-eye::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  border: 2px solid var(--blue-sheikah);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.illus-sheikah-eye::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--blue-sheikah);
+  opacity: 0.8;
+  pointer-events: none;
+  box-shadow: 0 0 10px rgba(79,195,247,0.6);
+}
+
+/* Sheikah eye with "teardrop" */
+.illus-sheikah-eye-tear::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  border: 2px solid var(--blue-sheikah);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.illus-sheikah-eye-tear::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 0; height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid var(--blue-sheikah);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+
+/* ============================================================
+   11. GLOWING ORB DECORATIONS (Divine Beast / Shrine orbs)
+   ============================================================ */
+
+.illus-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.illus-orb-blue {
+  background: radial-gradient(circle at 40% 35%, rgba(79,195,247,0.2), rgba(52,152,219,0.05));
+  box-shadow: 0 0 20px rgba(79,195,247,0.15);
+}
+
+.illus-orb-gold {
+  background: radial-gradient(circle at 40% 35%, rgba(232,212,139,0.2), rgba(201,168,76,0.05));
+  box-shadow: 0 0 20px rgba(201,168,76,0.15);
+}
+
+.illus-orb-red {
+  background: radial-gradient(circle at 40% 35%, rgba(231,76,60,0.2), rgba(231,76,60,0.05));
+  box-shadow: 0 0 20px rgba(231,76,60,0.15);
+}
+
+.illus-orb-green {
+  background: radial-gradient(circle at 40% 35%, rgba(46,204,113,0.2), rgba(46,204,113,0.05));
+  box-shadow: 0 0 20px rgba(46,204,113,0.15);
+}
+
+
+/* ============================================================
+   12. KOROK SEED / DEKU LEAF decorative particles
+   ============================================================ */
+
+.illus-korok-particle {
+  position: absolute;
+  width: 3px; height: 3px;
+  border-radius: 50%;
+  background: var(--tag-cook);
+  pointer-events: none;
+  animation: korokFloat 6s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(46,204,113,0.4);
+}
+
+@keyframes korokFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  20% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateY(-40px) translateX(15px) rotate(180deg);
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-80px) translateX(-10px) rotate(360deg);
+  }
+}
+
+/* Korok leaf shape */
+.illus-korok-leaf {
+  position: relative;
+  width: 12px; height: 6px;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.illus-korok-leaf::before {
+  content: '';
+  position: absolute;
+  width: 12px; height: 6px;
+  background: var(--tag-cook);
+  border-radius: 50% 0 50% 0;
+  transform: rotate(-30deg);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+
+/* ============================================================
+   End of illustrations.css
+   ============================================================ */

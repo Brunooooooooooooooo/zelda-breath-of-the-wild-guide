@@ -1,0 +1,655 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>区域攻略 | 荒野之息攻略站</title>
+  <meta name="description" content="塞尔达传说旷野之息海拉鲁八大区域深度攻略 — 环境解析、推荐探索时机、关键地点、敌人、装备、资源、实用技巧全覆盖">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/material.css">
+  <link rel="stylesheet" href="../css/guide.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">▲</span>
+        <span class="logo-text">荒野之息<span class="logo-sub">攻略站</span></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="../index.html" class="nav-link">首页</a></li>
+        <li><a href="great-plateau.html" class="nav-link">新手入门</a></li>
+        <li><a href="divine-beasts.html" class="nav-link">主线攻略</a></li>
+        <li><a href="shrines.html" class="nav-link">神庙攻略</a></li>
+        <li><a href="equipment.html" class="nav-link">装备图鉴</a></li>
+        <li><a href="bosses.html" class="nav-link">BOSS指南</a></li>
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link nav-more">更多 ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="korok-seeds.html">🌱 呀哈哈全收集</a></li>
+            <li><a href="cooking.html">🍲 料理配方大全</a></li>
+            <li><a href="secrets.html">🔍 隐藏要素</a></li>
+            <li><a href="regions.html">🗺️ 区域攻略</a></li>
+            <li><a href="locations.html">📍 重要地点</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="nav-search">
+        <input type="text" placeholder="搜索攻略..." id="searchInput">
+        <button class="search-btn" id="searchBtn">🔍</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </nav>
+
+  <section class="guide-hero active" style="background:radial-gradient(ellipse 80% 60% at 50% 40%, rgba(79,195,247,0.12) 0%, transparent 60%),linear-gradient(180deg, #0a0e17 0%, #0d1528 40%, #0a0e17 100%)">
+    <div class="guide-hero-inner">
+      <div class="guide-breadcrumb">
+        <a href="../index.html">首页</a> <span class="sep">›</span>
+        <span>区域攻略</span>
+      </div>
+      <div class="guide-hero-content">
+        <div class="guide-hero-text">
+          <h1>🗺️ 海拉鲁八大区域深度攻略</h1>
+          <p class="guide-desc">从冰雪覆盖的海布拉之巅到炽热咆哮的死亡之山，从热带雨林费罗尼到广袤沙漠格鲁德——带你读懂海拉鲁每一寸土地的环境、威胁、宝藏与秘密。</p>
+          <div class="guide-meta-bar">
+            <span>🗺️ 8大区域</span>
+            <span>🏛️ 120座神庙</span>
+            <span>👹 40+小BOSS</span>
+            <span>🌱 900个呀哈哈</span>
+            <span>⏱️ 阅读约30分钟</span>
+          </div>
+        </div>
+        <div class="guide-hero-image"><img src="../images/hyrule-landscape.svg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">🗺️</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="guide-layout">
+    <main class="guide-main">
+      <div class="guide-toc">
+        <h3>📑 区域导航</h3>
+        <ul>
+          <li><a href="#hateno">🌾 哈特诺地区 — 田园之乡（推荐首探）</a></li>
+          <li><a href="#lanayru">🌊 拉聂尔地区 — 水之国度（推荐第二站）</a></li>
+          <li><a href="#hebra">❄️ 海布拉地区 — 冰雪之巅</a></li>
+          <li><a href="#eldin">🌋 奥尔汀地区 — 死亡之山</a></li>
+          <li><a href="#faron">🌴 费罗尼地区 — 热带丛林</a></li>
+          <li><a href="#akkala">🍂 阿卡莱地区 — 秋色要塞</a></li>
+          <li><a href="#gerudo">🏜️ 格鲁德地区 — 沙漠秘境</a></li>
+          <li><a href="#central">🏰 中央海拉鲁 — 王国心脏（终局区域）</a></li>
+        </ul>
+      </div>
+
+      <div class="guide-info" style="margin-bottom:32px">
+        📌 <strong>探索路线建议：</strong>初始台地 → 哈特诺（解锁升级）→ 拉聂尔（水神兽）→ 海布拉（风神兽）→ 奥尔汀（火神兽）→ 费罗尼（采集资源）→ 阿卡莱（古代装备）→ 格鲁德（雷神兽）→ 中央海拉鲁（决战）。遵循这个路线，难度曲线平滑，装备和血量自然成长。
+      </div>
+
+      <!-- ==================== 哈特诺地区 ==================== -->
+      <section class="guide-section" id="hateno">
+        <h2>🌾 哈特诺地区 — 田园之乡</h2>
+
+        <h3>🌿 环境概览</h3>
+        <p>哈特诺地区位于海拉鲁东南部，是最温和宜居的区域。广袤的农田沿着哈特诺湾铺展开来，起伏的丘陵间点缀着风车和牧场，东部海岬的沙滩在夕阳下泛着金光。这里气候宜人，没有极端的温度威胁，是<strong>离开初始台地后的第一站首选</strong>。哈特诺村是海拉鲁少数几个未被灾厄摧毁的聚居地，村民们过着自给自足的农耕生活。</p>
+
+        <h3>⏰ 推荐探索时机</h3>
+        <p><strong>游戏初期（离开初始台地后立即前往）</strong>——哈特诺古代研究所是解锁照相机、感应器+和希卡之石升级的关键地点。同时在这里可以购买海利亚套装，获得基础防御力。</p>
+
+        <h3>📍 重要地点</h3>
+        <ul>
+          <li><strong>哈特诺村</strong> — 游戏核心枢纽之一。可以购买/出售装备，开启自己的房屋（3000卢比+30捆木材），以及染色坊为防具变色。</li>
+          <li><strong>哈特诺古代研究所</strong> — 用古代材料和卢比升级希卡之石。解锁照相机、海拉鲁图鉴、感应器+、传送标注器（DLC）。<strong>优先级最高的早期目标。</strong></li>
+          <li><strong>卡卡利科村</strong> — 因帕奶奶所在地，主线剧情推进点。可以购买潜行套装，开启大精灵之泉（增强防具）。</li>
+          <li><strong>沃托里村</strong> — 东南海岸的渔村，拥有赌博小游戏和海鲜料理。海滨风景优美，是收集鱼类资源的好去处。</li>
+          <li><strong>克拉尔湖</strong> — 被山环绕的内陆湖，天降神庙隐藏于此。</li>
+        </ul>
+
+        <h3>👹 主要敌人</h3>
+        <ul>
+          <li><strong>波克布林</strong> — 最基本的敌人，红色和蓝色为主，分布在田野和路边营地。</li>
+          <li><strong>莫力布林</strong> — 大型人形怪物，出现在哈特诺村外田野和森林边缘地带。</li>
+          <li><strong>丘丘</strong> — 史莱姆型敌人，普通丘丘为主，偶有电丘丘。</li>
+          <li><strong>西诺克斯</strong> — 独眼巨人，沃托里村附近海滩有一只，哈特诺海滩也有一只。</li>
+        </ul>
+
+        <h3>⚔️ 关键装备</h3>
+        <ul>
+          <li><strong>海利亚套装</strong> — 哈特诺村购买，基础防御装备，可染色。</li>
+          <li><strong>潜行套装</strong> — 卡卡利科村购买，夜间移动速度+，对初期偷取敌人营地物资非常有帮助。</li>
+          <li><strong>英杰服</strong> — 完成一个回忆任务后因帕赠送，显示敌人血量，游戏中防最高单件上衣。</li>
+          <li><strong>士兵套装</strong> — 哈特诺村购买，早期防御最高的重甲套装。</li>
+        </ul>
+
+        <h3>🪵 资源采集</h3>
+        <ul>
+          <li><strong>海拉鲁米/塔邦挞小麦</strong> — 哈特诺村周围农田大量分布，烹饪基础食材。</li>
+          <li><strong>海拉鲁草/静谧公主</strong> — 田野和森林中常见，用于料理和支线任务。</li>
+          <li><strong>海拉鲁鲈鱼/精力鲈鱼</strong> — 哈特诺河和海岸大量，烹饪补充血量。</li>
+          <li><strong>木柴捆</strong> — 森林砍伐获得，建设一始村和自家房屋必需（共需80+捆）。</li>
+          <li><strong>精力蘑菇</strong> — 森林中常见，用于制作精力料理。</li>
+        </ul>
+
+        <div class="guide-tip">💡 <strong>第一站必做清单：</strong>① 爬哈特诺古代研究所解锁照相机和感应器+；② 在哈特诺村买海利亚套装；③ 去卡卡利科村见因帕开启主线；④ 解锁卡卡利科的大精灵之泉强化防具。完成这些可以在2-3小时内将生存能力提升一个档次。</div>
+
+        <div class="guide-warning">⚠️ <strong>沃托里村东北方向</strong>有一座终阶力之试炼神庙，内部守护者侦察兵IV拥有3000HP和强力古代武器。除非你对自己的盾反和回避技术有信心，否则不建议早期挑战。建议拿到大师之剑后再来。</div>
+
+        <table class="guide-table">
+          <tr><th>信息项</th><th>详情</th></tr>
+          <tr><td>神庙数量</td><td>12座（卡卡利科附近3座 + 哈特诺周边4座 + 沃托里区域5座）</td></tr>
+          <tr><td>神兽</td><td>无</td></tr>
+          <tr><td>塔</td><td>哈特诺之塔</td></tr>
+          <tr><td>呀哈哈</td><td>约50个</td></tr>
+          <tr><td>大精灵之泉</td><td>1个（卡卡利科村外）</td></tr>
+          <tr><td>小BOSS刷新</td><td>西诺克斯 × 2，岩石巨人 × 1</td></tr>
+          <tr><td>特殊挑战</td><td>沃托里村北方终阶力之试炼</td></tr>
+          <tr><td>难度评分</td><td>★☆☆☆☆（最适合新手）</td></tr>
+        </table>
+      </section>
+
+      <!-- ==================== 拉聂尔地区 ==================== -->
+      <section class="guide-section" id="lanayru">
+        <h2>🌊 拉聂尔地区 — 水之国度</h2>
+
+        <h3>🌿 环境概览</h3>
+        <p>拉聂尔地区是水之英杰米法的故乡，以<strong>永久降雨</strong>和<strong>壮丽的瀑布景观</strong>闻名。佐拉之里由发光的夜光石雕琢而成，在雨中闪烁蓝色荧光，是整个海拉鲁最美的城市景观之一。拉聂尔山则是海拉鲁最高峰之一，山顶常年积雪，是冰龙聂尔龙的家园。区域的河流和湿地遍布，水生物种丰富。注意：<strong>前往佐拉之里的路上会持续下雨</strong>，攀爬变得极为困难，需要沿着铺设的道路前进。</p>
+
+        <h3>⏰ 推荐探索时机</h3>
+        <p><strong>游戏早期（完成哈特诺主线后立即前往）</strong>——水之神兽瓦·露塔是最容易的神兽，米法的祈福（自动复活+额外黄心）是前期最有价值的英杰技能。推荐的<strong>第一个神兽攻略目标</strong>。</p>
+
+        <h3>📍 重要地点</h3>
+        <ul>
+          <li><strong>佐拉之里</strong> — 米法的故乡，水之神兽任务起点。可以制作卓拉武器，购买卓拉套装。城内有大量夜光石矿脉。</li>
+          <li><strong>拉聂尔山</strong> — 海拉鲁最高峰之一，需要防寒措施。山顶有聂尔龙（冰龙）刷新点，可获取龙鳞/龙角/龙牙/龙爪用于升级和料理。还有隐藏神庙和多个回忆地点。</li>
+          <li><strong>雷兽山</strong> — 佐拉之里东部高地，有一只<strong>红色莱尼尔（人马）</strong>。主线任务要求收集20支电箭——不必硬打，可以潜行绕圈拾取。</li>
+          <li><strong>拉利斯池塘</strong> — 佐拉之里外的美丽池塘，是支线任务和拍照打卡点。</li>
+          <li><strong>湿地驿站</strong> — 进入拉聂尔区域的前哨站，可以补充物资和接取支线。</li>
+          <li><strong>露朵湖</strong> — 神兽瓦·露塔所在位置，完成前置任务后在此登上神兽。</li>
+        </ul>
+
+        <h3>👹 主要敌人</h3>
+        <ul>
+          <li><strong>电击蜥蜴战士</strong> — 拉聂尔区域最大威胁。电击攻击会造成麻痹+掉装备，在雨天攻击范围会扩大。</li>
+          <li><strong>蓝色蜥蜴战士</strong> — 湿地和河边常见，会吐水球。</li>
+          <li><strong>红色莱尼尔</strong> — 雷兽山上的人马，主线任务需要到此收集电箭。可以用潜行方式绕圈拾取，不必硬打。</li>
+          <li><strong>八爪怪</strong> — 河边的章鱼型怪物，会吐石头。可以盾反石头一击秒杀。</li>
+        </ul>
+
+        <h3>⚔️ 关键装备</h3>
+        <ul>
+          <li><strong>卓拉铠甲</strong> — 希多王子赠送。穿上后可以在瀑布下按A键<strong>攀登瀑布</strong>，是水之神兽任务的必备装备。同时增加游泳速度。</li>
+          <li><strong>电箭</strong> — 雷兽山莱尼尔处大量获取（树上、地上、石头上），用于后续水之神兽BOSS战。</li>
+          <li><strong>卓拉武器系列</strong> — 卓拉之枪、卓拉大剑、银鳞长枪等，耐久度和攻击力都不错的中期过渡装备。</li>
+          <li><strong>祭祀长枪</strong> — 佐拉之里工匠制作，修理材料为钻石。</li>
+        </ul>
+
+        <h3>🪷 资源采集</h3>
+        <ul>
+          <li><strong>莲叶种子</strong> — 拉聂尔湿地大量分布，烹饪后提升移动速度。</li>
+          <li><strong>海拉鲁鲈鱼</strong> — 河流和湖泊中大量，烹饪基础食材。</li>
+          <li><strong>生命鲈鱼</strong> — 佐拉之里周边水域，回复更多血量。</li>
+          <li><strong>夜光石</strong> — 佐拉之里周边矿脉丰富，10个夜光石可兑换1颗钻石（佐拉之里支线）。</li>
+          <li><strong>聂尔龙材料</strong> — 拉聂尔山顶射龙获取：龙鳞（射身体）、龙角（射角）、龙牙（射嘴）、龙爪（射脚）。</li>
+        </ul>
+
+        <div class="guide-tip">💡 <strong>雨天爬不上山？</strong>前往佐拉之里的路上持续下雨，攀爬会滑手。沿着希多王子指引的道路前进即可——这条路被设计为不需攀爬。如果看到敌人营地，可以用电箭射水池造成范围伤害。另外，<strong>在雷兽山收集电箭时完全不需要打莱尼尔</strong>：蹲下潜行，绕圈从树上和岩石上拔箭即可。</div>
+
+        <div class="guide-warning">⚠️ <strong>电系敌人警告：</strong>拉聂尔地区多雨天气会使电击攻击范围扩大。被电击蜥蜴战士击中会麻痹并掉落武器/盾牌。建议携带木制盾牌（雷电无效），或使用橡胶套装（防电）。如果看到电击蜥蜴战士站在水中，优先用冰箭冻结或远程击杀。</div>
+
+        <table class="guide-table">
+          <tr><th>信息项</th><th>详情</th></tr>
+          <tr><td>神庙数量</td><td>12座（佐拉之里周边3座 + 湿地3座 + 拉聂尔山6座）</td></tr>
+          <tr><td>神兽</td><td>瓦·露塔（水之神兽）— 推荐第一个攻略</td></tr>
+          <tr><td>英杰技能</td><td>米法的祈福（血量归零自动复活+5颗黄心，冷却24分钟）</td></tr>
+          <tr><td>塔</td><td>拉聂尔之塔</td></tr>
+          <tr><td>呀哈哈</td><td>约60个</td></tr>
+          <tr><td>龙</td><td>聂尔龙（冰龙）— 拉聂尔山山顶</td></tr>
+          <tr><td>小BOSS刷新</td><td>莱尼尔（雷兽山）× 1，西诺克斯 × 1，岩石巨人 × 1</td></tr>
+          <tr><td>难度评分</td><td>★★☆☆☆（适合早期，BOSS简单）</td></tr>
+        </table>
+      </section>
+
+      <!-- ==================== 海布拉地区 ==================== -->
+      <section class="guide-section" id="hebra">
+        <h2>❄️ 海布拉地区 — 冰雪之巅</h2>
+
+        <h3>🌿 环境概览</h3>
+        <p>海布拉地区位于海拉鲁西北角，由<strong>终年积雪的海布拉山脉</strong>和<strong>塔邦挞边境</strong>组成。这里是利特族的故乡，群山巍峨，峡谷深邃，整个区域覆盖着厚厚白雪。气温常年低于冰点，<strong>没有防寒措施会持续扣血</strong>。海布拉山是整个游戏中最适合盾牌滑雪的地形——从山顶一路滑下，穿越峡谷、跳过悬崖，速度与畅快感无可比拟。利特村建在孤立的岩石柱顶端，鸟人族在天空翱翔，景色壮阔。</p>
+
+        <h3>⏰ 推荐探索时机</h3>
+        <p><strong>游戏中期（完成水神兽后）</strong>——需要先在利特村购买防寒服（雪羽套装），或者准备大量防寒料理。风之神兽瓦·梅德是四个神兽中最简单的一个，力巴尔的勇猛（原地上升气流）对后续探索极为便利。</p>
+
+        <h3>📍 重要地点</h3>
+        <ul>
+          <li><strong>利特村</strong> — 鸟人族的岩石柱城市，可以购买防寒装备（雪羽套装），开启风之神兽任务。村内有多个支线任务可以获得卢比。</li>
+          <li><strong>海布拉山</strong> — 游戏中最适合盾牌滑雪的地方。东西向山脉有天然雪道，从山顶一路滑下可以跨越巨大区域。隐藏多个神庙在山洞和冰层之下。</li>
+          <li><strong>飞行训练场</strong> — 利特村附近的靶场，特巴在此进行飞行训练。完成射箭小游戏可获得卢比奖励。</li>
+          <li><strong>塔邦挞边境</strong> — 海布拉南部的峡谷地带，连接中央海拉鲁。有塔邦挞大桥和多个驿站。</li>
+          <li><strong>雪原驿站</strong> — 海布拉南部入口驿站，提供防寒料理信息。</li>
+          <li><strong>塔邦挞之塔</strong> — 被冰冻敌人和冰雪围困的塔，需要融化冰块才能攀爬。</li>
+          <li><strong>雪山保龄球</strong> — 海布拉山小屋外的迷你游戏，滚雪球击中靶标可获得卢比奖励（全中300卢比）。</li>
+        </ul>
+
+        <h3>👹 主要敌人</h3>
+        <ul>
+          <li><strong>冰蜥蜴战士</strong> — 海布拉最常见的敌人，会吐冰球冻结林克。击杀后掉落冰蜥蜴尾巴。</li>
+          <li><strong>冰岩石巨人</strong> — 海布拉山特有的岩石巨人变种，表面覆盖冰层。先用火属性攻击融化冰层，再攻击矿石弱点。</li>
+          <li><strong>白鬃莱尼尔</strong> — 海布拉山西北区域的一只强力人马，掉落强力武器。</li>
+          <li><strong>冰蝙蝠</strong> — 飞行敌人，被击中会冻结。掉落冰蝙蝠翅膀（用于防寒料理）。</li>
+          <li><strong>波克布林（冰）</strong> — 雪原营地的冰冻变种波克布林。</li>
+        </ul>
+
+        <h3>⚔️ 关键装备</h3>
+        <ul>
+          <li><strong>雪羽套装</strong> — 利特村购买，提供耐寒效果。<strong>必买。</strong>2级套装效果：冻伤无效。</li>
+          <li><strong>雪地靴</strong> — 完成格鲁德秘密俱乐部任务获得，在雪地上行走速度提升。</li>
+          <li><strong>大鹫弓</strong> — 风之神兽完成后获得，射程最远的弓之一（射程40），三连射。损坏后可在利特村工匠处用钻石+燕雀弓+木柴捆重新制作。</li>
+          <li><strong>冰箭</strong> — 海布拉各地商店和敌人掉落大量，对抗火系敌人和冻结水面非常有用。</li>
+        </ul>
+
+        <h3>❄️ 资源采集</h3>
+        <ul>
+          <li><strong>冰冷香草</strong> — 海布拉山区和塔邦挞边境大量生长，烹饪后获得耐寒效果。</li>
+          <li><strong>冰蝙蝠翅膀</strong> — 击杀冰蝙蝠掉落，可制作防寒料理和升级装备。</li>
+          <li><strong>冰蜥蜴尾巴</strong> — 击杀冰蜥蜴战士掉落，防寒料理和升级材料。</li>
+          <li><strong>打火石/琥珀/蛋白石</strong> — 海布拉山矿脉丰富。</li>
+        </ul>
+
+        <div class="guide-tip">💡 <strong>盾牌滑雪指南：</strong>按住ZL举盾 + 跳跃 + A = 盾牌滑雪。在雪地上完全不消耗盾牌耐久！海布拉山有全游戏最长的天然雪道。从山顶的加·阿萨神庙出发，一路滑到山脚，轻松跨越原本需要10分钟步行才能到达的区域。滑雪过程中可以跳跃躲避障碍，也可以用弓箭射击沿途敌人——真正的海拉鲁极限运动。</div>
+
+        <div class="guide-info">🔵 <strong>风之神兽瓦·梅德</strong>是最简单的神兽战。BOSS风咒盖侬只会在空中飞行射击，用炸弹箭或爆炸箭射击其眼部核心即可造成大量伤害。力巴尔的勇猛（蓄力跳跃产生上升气流+空中射击）通关后获得，<strong>是探索和战斗的高频使用技能。</strong></div>
+
+        <div class="guide-warning">⚠️ <strong>永久冰冻伤害：</strong>海布拉地区如果不穿防寒装备或不吃防寒料理，会持续扣血直至死亡。请确保进入海布拉前准备好：① 雪羽套装（至少一件）、② 或者多个防寒料理（5个冰冷香草烹饪 = 12分30秒耐寒）、③ 或者携带火焰武器（火焰剑/火焰枪）——装备在身上可以提供1级温暖。</div>
+
+        <table class="guide-table">
+          <tr><th>信息项</th><th>详情</th></tr>
+          <tr><td>神庙数量</td><td>16座（海布拉山9座 + 利特村周边 + 塔邦挞区域）</td></tr>
+          <tr><td>神兽</td><td>瓦·梅德（风之神兽）— 最简单</td></tr>
+          <tr><td>英杰技能</td><td>力巴尔的勇猛（蓄力跳跃产生上升气流，冷却6分钟）</td></tr>
+          <tr><td>塔</td><td>塔邦挞之塔、海布拉之塔</td></tr>
+          <tr><td>呀哈哈</td><td>约70个（山区和峡谷藏量丰富）</td></tr>
+          <tr><td>小BOSS刷新</td><td>莱尼尔（白鬃）× 2，冰岩石巨人 × 3，西诺克斯 × 1</td></tr>
+          <tr><td>特殊玩法</td><td>盾牌滑雪、雪山保龄球（赚钱小游戏）</td></tr>
+          <tr><td>难度评分</td><td>★★★☆☆（环境恶劣但敌人不强）</td></tr>
+        </table>
+      </section>
+
+      <!-- ==================== 奥尔汀地区 ==================== -->
+      <section class="guide-section" id="eldin">
+        <h2>🌋 奥尔汀地区 — 死亡之山</h2>
+
+        <h3>🌿 环境概览</h3>
+        <p>奥尔汀地区以<strong>死亡之山</strong>火山为中心，是鼓隆族的家园。整个地区被岩浆和高温笼罩，空气中弥漫着火山灰。一旦进入火山区域，<strong>没有防火保护就会持续燃烧扣血</strong>。更致命的是——所有<strong>木制武器、弓和箭都会在进入时自动燃烧</strong>，只能使用金属装备。鼓隆城依山而建，鼓隆族是岩石般的耐火生物，经营着全海拉鲁最好的矿石交易。火山地带遍布稀有矿石矿脉，是<strong>收集宝石的最佳区域</strong>。</p>
+
+        <h3>⏰ 推荐探索时机</h3>
+        <p><strong>游戏中期（完成水神兽和风神兽后）</strong>——需要<strong>提前获取防火服</strong>：在南部采矿场用10只防火蜥蜴兑换。火之神兽瓦·鲁达尼亚难度中等，但达尔克尔的守护（自动盾反）是非常实用的防御技能。</p>
+
+        <h3>📍 重要地点</h3>
+        <ul>
+          <li><strong>鼓隆城</strong> — 火山中心的鼓隆族城市。可以购买防火装备（耐火套装），开启火之神兽任务。城内有矿石交易所，可以用矿石兑换卢比。</li>
+          <li><strong>死亡之山</strong> — 游戏中最热的区域（2级高温），需要全套耐火套装或2级防火效果才能进入山顶。</li>
+          <li><strong>南部采矿场</strong> — <strong>关键地点：</strong>用10只防火蜥蜴与NPC兑换<strong>耐火石铠（防火上衣）</strong>。这是进入鼓隆城的最低门槛。</li>
+          <li><strong>废弃北部矿场</strong> — 鼓隆城北部，有多个矿石矿脉。也是神兽任务的关键地点——用炮击驱赶瓦·鲁达尼亚。</li>
+          <li><strong>骨碌碌采矿场</strong> — 鼓隆城西部的矿场，矿石资源丰富。</li>
+          <li><strong>大桥</strong> — 连接奥尔汀与外界的桥梁，桥下是岩浆。</li>
+        </ul>
+
+        <h3>👹 主要敌人</h3>
+        <ul>
+          <li><strong>喷火蜥蜴战士</strong> — 奥尔汀最常见的敌人，会喷出火焰。击杀后掉落火蜥蜴尾巴（防火料理+升级材料）。</li>
+          <li><strong>熔岩岩石巨人</strong> — 站在岩浆中的岩石巨人变种，表面温度极高，直接接触会扣血。用冰箭冷却外壳后再攻击弱点矿石。</li>
+          <li><strong>耐火莫力布林</strong> — 穿着耐火装备的莫力布林变种，免疫火焰伤害。</li>
+          <li><strong>火焰蝙蝠</strong> — 飞行敌人，会点燃林克。掉落火焰蝙蝠翅膀（用于防火料理）。</li>
+        </ul>
+
+        <h3>⚔️ 关键装备</h3>
+        <ul>
+          <li><strong>耐火套装（火焰breaker set）</strong> — 鼓隆城购买全套。提供防火效果。2级套装效果：火焰伤害无效。<strong>这是奥尔汀的生存必需品。</strong></li>
+          <li><strong>耐火石铠</strong> — 南部采矿场用10只防火蜥蜴兑换。提供1级防火。至少需要这一件才能进入鼓隆城区。</li>
+          <li><strong>钻头枪</strong> — 鼓隆武器，攻击力不俗，挖掘矿石效率极高。</li>
+          <li><strong>碎石剑</strong> — 鼓隆族双手武器，攻击力高但速度慢。打岩石系敌人效果拔群。</li>
+        </ul>
+
+        <h3>💎 资源采集</h3>
+        <ul>
+          <li><strong>红宝石/蓝宝石/钻石/黄玉</strong> — 火山矿脉大量产出，<strong>全海拉鲁最佳采矿区域。</strong>可用作装备升级或卖钱（钻石500卢比/颗）。</li>
+          <li><strong>打火石/琥珀/蛋白石</strong> — 基础矿石，矿脉随处可见。</li>
+          <li><strong>防火蜥蜴</strong> — 南部采矿场附近大量出现。可以制作防火料理（防火蜥蜴+怪物材料 = 防火药）。也可以与采矿场NPC兑换耐火石铠。</li>
+          <li><strong>火焰蝙蝠翅膀</strong> — 升级耐火套装的必要材料。</li>
+        </ul>
+
+        <div class="guide-tip">💡 <strong>最快获取防火服方法：</strong>到达南部采矿场后，在岩石下翻找防火蜥蜴（它们爬到石头背面时被抓），收集10只后与采矿场内的NPC兑换<strong>耐火石铠</strong>。有了这件上衣就可以安全进入鼓隆城。进入后立刻购买全套耐火套装（约2000卢比），之后就不需要每次都吃药了。采矿时注意：<strong>扔炸弹效率远高于用武器敲矿石。</strong></div>
+
+        <div class="guide-warning">⚠️ <strong>木制装备全部失效！</strong>进入死亡之山区域后，所有木制武器（树枝、波克布林棒等）、木制弓（旅人之弓、士兵之弓等）和木制箭都会<strong>自动燃烧</strong>。炸弹箭更是会直接爆炸炸死自己！请提前准备金属武器和金属弓。可以使用古代兵装或守护者武器代替。另外，由于环境本身有高温，<strong>木盾和木弓即使不装备也会被点燃。</strong></div>
+
+        <table class="guide-table">
+          <tr><th>信息项</th><th>详情</th></tr>
+          <tr><td>神庙数量</td><td>10座</td></tr>
+          <tr><td>神兽</td><td>瓦·鲁达尼亚（火之神兽）— 难度中等</td></tr>
+          <tr><td>英杰技能</td><td>达尔克尔的守护（自动完美盾反3次，冷却18分钟）</td></tr>
+          <tr><td>塔</td><td>奥尔汀之塔（被荆棘围困，需火把烧开）</td></tr>
+          <tr><td>呀哈哈</td><td>约45个</td></tr>
+          <tr><td>小BOSS刷新</td><td>熔岩岩石巨人 × 2，西诺克斯 × 1</td></tr>
+          <tr><td>特殊机制</td><td>木制装备自动燃烧、2级高温区域需全套防火</td></tr>
+          <tr><td>难度评分</td><td>★★★☆☆（环境苛刻，但敌人不强）</td></tr>
+        </table>
+      </section>
+
+      <!-- ==================== 费罗尼地区 ==================== -->
+      <section class="guide-section" id="faron">
+        <h2>🌴 费罗尼地区 — 热带丛林</h2>
+
+        <h3>🌿 环境概览</h3>
+        <p>费罗尼地区位于海拉鲁南部，是一片<strong>茂密的热带雨林</strong>。高大的棕榈树和芭蕉树遮天蔽日，遍地生长着稀有水果和珍稀植物。然而，这里的天气极不稳定——<strong>频繁的雷暴和暴雨</strong>使得攀爬变得异常困难，金属装备还会引雷。花柔利亚湖是雷龙费罗龙的家园，巨大的龙身从湖中升起，伴随着闪电雷鸣，场景壮观震撼。南部海岸的沃托里村是海拉鲁唯一的滨海度假胜地（但属于哈特诺区域边界）。费罗尼是<strong>顶级食材的宝库</strong>——生命榴莲和大剑香蕉的大量刷新点，是全海拉鲁最值得定期光顾的"菜市场"。</p>
+
+        <h3>⏰ 推荐探索时机</h3>
+        <p><strong>任何时期均可</strong>——没有神兽主线压力，没有极端温度要求。但因为榴莲和香蕉的重要性，<strong>越早来采集越好</strong>。建议在攻略火神兽前后定期来此补充顶级食材。</p>
+
+        <h3>📍 重要地点</h3>
+        <ul>
+          <li><strong>沃托里村</strong> — 东南海岸的渔村（边界地带），热带风情的木屋和海鲜料理。可以与村民进行赌博小游戏（押注宝箱）。</li>
+          <li><strong>花柔利亚湖</strong> — <strong>雷龙费罗龙</strong>的出没地。每天早上5:00从湖中升起，是最稳定的龙材料刷新点。湖周边有多个神庙。</li>
+          <li><strong>费罗尼之塔</strong> — 位于雨林核心地带，解锁后可以俯瞰整个费罗尼地区。塔周围有电蜥蜴营地，建议从高处滑翔过去。</li>
+          <li><strong>花柔利亚大瀑布</strong> — 多层瀑布群，隐藏着多个神庙。费罗龙会飞过瀑布顶端。</li>
+          <li><strong>湖畔驿站</strong> — 费罗尼地区的门户驿站，提供榴莲和香蕉的采集信息。周边是生命榴莲的大量刷新区域。</li>
+          <li><strong>勇气之泉</strong> — 需要献上费罗龙鳞片才能开启的古代神庙。完成龙鳞任务的关键地点。</li>
+          <li><strong>花柔利亚桥</strong> — 横跨湖泊的大桥，是射龙材料的最佳狙击点之一。</li>
+        </ul>
+
+        <h3>👹 主要敌人</h3>
+        <ul>
+          <li><strong>电击蜥蜴战士</strong> — 雨林中最大的威胁。在雨天（几乎永远是雨天）电击范围大幅增加。</li>
+          <li><strong>西诺克斯</strong> — 费罗尼雨林中有多只西诺克斯，其中一只在湖中岛屿上。</li>
+          <li><strong>岩石巨人</strong> — 雨林和海岸区域常见，使用铁锤或碎石剑快速击杀。</li>
+          <li><strong>章鱼怪</strong> — 花柔利亚湖周边有多个章鱼怪刷新点。</li>
+        </ul>
+
+        <h3>⚔️ 关键装备</h3>
+        <ul>
+          <li><strong>雷鸣头盔</strong> （格鲁德主线完成后获得）— 完全免疫雷电伤害，在费罗尼雷暴天极为实用。</li>
+          <li><strong>防雷套装</strong> — 如果还没有雷鸣头盔，可以用橡胶套装（三级防雷）减少电击伤害。</li>
+          <li><strong>铁锤/碎石剑</strong> — 对付岩石巨人的利器。</li>
+        </ul>
+
+        <h3>🍌 资源采集（⭐ 重点！）</h3>
+        <ul>
+          <li><strong>生命榴莲</strong> — <strong>全游戏最重要的烹饪食材之一！</strong>费罗尼雨林和湖畔驿站周边大量刷新。烹饪1个榴莲 = 全回复+4颗黄心。5个榴莲烹饪 = 全回复+20颗黄心（前期等于多一条命）。</li>
+          <li><strong>大剑香蕉</strong> — <strong>攻击力提升的核心食材！</strong>费罗尼雨林遍地都是。5个大剑香蕉烹饪 = 3级攻击力提升持续4分10秒。打BOSS和人马的神级料理。</li>
+          <li><strong>莲叶种子</strong> — 花柔利亚湖周边大量分布，料理提升移动速度。</li>
+          <li><strong>费罗龙材料</strong> — 每天早上5:00在花柔利亚湖射龙获取。龙鳞（射身体）、龙角（射角）、龙牙（射嘴）、龙爪（射脚）。龙角是升级英杰装备的必须材料。</li>
+          <li><strong>精力蘑菇/精力草</strong> — 雨林地面常见，制作额外精力料理。</li>
+        </ul>
+
+        <div class="guide-tip">💡 <strong>榴莲和大剑香蕉刷新机制：</strong>食材在<strong>血月之后</strong>会重新刷新。费罗尼地区有多个高密度刷新点：① 湖畔驿站北边的树林（10+榴莲）；② 勇气之泉附近的丛林（15+香蕉）；③ 花柔利亚湖北岸（榴莲+香蕉混合）。每次血月后飞过来逛一圈，5分钟收集足够用很久的顶级食材。5个榴莲/香蕉放锅里烹饪即可获得最强料理。</div>
+
+        <div class="guide-warning">⚠️ <strong>费罗龙危险警告：</strong>费罗龙（雷龙）从花柔利亚湖中升起时，身体周围会释放电球。如果离龙太近，会被电球击中造成麻痹和大量伤害。射龙时保持一定距离——用远程弓（如格鲁德弓、黄昏弓）在花柔利亚桥上狙击最安全。另外<strong>雷暴天气不要装备金属武器/盾牌/弓</strong>——会引雷直接被劈死。</div>
+
+        <table class="guide-table">
+          <tr><th>信息项</th><th>详情</th></tr>
+          <tr><td>神庙数量</td><td>14座（雨林 + 海岸 + 湖中岛屿）</td></tr>
+          <tr><td>神兽</td><td>无</td></tr>
+          <tr><td>塔</td><td>费罗尼之塔（被电蜥蜴营地包围）</td></tr>
+          <tr><td>呀哈哈</td><td>约55个</td></tr>
+          <tr><td>龙</td><td>费罗龙（雷龙）— 花柔利亚湖，每天早上5:00</td></tr>
+          <tr><td>小BOSS刷新</td><td>西诺克斯 × 3，岩石巨人 × 2</td></tr>
+          <tr><td>⭐ 核心价值</td><td>生命榴莲 + 大剑香蕉最佳采集地（全海拉鲁No.1）</td></tr>
+          <tr><td>难度评分</td><td>★★☆☆☆（环境不便但敌人不难）</td></tr>
+        </table>
+      </section>
+
+      <!-- ==================== 阿卡莱地区 ==================== -->
+      <section class="guide-section" id="akkala">
+        <h2>🍂 阿卡莱地区 — 秋色要塞</h2>
+
+        <h3>🌿 环境概览</h3>
+        <p>阿卡莱地区位于海拉鲁东北角，以<strong>绚烂的秋色森林</strong>和<strong>壮丽的悬崖海岸线</strong>著称。深秋的红叶和金黄草地让这里成为游戏中最美的区域之一。然而美丽的景色下隐藏着巨大危险——<strong>多只飞行守护者</strong>在阿卡莱堡垒遗迹上空巡逻，是游戏中守护者密度最高的区域之一。阿卡莱古代研究所是获取古代兵装装备的核心地点，而一始村（Tarrey Town）的建设任务是全游戏最具成就感的支线之一。漩涡半岛的海蚀洞和骷髅湖的诡异造型更是地标级景观。</p>
+
+        <h3>⏰ 推荐探索时机</h3>
+        <p><strong>游戏中后期（完成至少两个神兽后）</strong>——古代研究所需要大量古代材料和卢比来兑换装备，建议有了一定积蓄再来。飞行守护者需要古代箭来应对，否则正面战斗非常困难。</p>
+
+        <h3>📍 重要地点</h3>
+        <ul>
+          <li><strong>阿卡莱古代研究所</strong> — <strong>与哈特诺研究所并列最重要的设施。</strong>可以制作古代兵装武器、盾牌和古代兵装套装。也是全游戏唯一购买<strong>古代箭</strong>的地方（守护者一击必杀）。</li>
+          <li><strong>阿卡莱堡垒遗迹</strong> — 昔日的军事要塞，如今是飞行守护者的巢穴。塔顶视野极佳，可以滑翔到周围多个地点。注意——空中至少有3只飞行守护者巡逻。</li>
+          <li><strong>一始村</strong> — 全游戏最暖心的支线任务"幸福搬运匠"。帮助松达建设一座全新的村庄，需要从全海拉鲁各地招募居民。完成后可以购买稀有材料、特殊装备。</li>
+          <li><strong>骷髅湖</strong> — 奇特的骷髅头形状湖泊，湖中有一只西诺克斯。周边有多个呀哈哈和神庙。</li>
+          <li><strong>漩涡半岛</strong> — 东部海岸的螺旋形半岛，地形独特。隐藏着<strong>终阶力之试炼神庙</strong>——3000HP的守护者侦察兵IV。</li>
+          <li><strong>春天之泉</strong> — 需要献上聂尔龙鳞片开启的神庙所在地。</li>
+        </ul>
+
+        <h3>👹 主要敌人</h3>
+        <ul>
+          <li><strong>飞行守护者</strong> — 阿卡莱区域的头号威胁。空中盘旋的守护者变种，激光威力与步行守护者相同。<strong>至少3只在堡垒遗迹巡逻，2只在上空。</strong></li>
+          <li><strong>步行守护者</strong> — 堡垒遗迹和周边平原有多只步行守护者。</li>
+          <li><strong>蓝色莱尼尔</strong> — 阿卡莱草原区域的人马，难度中等。</li>
+          <li><strong>西诺克斯</strong> — 骷髅湖中的一只，以及南部区域的一只。</li>
+          <li><strong>莫力布林</strong> — 秋色森林中多处营地有莫力布林。</li>
+        </ul>
+
+        <h3>⚔️ 关键装备</h3>
+        <ul>
+          <li><strong>古代兵装套装</strong> — 阿卡莱古代研究所用古代材料+卢比制作。2级套装效果：古代武器攻击力提升80%。配合古代武器使用极为强力。</li>
+          <li><strong>古代兵装武器</strong> — 古代剑、古代大剑、古代枪、古代弓。对守护者伤害1.5倍，是后期最强装备系列之一。</li>
+          <li><strong>古代盾</strong> — 可以自动盾反守护者激光，无需手动操作！是应对飞行守护者的神器。</li>
+          <li><strong>古代箭</strong> — <strong>守护者一击必杀。</strong>90卢比/支或2个古代齿轮+1个古代驱动轴+1个古代弹簧+20卢比交换。阿卡莱研究所独家出售。</li>
+        </ul>
+
+        <h3>⚙️ 资源采集</h3>
+        <ul>
+          <li><strong>古代齿轮/古代螺丝/古代弹簧/古代传动轴</strong> — 击杀守护者掉落，用于在阿卡莱研究所兑换古代装备和古代箭。</li>
+          <li><strong>古代核心/巨大古代核心</strong> — 稀有掉落，用于升级古代套装和希卡之石。</li>
+          <li><strong>木柴捆</strong> — 阿卡莱森林茂密，是一始村建设任务的木材来源。需要至少30捆。</li>
+        </ul>
+
+        <div class="guide-tip">💡 <strong>一始村建设攻略：</strong>这是全游戏内容最丰富的支线任务，需要在海拉鲁各地寻找"松"字结尾的NPC招募到一始村。总共需要招募：① 牧师（格鲁德小镇）、② 杂货店（利特村）、③ 防具店（鼓隆城）、④ 珠宝商（格鲁德小镇）。建设完成后可以买到稀有装备（沙漠Voe套装、雪地靴等）和稀有材料。整个任务大约需要2小时和大量卢比。</div>
+
+        <div class="guide-warning">⚠️ <strong>飞行守护者危险警告：</strong>阿卡莱堡垒遗迹上空有多只飞行守护者。它们视野极广，会在你进入范围后立刻锁定，激光弹道极快不易躲避。应对方案：① 使用古代箭（一发入魂）、② 使用古代盾（自动盾反）、③ 使用力巴尔的勇猛快速升空+空中林克时间射击眼睛使其短暂瘫痪，然后地面输出。平地上对飞行守护者正面战斗是下下策。</div>
+
+        <table class="guide-table">
+          <tr><th>信息项</th><th>详情</th></tr>
+          <tr><td>神庙数量</td><td>10座（包含力之试炼终阶 × 2）</td></tr>
+          <tr><td>神兽</td><td>无</td></tr>
+          <tr><td>塔</td><td>阿卡莱之塔</td></tr>
+          <tr><td>呀哈哈</td><td>约60个</td></tr>
+          <tr><td>⭐ 核心设施</td><td>阿卡莱古代研究所（兑换古代装备+古代箭）</td></tr>
+          <tr><td>核心支线</td><td>一始村建设（全游戏最大支线任务）</td></tr>
+          <tr><td>小BOSS刷新</td><td>莱尼尔 × 1，西诺克斯 × 2，岩石巨人 × 1，守护者 × 5+</td></tr>
+          <tr><td>难度评分</td><td>★★★★☆（飞行守护者极其危险）</td></tr>
+        </table>
+      </section>
+
+      <!-- ==================== 格鲁德地区 ==================== -->
+      <section class="guide-section" id="gerudo">
+        <h2>🏜️ 格鲁德地区 — 沙漠秘境</h2>
+
+        <h3>🌿 环境概览</h3>
+        <p>格鲁德地区位于海拉鲁西南角，是一片<strong>广袤无垠的沙漠</strong>。这里有着全游戏最极端的气候——<strong>白天酷热难耐（持续扣血），夜间寒冷刺骨（持续扣血）</strong>。格鲁德小镇是格鲁德族的女儿国，男性不得进入（林克需要穿上淑女装伪装才能进城）。沙漠深处隐藏着伊盖团的秘密基地、四只巨大的沙漠鲸鱼——莫尔德拉吉克，以及全游戏最难的雷之神兽瓦·娜波力斯。格鲁德沙漠也是8大区域中<strong>神庙数量最多的区域（18座）</strong>，探索内容极其丰富。</p>
+
+        <h3>⏰ 推荐探索时机</h3>
+        <p><strong>游戏中后期（完成至少三个神兽后）</strong>——雷之神兽是四个神兽中最难的一个，格鲁德区域敌人强度也最高。建议准备充分后前往：至少13颗心、充足的耐热/防寒手段、以及大量弹药。</p>
+
+        <h3>📍 重要地点</h3>
+        <ul>
+          <li><strong>格鲁德小镇</strong> — 女儿国，所有居民都是女性。进入需要<strong>淑女装（沙漠Vai套装）</strong>，在市场区域花600卢比购买。镇内可以购买格鲁德武器、珠宝和耐热装备。</li>
+          <li><strong>伊盖团秘密基地</strong> — 主线任务关键地点。需要潜行通过，一旦被发现就会被伊盖团忍者包围。通关后获得<strong>雷鸣头盔</strong>（免疫雷电）。</li>
+          <li><strong>格鲁德沙漠</strong> — 广袤沙海，有<strong>四只莫尔德拉吉克</strong>在不同位置游荡。用炸弹可以引诱它们跃出沙面。</li>
+          <li><strong>沙漠迷宫</strong> — 东南角的巨大迷宫，内部有神庙和强力敌人。到达迷宫内部需要从地下通道进入。</li>
+          <li><strong>卡拉卡拉集市</strong> — 沙漠入口的绿洲集市，提供补水和耐热信息。这里也是获取淑女装情报的地点。</li>
+          <li><strong>格鲁德高地</strong> — 小镇北部的雪山区，有第三个大精灵之泉和多个神庙。</li>
+          <li><strong>北部冰库</strong> — 隐藏在山体内的古代冰窖，与DLC英杰之诗任务相关。</li>
+        </ul>
+
+        <h3>👹 主要敌人</h3>
+        <ul>
+          <li><strong>莫尔德拉吉克</strong> — 沙漠鲸鱼，<strong>格鲁德沙漠独有敌人（共4只）</strong>。潜伏在沙下，感受到震动后跃出攻击。用炸弹引诱使其跃出，然后用弓箭射击其腹部弱点。</li>
+          <li><strong>伊盖团成员</strong> — 人形忍者敌人，会瞬移和扔风魔手里剑。伊盖团基地内大量出现，基地外的道路上也偶有埋伏。</li>
+          <li><strong>伊盖团精英</strong> — 伊盖团基地BOSS，会使用土遁术和强力近战攻击。击败后掉落大量卢比。</li>
+          <li><strong>电击蜥蜴战士</strong> — 格鲁德沙漠和峡谷中常见。</li>
+          <li><strong>骨头敌人（夜间）</strong> — 沙漠夜间大量刷新骷髅波克布林和骷髅莫力布林。用炸弹或者射头击杀。</li>
+        </ul>
+
+        <h3>⚔️ 关键装备</h3>
+        <ul>
+          <li><strong>沙漠Voe套装</strong> — 格鲁德秘密俱乐部购买（需要知道密码），提供耐热效果。是沙漠中不靠料理存活的关键装备。</li>
+          <li><strong>淑女装（沙漠Vai套装）</strong> — 卡拉卡拉集市600卢比购买全套。<strong>进入格鲁德小镇的必需品。</strong></li>
+          <li><strong>雷鸣头盔</strong> — 伊盖团基地任务完成后获得。完全免疫雷电伤害（包括雷暴），是费罗尼和阿卡莱雷暴区域的神器。</li>
+          <li><strong>格鲁德武器系列</strong> — 格鲁德弯刀、格鲁德盾、格鲁德弓。格鲁德弓射程远（射程40），适合沙漠开阔地形。</li>
+          <li><strong>沙地靴</strong> — 完成格鲁德相关支线获得，在沙地上行走速度大幅提升。</li>
+        </ul>
+
+        <h3>🫒 资源采集</h3>
+        <ul>
+          <li><strong>炸裂果</strong> — 沙漠特有水果，可以生吃或烹饪。格鲁德小镇周围较多。</li>
+          <li><strong>蓝莓</strong> — 格鲁德高地雪山区分布，用于烹饪和染色。</li>
+          <li><strong>黄玉</strong> — 格鲁德沙漠和峡谷的矿脉中产出，用于装备升级。</li>
+          <li><strong>冰冷香草</strong> — 格鲁德高地分布，制作耐寒料理。</li>
+        </ul>
+
+        <div class="guide-tip">💡 <strong>莫尔德拉吉克速杀法：</strong>站在岩石或安全位置（莫尔德拉吉克只会感应沙地上的震动），朝远处扔一颗<strong>遥控炸弹</strong>。莫尔德拉吉克会感应到震动并朝炸弹跃出沙面。此时立即引爆炸弹使其短暂眩晕，然后用弓箭（最好配备爆炸箭或古代箭）射击其腹部弱点。如果带了乌尔波扎的愤怒，可以直接蓄力释放雷击——莫尔德拉吉克在沙中也会被电击跃出。循环3-4次即可击杀。</div>
+
+        <div class="guide-info">🟡 <strong>淑女装购买指南：</strong>在卡拉卡拉集市与一个穿着淑女装的人对话，他会告诉你格鲁德小镇只允许女性进入。花600卢比从他那里购买全套淑女装（头巾+上衣+裤子），穿上后就能进入格鲁德小镇。进入后记得在装备界面就可以看到林克穿女装的样子——这可是游戏名场面之一。</div>
+
+        <div class="guide-warning">⚠️ <strong>格鲁德沙漠生存三要素：</strong>① 白天需要耐热（沙漠Voe套装或耐热料理），否则持续扣血；② 夜间需要耐寒（防寒料理），沙漠夜间温度骤降；③ 沙尘暴会影响视野，使用地图定位功能辅助导航。雷之神兽瓦·娜波力斯是<strong>四个神兽中最难的一个</strong>，BOSS雷咒盖侬速度极快，建议最后攻略。</div>
+
+        <table class="guide-table">
+          <tr><th>信息项</th><th>详情</th></tr>
+          <tr><td>神庙数量</td><td>18座（8大区域最多）</td></tr>
+          <tr><td>神兽</td><td>瓦·娜波力斯（雷之神兽）— 最难</td></tr>
+          <tr><td>英杰技能</td><td>乌尔波扎的愤怒（范围雷击3次，冷却12分钟）</td></tr>
+          <tr><td>塔</td><td>格鲁德之塔</td></tr>
+          <tr><td>呀哈哈</td><td>约70个</td></tr>
+          <tr><td>小BOSS刷新</td><td>莫尔德拉吉克 × 4，莱尼尔 × 1，西诺克斯 × 2，岩石巨人 × 3</td></tr>
+          <tr><td>特殊机制</td><td>性别限制（需女装进城）、昼夜温度两极端</td></tr>
+          <tr><td>难度评分</td><td>★★★★★（全游戏最难区域）</td></tr>
+        </table>
+      </section>
+
+      <!-- ==================== 中央海拉鲁 ==================== -->
+      <section class="guide-section" id="central">
+        <h2>🏰 中央海拉鲁 — 王国心脏</h2>
+
+        <h3>🌿 环境概览</h3>
+        <p>中央海拉鲁是曾经海拉鲁王国的核心地带。如今的海利亚平原上散落着废墟和残垣断壁，昔日的繁华早已烟消云散。海拉鲁城堡被灾厄盖侬的暗紫色瘴气笼罩，城堡周边的平原上<strong>大量守护者在巡逻</strong>——这是全游戏守护者密度最高、最危险的地表区域。但正是在这片废墟之中，隐藏着游戏中最强的装备（海利亚盾、王家近卫武器系列），以及最终决战之地。中央海拉鲁昼夜温差正常，但<strong>夜晚会刷新大量骷髅敌人</strong>。对于任何准备不足的林克，这里都是致命的陷阱；对于准备充分的勇士，这里是证明实力的终极舞台。</p>
+
+        <h3>⏰ 推荐探索时机</h3>
+        <p><strong>游戏终局（解放四大神兽 + 获得大师之剑 + 准备充足后）</strong>——强烈建议在探索中央海拉鲁之前完成所有神兽、获得大师之剑（需13颗心）、积累充足古代箭（至少20支）和强力装备。城堡内部可以直接挑战最终BOSS——如果你还没准备好，<strong>请只在城堡外围活动。</strong></p>
+
+        <h3>📍 重要地点</h3>
+        <ul>
+          <li><strong>海拉鲁城堡</strong> — <strong>最终决战之地。</strong>城堡内部多层结构，从地下牢房到顶层王座之间遍布守护者、蜥蜴战士和莫力布林。可以走正门、侧门或从背面瀑布潜入。城堡内的宝箱和武器架上有大量顶级装备（王家近卫武器系列）。</li>
+          <li><strong>竞技场遗迹</strong> — 海拉鲁平原上的巨大圆形竞技场。底层有一只<strong>莱尼尔</strong>（随游戏进度升级——红色→蓝色→白鬃→白银），是游戏中最容易到达的莱尼尔刷新点。各层看台上有多种属性武器（火剑、雷剑、冰剑）。</li>
+          <li><strong>监狱遗迹</strong> — 城堡地下区域，关押着巨大的骷髅西诺克斯。击败后背后的宝库中可以获得<strong>海利亚盾</strong>——游戏中防御最高的盾（防御力90，耐久800）。</li>
+          <li><strong>牧场遗迹</strong> — 海利亚平原上的昔日牧场废墟，现在被波克布林占据。附近有多个回忆地点。</li>
+          <li><strong>海利亚岛</strong> — 海利亚河中央的岛屿，有一座力之试炼神庙（高阶）。</li>
+          <li><strong>海拉鲁大森林</strong> — 隐藏在迷雾中的秘境，大师之剑的所在地。需要穿过迷失森林（特定路线）才能到达。</li>
+          <li><strong>中央广场遗迹</strong> — 城堡正前方的广场废墟，曾经是王国的中心广场。如今是守护者的狩猎场。</li>
+        </ul>
+
+        <h3>👹 主要敌人</h3>
+        <ul>
+          <li><strong>守护者（步行型）</strong> — <strong>海利亚平原核心威胁。</strong>城堡周围有超过10只步行守护者。一束激光500+伤害。需要使用古代箭（一发秒杀）或熟练盾反（连续3次盾反击杀）。</li>
+          <li><strong>守护者（炮台型）</strong> — 固定在高台上的守护者，视野极远，激光射速更快。发现后优先用古代箭远程击杀。</li>
+          <li><strong>守护者（飞行型）</strong> — 城堡上空2-3只巡逻。空中视角使得它们更难躲避。</li>
+          <li><strong>莱尼尔</strong> — 竞技场遗迹中有一只，会随游戏进度升级势力。白银莱尼尔拥有5000HP，是游戏中最强的普通敌人之一。</li>
+          <li><strong>骷髅敌人（夜间）</strong> — 平原夜间大量刷新骷髅波克布林、骷髅莫力布林和骷髅蜥蜴战士。击杀后骷髅头会复活，必须打碎骷髅头或等天亮自动消亡。</li>
+          <li><strong>城堡内部敌人</strong> — 黑蜥蜴战士、白银莫力布林、守护者侦察兵、小型守护者。全部是高级变种。</li>
+        </ul>
+
+        <h3>⚔️ 关键装备</h3>
+        <ul>
+          <li><strong>海利亚盾</strong> — 监狱遗迹BOSS房宝库获得。<strong>游戏中防御最高的盾（防御90，耐久800）</strong>。即使损坏也可以在一始村找NPC重新购买（3000卢比，需完成一始村任务）。</li>
+          <li><strong>王家近卫武器系列</strong> — 城堡内部武器架和宝箱中获得。攻击力极高（剑48+、大剑72+），但耐久度极低。适合在关键时刻爆发使用。</li>
+          <li><strong>大师之剑</strong> — 海拉鲁大森林获得（需要至少13颗心）。在城堡和守护者附近攻击力翻倍至60。<strong>对抗守护者的主力武器。</strong></li>
+          <li><strong>古代箭</strong> — 必备。建议携带至少20支进入城堡区域。</li>
+          <li><strong>古代盾</strong> — 自动盾反守护者激光，大幅降低应对守护者的操作门槛。</li>
+        </ul>
+
+        <h3>⚙️ 资源采集</h3>
+        <ul>
+          <li><strong>古代材料（齿轮/螺丝/弹簧/传动轴/核心）</strong> — 击杀守护者获得。中央海拉鲁是全海拉鲁守护者密度最高区域，是最佳刷古代材料地点。</li>
+          <li><strong>王家近卫武器</strong> — 城堡内部宝箱的大量掉落，可以收集作为强力武器储备。</li>
+          <li><strong>矿石（红宝石/蓝宝石等）</strong> — 中央海拉鲁峡谷中有矿脉分布。</li>
+        </ul>
+
+        <div class="guide-tip">💡 <strong>城堡潜入路线推荐：</strong>不建议从正门硬刚。最佳路线是从<strong>城堡背面的瀑布</strong>使用卓拉铠甲攀登进入。瀑布顶端是城堡的码头区，敌人密度较低，可以一路潜入到囚牢区域拿到海利亚盾，再逐步向上探索。如果想直接打最终BOSS，从城堡外壁攀爬上去直接进入王座厅（顶层）是最快的路线，但会跳过大量探索内容和装备收集。</div>
+
+        <div class="guide-info">🔵 <strong>守护者盾反技巧：</strong>近距离站在守护者面前，等待眼睛发出蓝光后<strong>立即按A键盾反</strong>。听到"哔——"音效的瞬间就是盾反窗口。步行守护者需要连续盾反3次才能击杀（每次反激光对其造成约500伤害）。如果没把握，可以先用古代箭射眼睛造成大量伤害，然后补刀。或者——最简单的方法——使用<strong>古代箭直接秒杀</strong>（射中身体任意部位即可，但射眼睛可获得更多古代材料）。</div>
+
+        <div class="guide-warning">⚠️ <strong>绝对不要在低等级时进入城堡周边！</strong>海拉鲁城堡周围的平原是游戏中守护者密度最高的区域。一个3心、没有古代箭的林克在这片区域存活时间通常不超过30秒。即使是中期玩家（如5-8心），面对3只以上守护者同时锁定也几乎没有生存可能。<strong>最低门槛：</strong>至少10颗心、20支以上古代箭、古代盾或熟练盾反技巧。城堡内部更是有大量高级敌人——如果你听到经典BOSS音乐响起却没有足够准备，立刻传送离开。</div>
+
+        <table class="guide-table">
+          <tr><th>信息项</th><th>详情</th></tr>
+          <tr><td>神庙数量</td><td>8座（平原和峡谷中，含多座力之试炼）</td></tr>
+          <tr><td>最终BOSS</td><td>灾厄盖侬 &amp; 魔兽盖侬（海拉鲁城堡）</td></tr>
+          <tr><td>塔</td><td>中央海拉鲁之塔（被守护者包围，极其危险）</td></tr>
+          <tr><td>呀哈哈</td><td>约65个（平原和城堡周边密度高）</td></tr>
+          <tr><td>⭐ 核心装备</td><td>海利亚盾（监狱遗迹）、王家近卫武器系列（城堡内）</td></tr>
+          <tr><td>守护者数量</td><td>步行10+、炮台5+、飞行3+（全游戏最多）</td></tr>
+          <tr><td>小BOSS刷新</td><td>莱尼尔（竞技场）× 1，骷髅西诺克斯（监狱）× 1，守护者 × 20+</td></tr>
+          <tr><td>难度评分</td><td>★★★★★★（全游戏终极区域，需要完全准备）</td></tr>
+        </table>
+      </section>
+
+      <!-- 区域对比总览表 -->
+      <section class="guide-section" id="overview-table">
+        <h2>📊 八大区域对比总览</h2>
+        <table class="guide-table">
+          <tr><th>区域</th><th>神庙</th><th>神兽</th><th>难度</th><th>环境威胁</th><th>核心价值</th><th>推荐时机</th></tr>
+          <tr><td>🌾 哈特诺</td><td>12</td><td>无</td><td>★☆☆☆☆</td><td>无</td><td>解锁希卡之石升级、购买装备</td><td>最初期</td></tr>
+          <tr><td>🌊 拉聂尔</td><td>12</td><td>水</td><td>★★☆☆☆</td><td>永久降雨</td><td>米法祈福、攀登瀑布</td><td>早期</td></tr>
+          <tr><td>❄️ 海布拉</td><td>16</td><td>风</td><td>★★★☆☆</td><td>永久冰冻</td><td>力巴尔勇猛、盾牌滑雪</td><td>中期</td></tr>
+          <tr><td>🌋 奥尔汀</td><td>10</td><td>火</td><td>★★★☆☆</td><td>永久燃烧</td><td>达尔克尔守护、宝石矿</td><td>中期</td></tr>
+          <tr><td>🌴 费罗尼</td><td>14</td><td>无</td><td>★★☆☆☆</td><td>频繁雷暴</td><td>榴莲+香蕉采集、雷龙材料</td><td>任何时期</td></tr>
+          <tr><td>🍂 阿卡莱</td><td>10</td><td>无</td><td>★★★★☆</td><td>飞行守护者</td><td>古代装备、一始村建设</td><td>中后期</td></tr>
+          <tr><td>🏜️ 格鲁德</td><td>18</td><td>雷</td><td>★★★★★</td><td>极热+极寒</td><td>乌尔波扎愤怒、大量神庙</td><td>后期</td></tr>
+          <tr><td>🏰 中央</td><td>8</td><td>无</td><td>★★★★★★</td><td>守护者海</td><td>海利亚盾、最终决战</td><td>终局</td></tr>
+        </table>
+      </section>
+
+      <div class="guide-footer-nav">
+        <a href="locations.html" class="footer-prev">← 重要地点</a>
+        <a href="great-plateau.html" class="footer-next">新手入门 →</a>
+      </div>
+    </main>
+
+    <aside class="guide-sidebar">
+      <div class="sidebar-card">
+        <h4>🔥 热门攻略</h4>
+        <ul>
+          <li><a href="great-plateau.html">· 🏔️ 初始台地新手教学</a></li>
+          <li><a href="korok-seeds.html">· 🌱 呀哈哈全收集指南</a></li>
+          <li><a href="regions.html">· 🗺️ 八大区域攻略</a></li>
+        </ul>
+        <h4 style="margin-top:16px">📚 攻略分类</h4>
+        <ul>
+          <li><a href="great-plateau.html">· 新手入门</a></li>
+          <li><a href="divine-beasts.html">· 解放四神兽完整攻略</a></li>
+          <li><a href="shrines.html">· 全120座神庙位置与解法</a></li>
+          <li><a href="equipment.html">· 大师之剑获取全流程</a></li>
+          <li><a href="cooking.html">· 最佳料理搭配推荐</a></li>
+          <li><a href="secrets.html">· 全部隐藏要素大公开</a></li>
+          <li><a href="locations.html">· 重要地点全图鉴</a></li>
+          <li><a href="bosses.html">· BOSS战完整攻略</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand"><span class="logo-icon">▲</span><span>荒野之息攻略站</span></div>
+        <div class="footer-links">
+          <div class="footer-col"><h4>攻略分类</h4><a href="divine-beasts.html">主线任务</a><a href="shrines.html">神庙攻略</a><a href="bosses.html">BOSS指南</a><a href="secrets.html">隐藏要素</a></div>
+          <div class="footer-col"><h4>装备系统</h4><a href="equipment.html">武器图鉴</a><a href="equipment.html">盾牌图鉴</a><a href="equipment.html">防具套装</a><a href="cooking.html">料理配方</a></div>
+          <div class="footer-col"><h4>关于本站</h4><a href="../index.html">首页</a><a href="../about.html#contribute">贡献攻略</a><a href="#">GitHub</a><a href="../about.html#feedback">反馈建议</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 荒野之息攻略站 · 版权归任天堂所有</p></div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

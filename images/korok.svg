@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="forestBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0d1520"/><stop offset="100%" stop-color="#1a3a1a"/></linearGradient>
+  </defs>
+  <rect fill="url(#forestBg)" width="800" height="400"/>
+  <!-- 背景树 -->
+  <g fill="#1a3a1a" opacity="0.5">
+    <circle cx="100" cy="180" r="50"/><rect x="97" y="180" width="6" height="40" fill="#2a1a0a"/>
+    <circle cx="300" cy="160" r="55"/><rect x="297" y="160" width="6" height="50" fill="#2a1a0a"/>
+    <circle cx="550" cy="175" r="45"/><rect x="547" y="175" width="6" height="35" fill="#2a1a0a"/>
+    <circle cx="700" cy="155" r="50"/><rect x="697" y="155" width="6" height="45" fill="#2a1a0a"/>
+  </g>
+  <!-- 地面 -->
+  <ellipse cx="400" cy="350" rx="450" ry="50" fill="#3a6020" opacity="0.3"/>
+  <!-- 科洛克 -->
+  <g transform="translate(400,220)">
+    <!-- 身体（树叶面具） -->
+    <ellipse cx="0" cy="0" rx="35" ry="40" fill="#2ecc71"/>
+    <ellipse cx="0" cy="-5" rx="25" ry="30" fill="#27ae60"/>
+    <!-- 脸 -->
+    <ellipse cx="0" cy="10" rx="18" ry="20" fill="#8B7355"/>
+    <!-- 眼睛 -->
+    <circle cx="-8" cy="10" r="5" fill="white"/>
+    <circle cx="8" cy="10" r="5" fill="white"/>
+    <circle cx="-7" cy="10" r="2.5" fill="#1a1a1a"/>
+    <circle cx="9" cy="10" r="2.5" fill="#1a1a1a"/>
+    <!-- 嘴 -->
+    <ellipse cx="0" cy="20" rx="4" ry="2" fill="#4a3020"/>
+    <!-- 小树枝/角 -->
+    <line x1="-20" y1="-30" x2="-30" y2="-50" stroke="#8B4513" stroke-width="3"/>
+    <circle cx="-30" cy="-50" r="4" fill="#2ecc71"/>
+    <line x1="20" y1="-30" x2="30" y2="-50" stroke="#8B4513" stroke-width="3"/>
+    <circle cx="30" cy="-50" r="4" fill="#2ecc71"/>
+  </g>
+  <!-- 小精灵粒子 -->
+  <g fill="#ffcc00" opacity="0.4">
+    <circle cx="300" cy="150" r="2"><animate attributeName="cy" values="150;140;150" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="500" cy="170" r="2"><animate attributeName="cy" values="170;160;170" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="350" cy="280" r="1.5"><animate attributeName="cy" values="280;270;280" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="460" cy="260" r="1.5"><animate attributeName="cy" values="260;250;260" dur="3s" repeatCount="indefinite"/></circle>
+  </g>
+  <text x="400" y="370" text-anchor="middle" fill="#2ecc71" font-size="14" opacity="0.3">Y A H A H A !</text>
+</svg>

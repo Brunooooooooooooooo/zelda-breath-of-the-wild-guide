@@ -1,0 +1,895 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>料理与药剂全配方指南 | 荒野之息攻略站</title>
+  <meta name="description" content="塞尔达传说旷野之息最全料理配方 · 属性药剂调配 · 材料获取地点 · 烹饪技巧完全指南">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/material.css">
+  <link rel="stylesheet" href="../css/illustrations.css">
+  <link rel="stylesheet" href="../css/guide.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">▲</span>
+        <span class="logo-text">荒野之息<span class="logo-sub">攻略站</span></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="../index.html" class="nav-link">首页</a></li>
+        <li><a href="great-plateau.html" class="nav-link">新手入门</a></li>
+        <li><a href="divine-beasts.html" class="nav-link">主线攻略</a></li>
+        <li><a href="shrines.html" class="nav-link">神庙攻略</a></li>
+        <li><a href="equipment.html" class="nav-link">装备图鉴</a></li>
+        <li><a href="bosses.html" class="nav-link">BOSS指南</a></li>
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link nav-more">更多 ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="korok-seeds.html">🌱 呀哈哈全收集</a></li>
+            <li><a href="cooking.html" class="nav-link active">🍲 料理配方大全</a></li>
+            <li><a href="secrets.html">🔍 隐藏要素</a></li>
+            <li><a href="regions.html">🗺️ 区域攻略</a>
+            <li><a href="locations.html">📍 重要地点</a></li></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="nav-search">
+        <input type="text" placeholder="搜索攻略..." id="searchInput">
+        <button class="search-btn" id="searchBtn">🔍</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- 攻略头部 -->
+  <section class="guide-hero">
+    <div class="guide-hero-inner">
+      <div class="guide-breadcrumb">
+        <a href="../index.html">首页</a> <span class="sep">›</span>
+        <span>料理配方</span>
+      </div>
+      <div class="guide-hero-content">
+        <div class="guide-hero-text">
+          <h1>🍲 料理与药剂全配方指南</h1>
+          <p class="guide-desc">最全料理配方 · 属性药剂调配 · 材料获取地点 · 烹饪技巧</p>
+          <div class="guide-meta-bar">
+            <span>🍲 50+ 料理配方</span>
+            <span>🧪 15+ 药剂配方</span>
+            <span>🗺️ 全部材料获取点</span>
+            <span>⏱️ 阅读约20分钟</span>
+          </div>
+        </div>
+        <div class="guide-hero-image"><img src="../images/cooking-scene.svg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">🍲</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="guide-layout">
+    <!-- 主内容 -->
+    <main class="guide-main">
+      <!-- 目录 -->
+      <div class="guide-toc">
+        <h3>📑 快速导航</h3>
+        <ul>
+          <li><a href="#section-mechanics">烹饪系统详解</a></li>
+          <li><a href="#section-hearty">生命恢复料理</a></li>
+          <li><a href="#section-attack">攻击力提升料理</a></li>
+          <li><a href="#section-defense">防御力提升料理</a></li>
+          <li><a href="#section-stealth">潜行料理</a></li>
+          <li><a href="#section-speed">速度提升料理</a></li>
+          <li><a href="#section-elemental">元素抗性料理</a></li>
+          <li><a href="#section-elixir">药剂调配</a></li>
+          <li><a href="#section-farming">材料最佳采集地点</a></li>
+        </ul>
+      </div>
+
+      <!-- ========== 烹饪系统详解 ========== -->
+      <section class="guide-section" id="section-mechanics">
+        <h2>📖 烹饪系统详解</h2>
+
+        <h3>🍳 如何烹饪</h3>
+        <p>在海拉鲁大陆上，几乎每个村庄和驿站都能找到<strong>烹饪锅</strong>。靠近烹饪锅，打开背包，手持最多<strong>5种食材</strong>（按A键选择"手持"），然后退出背包并对着锅按A键投入食材，即可制作料理。</p>
+
+        <div class="guide-info">
+          📌 <strong>手持食材数量限制：</strong>一次最多手持5个食材。超过5个或使用了不能烹饪的材料（如矿石、怪物素材）会出现"无法烹饪"的提示。
+        </div>
+
+        <h3>✨ 大成功（Critical Success）</h3>
+        <p>烹饪时有<strong>随机概率</strong>触发大成功，料理效果会显著增强——可能是<strong>额外黄心</strong>、<strong>更长的效果持续时间</strong>、或是<strong>效果等级+1</strong>。大成功时烹饪动画会有一段额外的激昂旋律，林克会做出胜利动作。</p>
+
+        <div class="guide-tip">
+          💡 <strong>触发大成功的要素：</strong>在料理中添加稀有的龙角碎片（菲尔龙的角鳞、聂尔龙的角鳞、奥尔龙的角鳞）可以<strong>必定触发大成功</strong>，且龙角碎片会使效果持续时间延长到<strong>30分钟</strong>。这是游戏中持续时间最长的加成效果。
+        </div>
+
+        <h3>🌕 血月烹饪（Blood Moon Cooking）</h3>
+        <p>在<strong>血月之夜</strong>的特定时间段（晚上<strong>23:30至次日00:30</strong>），使用烹饪锅制作料理时<strong>必定触发大成功</strong>。血月即将升起时，天空会出现红色的粒子效果，背景音乐会变化——抓住这个黄金窗口期疯狂烹饪吧！</p>
+
+        <div class="guide-warning">
+          ⚠️ <strong>注意：</strong>血月过场动画期间（约23:50至00:15）你无法操作林克进行任何动作。建议在动画结束后立刻冲向最近的烹饪锅。海特诺村、卡卡利科村和各个驿站都有方便的烹饪锅。
+        </div>
+
+        <h3>📊 料理效果叠加规则</h3>
+        <p>料理的属性加成遵循以下核心规则：</p>
+        <ul>
+          <li><strong>同名效果不叠加：</strong>食用多个同类加成料理，后吃的会<strong>覆盖</strong>先吃的效果，不会叠加。</li>
+          <li><strong>不同效果可共存：</strong>你可以同时拥有攻击力提升和防御力提升，但不能同时拥有攻击力提升和潜行提升（同属于"战斗增益"类别会互相覆盖）。</li>
+          <li><strong>黄心与黄精力独立：</strong>生命料理的额外黄心和精力料理的额外黄精力圈属于特殊效果，不与属性加成冲突。</li>
+          <li><strong>效果等级：</strong>同类食材添加数量越多，效果等级越高（最高3级）。公式：食材效力和 = 食材数量 × 单个效力值，达到一定阈值即可升级。</li>
+        </ul>
+
+        <h3>🧪 料理 vs 药剂</h3>
+        <p><strong>料理（Food）：</strong>使用食材制作，通常恢复<strong>心</strong>并提供属性加成。食材包括水果、蔬菜、肉类、鱼类、蘑菇等。<br>
+        <strong>药剂（Elixir）：</strong>使用<strong>昆虫/蜥蜴/青蛙 + 怪物素材</strong>制作，只提供属性加成和微量心回复。药剂不恢复大量心，但持续时间通常更久，且某些效果（如防火）只有药剂能提供。</p>
+
+        <div class="guide-tip">
+          💡 <strong>重要的配方公式：</strong>角色类食材（昆虫/青蛙/蜥蜴）+ 怪物素材（波克布林的角/肝等）= 药剂。关键材料决定药剂效果，怪物素材决定持续时间——越稀有的怪物素材，持续时间越长。
+        </div>
+      </section>
+
+      <!-- ========== 生命恢复料理 ========== -->
+      <section class="guide-section" id="section-hearty">
+        <h2>❤️ 生命恢复料理（Hearty Recipes）</h2>
+        <p>生命系列食材是游戏中最珍贵的恢复材料之一。任何带有"生命"（Hearty）词缀的食材，烹饪后都会提供<strong>完全回复所有心 + 额外黄心</strong>。这是BOSS战和探索中最可靠的生命线。</p>
+
+        <div class="guide-info">
+          💊 <strong>核心规则：</strong>生命食材<strong>单独烹饪即可</strong>！一颗生命榴莲就能做出"完全回复+4颗额外黄心"的料理。把多个生命食材一起烹饪会得到更多额外黄心，但单独烹饪多个同一食材的料理效率更高（5个榴莲 = 5个全回复料理 vs 1个全回复+20黄心的料理）。
+        </div>
+
+        <table class="guide-table">
+          <tr>
+            <th>食材</th>
+            <th>单个烹饪效果</th>
+            <th>5个烹饪效果</th>
+            <th>额外黄心（每增加1个）</th>
+          </tr>
+          <tr>
+            <td>🍈 生命榴莲（Hearty Durian）</td>
+            <td>全回复 + 4♥</td>
+            <td>全回复 + 20♥</td>
+            <td>+4♥</td>
+          </tr>
+          <tr>
+            <td>🥕 生命小萝卜（Hearty Radish）</td>
+            <td>全回复 + 2♥</td>
+            <td>全回复 + 10♥</td>
+            <td>+2♥</td>
+          </tr>
+          <tr>
+            <td>🥕 生命大萝卜（Big Hearty Radish）</td>
+            <td>全回复 + 5♥</td>
+            <td>全回复 + 25♥</td>
+            <td>+5♥</td>
+          </tr>
+          <tr>
+            <td>🍄 生命松露（Hearty Truffle）</td>
+            <td>全回复 + 1♥</td>
+            <td>全回复 + 5♥</td>
+            <td>+1♥</td>
+          </tr>
+          <tr>
+            <td>🍄 生命大松露（Big Hearty Truffle）</td>
+            <td>全回复 + 3♥</td>
+            <td>全回复 + 15♥</td>
+            <td>+3♥</td>
+          </tr>
+          <tr>
+            <td>🐟 生命鲈鱼（Hearty Bass）</td>
+            <td>全回复 + 2♥</td>
+            <td>全回复 + 10♥</td>
+            <td>+2♥</td>
+          </tr>
+          <tr>
+            <td>🐟 生命三文鱼（Hearty Salmon）</td>
+            <td>全回复 + 4♥</td>
+            <td>全回复 + 20♥</td>
+            <td>+4♥</td>
+          </tr>
+        </table>
+
+        <h3>🍈 生命榴莲 — 最强恢复食材</h3>
+        <p><strong>食材效力：</strong>每颗榴莲提供全回复+4♥额外黄心。只需一颗就能拯救任何危急时刻。<br>
+        <strong>最佳采集地：</strong>费罗尼地区，费罗尼之塔附近的山坡上大量生长。撒托利山（Satori Mountain）也有稳定刷新点。<br>
+        <strong>推荐配方：</strong>1颗榴莲单独烹饪 = 全回复+4♥黄心。这是性价比最高的用法——一颗榴莲一锅，不要浪费。</p>
+
+        <h3>🥕 生命大萝卜 — 高品质恢复</h3>
+        <p><strong>食材效力：</strong>每颗大萝卜提供全回复+5♥额外黄心，是单次恢复量最高的食材。<br>
+        <strong>最佳采集地：</strong>非常稀有，分散在海拉鲁各地的森林中。阿克雷湖（Akkala）和费罗尼地区有少量刷新。完成支线任务"生命大萝卜的栽培"后可以在哈特诺村种植。<br>
+        <strong>推荐配方：</strong>单独烹饪1颗 = 全回复+5♥。配龙角 = 全回复+5♥ + 30分钟任意效果。</p>
+
+        <h3>🐟 生命三文鱼 — 水系恢复之王</h3>
+        <p><strong>食材效力：</strong>全回复+4♥，与榴莲同级。<br>
+        <strong>最佳采集地：</strong>海布拉地区（Hebra）的冰河中，尤其是海布拉山山脚的河流和利特村周边的水域。<br>
+        <strong>捕捞技巧：</strong>穿着卓拉铠甲游泳接近，或用炸弹炸鱼（会降低品质）快速收集。建议用冰柱在鱼群下方制造冰柱把鱼顶上岸。</p>
+
+        <div class="guide-tip">
+          💡 <strong>榴莲经济学：</strong>费罗尼之塔附近一圈能采集到约15-20颗榴莲。花5分钟跑一圈，你就拥有了15-20个"全回复"料理——足够打穿整个游戏。这是前期最值得做的准备工作。
+        </div>
+      </section>
+
+      <!-- ========== 攻击力提升料理 ========== -->
+      <section class="guide-section" id="section-attack">
+        <h2>⚔️ 攻击力提升料理（Mighty Recipes）</h2>
+        <p>攻击力提升效果增加所有近战武器、弓箭的攻击伤害。三级攻击力提升提供<strong>+50%伤害加成</strong>，是速杀BOSS和人马的首选料理。</p>
+
+        <table class="guide-table">
+          <tr>
+            <th>食材</th>
+            <th>效力值</th>
+            <th>3个效果</th>
+            <th>4个效果</th>
+            <th>5个效果</th>
+          </tr>
+          <tr>
+            <td>🍌 大剑香蕉（Mighty Bananas）</td>
+            <td>2</td>
+            <td>攻Lv2 · 3:10</td>
+            <td>攻Lv3 · 4:10</td>
+            <td>攻Lv3 · 4:10</td>
+          </tr>
+          <tr>
+            <td>🌿 大剑蓟（Mighty Thistle）</td>
+            <td>1</td>
+            <td>攻Lv1 · 2:00</td>
+            <td>攻Lv2 · 3:00</td>
+            <td>攻Lv3 · 4:00</td>
+          </tr>
+          <tr>
+            <td>🐟 大剑鲷鱼（Mighty Porgy）</td>
+            <td>2</td>
+            <td>攻Lv2 · 3:10</td>
+            <td>攻Lv3 · 4:10</td>
+            <td>攻Lv3 · 4:10</td>
+          </tr>
+          <tr>
+            <td>🦀 大剑螃蟹（Razorclaw Crab）</td>
+            <td>2</td>
+            <td>攻Lv2 · 3:10</td>
+            <td>攻Lv3 · 4:10</td>
+            <td>攻Lv3 · 4:10</td>
+          </tr>
+        </table>
+
+        <h3>🍌 大剑香蕉 — 最强攻击食材</h3>
+        <p><strong>最佳采集地：</strong>费罗尼地区，尤其是湖畔驿站（Lakeside Stable）周边的香蕉林中大量生长。伊盖团基地附近也有大量刷新。<br>
+        <strong>推荐配方：</strong><strong>4根大剑香蕉</strong> = 三级攻击力提升（持续4分10秒）。如果有龙角碎片，加1个龙角 + 4根香蕉 = 三级攻击力提升持续30分钟！<br>
+        <strong>美食名称：</strong>焖香蕉（等级3攻击提升）</p>
+
+        <h3>🐟 大剑鲷鱼 — 海洋攻击源</h3>
+        <p><strong>最佳采集地：</strong>聂尔达海（Necluda Sea）东南部海岸、沃托里村（Lurelin Village）周边海域。<br>
+        <strong>推荐配方：</strong>4条大剑鲷鱼 = 三级攻击力提升（4分10秒）。配合海拉鲁米可额外补心。<br>
+        <strong>美食名称：</strong>海鲜杂烩（等级3攻击提升）</p>
+
+        <h3>🦀 大剑螃蟹 — 海岸攻击源</h3>
+        <p><strong>最佳采集地：</strong>拉聂尔海岸、聂尔达海岸的沙滩上。哈特诺海滩也有分布。<br>
+        <strong>推荐配方：</strong>4只大剑螃蟹 = 三级攻击力提升。螃蟹+海拉鲁米+岩盐 = 美味螃蟹饭。<br>
+        <strong>美食名称：</strong>蟹肉烩饭（等级3攻击提升）</p>
+
+        <div class="guide-warning">
+          ⚠️ <strong>伊盖团基地警告：</strong>伊盖团基地内有大量大剑香蕉，但潜行难度极高。如果你已被伊盖团标记（主线后期），进入基地会遇到大量伊盖团员袭击。建议穿<strong>潜行套装</strong>或吃潜行料理后再前往。
+        </div>
+      </section>
+
+      <!-- ========== 防御力提升料理 ========== -->
+      <section class="guide-section" id="section-defense">
+        <h2>🛡️ 防御力提升料理（Tough Recipes）</h2>
+        <p>防御力提升减少所有受到的伤害。三级防御力提升提供<strong>约-50%伤害减免</strong>，是高难度战斗和面对大量敌人时的生存保障。</p>
+
+        <table class="guide-table">
+          <tr>
+            <th>食材</th>
+            <th>效力值</th>
+            <th>3个效果</th>
+            <th>4个效果</th>
+            <th>5个效果</th>
+          </tr>
+          <tr>
+            <td>🍄 铠甲蘑菇（Ironshroom）</td>
+            <td>1</td>
+            <td>防Lv1 · 2:30</td>
+            <td>防Lv2 · 3:30</td>
+            <td>防Lv3 · 4:30</td>
+          </tr>
+          <tr>
+            <td>🌿 铠甲草（Armoranth）</td>
+            <td>1</td>
+            <td>防Lv1 · 2:30</td>
+            <td>防Lv2 · 3:30</td>
+            <td>防Lv3 · 4:30</td>
+          </tr>
+          <tr>
+            <td>🎃 铠甲南瓜（Fortified Pumpkin）</td>
+            <td>2</td>
+            <td>防Lv2 · 3:10</td>
+            <td>防Lv3 · 4:10</td>
+            <td>防Lv3 · 4:10</td>
+          </tr>
+          <tr>
+            <td>🦀 铠甲螃蟹（Ironshell Crab）</td>
+            <td>2</td>
+            <td>防Lv2 · 3:10</td>
+            <td>防Lv3 · 4:10</td>
+            <td>防Lv3 · 4:10</td>
+          </tr>
+        </table>
+
+        <h3>🍄 铠甲蘑菇 — 最易获取的防御食材</h3>
+        <p><strong>最佳采集地：</strong>初始台地（Great Plateau）、海拉鲁各地的森林和树荫下大量生长。几乎随处可见。<br>
+        <strong>推荐配方：</strong><strong>5个铠甲蘑菇</strong> = 三级防御力提升（4分30秒）。最简单稳定的三级防御料理。<br>
+        <strong>美食名称：</strong>蘑菇煎（等级3防御提升）</p>
+
+        <h3>🎃 铠甲南瓜 — 高效率防御食材</h3>
+        <p><strong>最佳采集地：</strong>卡卡利科村（Kakariko Village）的南瓜田中种植，每次刷新4-5个。哈特诺村（Hateno Village）自家房屋旁也可种植。<br>
+        <strong>推荐配方：</strong>4个铠甲南瓜 = 三级防御力提升（4分10秒）。配鲜奶+禽蛋 = 南瓜炖菜。<br>
+        <strong>美食名称：</strong>南瓜炖蛋（等级3防御提升）</p>
+
+        <h3>🦀 铠甲螃蟹 — 海岸防御源</h3>
+        <p><strong>最佳采集地：</strong>拉聂尔海岸线、沃托里村海滩。穿潜行服蹲下慢慢靠近，以免惊动螃蟹。<br>
+        <strong>推荐配方：</strong>4只铠甲螃蟹 = 三级防御力提升（4分10秒）。</p>
+
+        <div class="guide-tip">
+          💡 <strong>农场经营：</strong>完成哈特诺村的"幸福之家"支线后，屋旁有块菜地可以种植。种下铠甲南瓜，每次血月后都能收获。再也不用到处找铠甲蘑菇了。
+        </div>
+      </section>
+
+      <!-- ========== 潜行料理 ========== -->
+      <section class="guide-section" id="section-stealth">
+        <h2>🤫 潜行料理（Sneaky Recipes）</h2>
+        <p>潜行效果降低你移动时发出的声音，让敌人更难以察觉你的存在。三级潜行几乎可以让你在敌人背后跳舞而不被发现。是<strong>捕捉昆虫、接近马匹、潜行刺杀</strong>的必备料理。</p>
+
+        <table class="guide-table">
+          <tr>
+            <th>食材</th>
+            <th>效力值</th>
+            <th>3个效果</th>
+            <th>4个效果</th>
+            <th>5个效果</th>
+          </tr>
+          <tr>
+            <td>🍄 潜行蘑菇（Silent Shroom）</td>
+            <td>2</td>
+            <td>潜Lv2 · 5:00</td>
+            <td>潜Lv3 · 7:00</td>
+            <td>潜Lv3 · 10:00</td>
+          </tr>
+          <tr>
+            <td>🐟 潜行鳟鱼（Stealthfin Trout）</td>
+            <td>2</td>
+            <td>潜Lv2 · 5:00</td>
+            <td>潜Lv3 · 7:00</td>
+            <td>潜Lv3 · 10:00</td>
+          </tr>
+          <tr>
+            <td>🌸 静谧公主（Silent Princess）</td>
+            <td>2</td>
+            <td>潜Lv2 · 5:00</td>
+            <td>潜Lv3 · 7:00</td>
+            <td>潜Lv3 · 10:00</td>
+          </tr>
+          <tr>
+            <td>🪲 夕阳萤火虫（Sunset Firefly）</td>
+            <td>2</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        </table>
+
+        <h3>🍄 潜行蘑菇 — 克洛格森林特产</h3>
+        <p><strong>最佳采集地：</strong>克洛格森林（Korok Forest）内部和外围、海拉鲁大森林（Great Hyrule Forest）周边大量生长。<br>
+        <strong>推荐配方：</strong><strong>5个潜行蘑菇</strong> = 三级潜行（持续10分钟！）。潜行料理的持续时间是所有属性料理中最长的。<br>
+        <strong>美食名称：</strong>蘑菇串（等级3潜行 10:00）</p>
+
+        <h3>🐟 潜行鳟鱼 — 森林溪流特产</h3>
+        <p><strong>最佳采集地：</strong>克洛格森林中的萨莉亚湖（Lake Saria）和迷雾森林的溪流。由于处于迷失森林中，需要跟随火把风向才能到达。<br>
+        <strong>推荐配方：</strong>5条潜行鳟鱼 = 三级潜行（10分钟）。</p>
+
+        <h3>🌸 静谧公主 — 稀有花朵</h3>
+        <p><strong>最佳采集地：</strong>各大精灵之泉（Great Fairy Fountain）周围通常生长3-5朵。极少量分散在各回忆地点附近。<br>
+        <strong>推荐配方：</strong>4朵静谧公主 = 三级潜行（7分钟）。但静谧公主非常稀有且是升级部分装备的材料，建议优先用于升级。</p>
+
+        <div class="guide-info">
+          📌 <strong>夕阳萤火虫特别说明：</strong>萤火虫是<strong>昆虫类</strong>食材，烹饪后只能制作<strong>潜行药剂</strong>（需搭配怪物素材），不能制作潜行料理。详见下方药剂篇。
+        </div>
+      </section>
+
+      <!-- ========== 速度提升料理 ========== -->
+      <section class="guide-section" id="section-speed">
+        <h2>💨 速度提升料理（Hasty Recipes）</h2>
+        <p>速度提升效果增加林克的<strong>移动速度</strong>（不含游泳和攀爬速度）。三级速度提升让林克健步如飞，穿越广阔地图时极为实用。</p>
+
+        <table class="guide-table">
+          <tr>
+            <th>食材</th>
+            <th>效力值</th>
+            <th>3个效果</th>
+            <th>4个效果</th>
+            <th>5个效果</th>
+          </tr>
+          <tr>
+            <td>🌱 速速莲蓬（Fleet-Lotus Seeds）</td>
+            <td>1</td>
+            <td>速Lv1 · 2:00</td>
+            <td>速Lv2 · 3:00</td>
+            <td>速Lv3 · 5:00</td>
+          </tr>
+          <tr>
+            <td>🍄 速速蘑菇（Rushroom）</td>
+            <td>1</td>
+            <td>速Lv1 · 2:00</td>
+            <td>速Lv2 · 3:00</td>
+            <td>速Lv3 · 5:00</td>
+          </tr>
+          <tr>
+            <td>🥕 速速胡萝卜（Swift Carrot）</td>
+            <td>2</td>
+            <td>速Lv2 · 3:00</td>
+            <td>速Lv3 · 4:00</td>
+            <td>速Lv3 · 5:00</td>
+          </tr>
+          <tr>
+            <td>🌸 速速紫罗兰（Swift Violet）</td>
+            <td>2</td>
+            <td>速Lv2 · 3:00</td>
+            <td>速Lv3 · 4:00</td>
+            <td>速Lv3 · 5:00</td>
+          </tr>
+        </table>
+
+        <h3>🥕 速速胡萝卜 — 最易获取的速度食材</h3>
+        <p><strong>最佳采集地：</strong>卡卡利科村的杂货店出售速速胡萝卜（约16卢比一个），每次刷新5个。<br>
+        <strong>推荐配方：</strong><strong>5个速速胡萝卜</strong> = 三级速度提升（5分钟）。搭配禽蛋和鲜奶可以做成胡萝卜蛋糕，口感绝佳。<br>
+        <strong>美食名称：</strong>胡萝卜浓汤（等级3速度）</p>
+
+        <h3>🍄 速速蘑菇 — 攀岩必备</h3>
+        <p><strong>最佳采集地：</strong>生长在几乎所有的<strong>悬崖壁面</strong>上。海布拉山、双子山、德谷多悬壁等地的岩壁上大量分布。攀爬时注意观察岩壁上的橙色蘑菇。<br>
+        <strong>推荐配方：</strong>5个速速蘑菇 = 三级速度提升（5分钟）。</p>
+
+        <h3>🌸 速速紫罗兰 — 高原花朵</h3>
+        <p><strong>最佳采集地：</strong>格鲁德高地（Gerudo Highlands）和拉聂尔山的高海拔地区。海利亚大桥周边的崖壁上也有分布。<br>
+        <strong>推荐配方：</strong>4朵速速紫罗兰 = 三级速度提升（4分钟）。</p>
+
+        <div class="guide-tip">
+          💡 <strong>速度与攀爬：</strong>注意！速度提升料理只提高<strong>跑步速度</strong>，不提高攀爬和游泳速度。攀爬需要<strong>攀登套装</strong>（登山头巾、登山鞋、攀登手套）或精力恢复料理。游泳速度可以靠<strong>卓拉套装</strong>提升。
+        </div>
+      </section>
+
+      <!-- ========== 元素抗性料理 ========== -->
+      <section class="guide-section" id="section-elemental">
+        <h2>🌡️ 元素抗性料理</h2>
+        <p>海拉鲁大陆有极端温度区域和电气环境，需要相应的抗性料理来安全探索。元素抗性分为三类：<strong>耐热</strong>（抵抗高温）、<strong>耐寒</strong>（抵抗低温）、<strong>抗电</strong>（抵抗雷电）。</p>
+
+        <h3>☀️ 耐热料理 — 对抗沙漠高温</h3>
+        <p>耐热效果让你在格鲁德沙漠和死亡之山外围等高温区域安全行动（注：死亡之山核心区需要防火药剂，普通耐热无效）。</p>
+
+        <table class="guide-table">
+          <tr>
+            <th>食材</th>
+            <th>效力值</th>
+            <th>3个效果</th>
+            <th>5个效果</th>
+            <th>最佳采集地</th>
+          </tr>
+          <tr>
+            <td>🍄 冰蘑菇（Chillshroom）</td>
+            <td>1</td>
+            <td>耐热Lv1 · 7:30</td>
+            <td>耐热Lv2 · 12:30</td>
+            <td>海布拉山、拉聂尔山山脚</td>
+          </tr>
+          <tr>
+            <td>🌿 冰凉香草（Cool Safflina）</td>
+            <td>1</td>
+            <td>耐热Lv1 · 7:30</td>
+            <td>耐热Lv2 · 12:30</td>
+            <td>格鲁德沙漠周边绿洲</td>
+          </tr>
+          <tr>
+            <td>🍉 冰西瓜（Hydromelon）</td>
+            <td>1</td>
+            <td>耐热Lv1 · 7:30</td>
+            <td>耐热Lv2 · 12:30</td>
+            <td>格鲁德峡谷驿站附近</td>
+          </tr>
+        </table>
+
+        <p><strong>推荐配方：</strong>5个冰蘑菇 = 2级耐热（持续12分30秒）。搭配在格鲁德小镇购买的<strong>淑女装</strong>使用效果更佳——淑女装提供1级耐热，料理提供剩余等级。</p>
+
+        <h3>❄️ 耐寒料理 — 对抗冰原低温</h3>
+        <p>耐寒效果让你在海布拉山、拉聂尔山顶等冰封区域安全行动。</p>
+
+        <table class="guide-table">
+          <tr>
+            <th>食材</th>
+            <th>效力值</th>
+            <th>3个效果</th>
+            <th>5个效果</th>
+            <th>最佳采集地</th>
+          </tr>
+          <tr>
+            <td>🍄 暖蘑菇（Sunshroom）</td>
+            <td>1</td>
+            <td>耐寒Lv1 · 7:30</td>
+            <td>耐寒Lv2 · 12:30</td>
+            <td>奥尔汀地区、格鲁德高地</td>
+          </tr>
+          <tr>
+            <td>🌿 温暖香草（Warm Safflina）</td>
+            <td>1</td>
+            <td>耐寒Lv1 · 7:30</td>
+            <td>耐寒Lv2 · 12:30</td>
+            <td>格鲁德高地、奥尔汀</td>
+          </tr>
+          <tr>
+            <td>🌶️ 暖暖香果（Spicy Pepper）</td>
+            <td>1</td>
+            <td>耐寒Lv1 · 7:30</td>
+            <td>耐寒Lv2 · 12:30</td>
+            <td>初始台地、海布拉山脚</td>
+          </tr>
+        </table>
+
+        <p><strong>推荐配方：</strong>5个暖暖香果 = 2级耐寒（12分30秒）。暖暖香果在初始台地就能大量采集，是前期最实用的耐寒食材。<br>
+        <strong>美食名称：</strong>香辣炒果（等级2耐寒）</p>
+
+        <div class="guide-info">
+          📌 <strong>耐寒过渡方案：</strong>在到达利特村之前，不需要2级耐寒。1级耐寒（3个香果或1件防寒服）足以应对海布拉山大部分区域。只有海布拉山顶峰区域需要2级耐寒。
+        </div>
+
+        <h3>⚡ 抗电料理 — 对抗雷暴与电击</h3>
+        <p>抗电效果让你免疫雷电伤害和电击麻痹。格鲁德沙漠的雷神兽区域和雷暴天气下极为重要。三级抗电可以<strong>完全免疫雷电伤害</strong>。</p>
+
+        <table class="guide-table">
+          <tr>
+            <th>食材</th>
+            <th>效力值</th>
+            <th>3个效果</th>
+            <th>5个效果</th>
+            <th>最佳采集地</th>
+          </tr>
+          <tr>
+            <td>🍄 电蘑菇（Zapshroom）</td>
+            <td>1</td>
+            <td>抗电Lv1 · 7:30</td>
+            <td>抗电Lv2 · 12:30</td>
+            <td>格鲁德沙漠、雷鸣平原</td>
+          </tr>
+          <tr>
+            <td>🌿 电气香草（Electric Safflina）</td>
+            <td>1</td>
+            <td>抗电Lv1 · 7:30</td>
+            <td>抗电Lv2 · 12:30</td>
+            <td>格鲁德沙漠</td>
+          </tr>
+          <tr>
+            <td>🐟 电鳍鳟鱼（Voltfin Trout）</td>
+            <td>1</td>
+            <td>抗电Lv1 · 7:30</td>
+            <td>抗电Lv2 · 12:30</td>
+            <td>雷鸣平原水域、佐拉之里</td>
+          </tr>
+        </table>
+
+        <p><strong>推荐配方：</strong>5个电蘑菇 = 2级抗电（12分30秒）。注意三级抗电<strong>只能通过套装获得</strong>——需要橡胶套装（橡胶头盔+橡胶紧身衣+橡胶紧身裤）的套装效果"雷电无效"。</p>
+
+        <div class="guide-warning">
+          ⚠️ <strong>雷电之日：</strong>雷暴天气下，林克身上如果装备了金属武器、金属盾牌或金属弓，会成为避雷针被雷劈。卸下所有金属装备，换上木质武器或直接空手。橡胶套装（雷电无效）可以让你无视这个规则，在雷暴中安心使用大师之剑。
+        </div>
+      </section>
+
+      <!-- ========== 药剂调配 ========== -->
+      <section class="guide-section" id="section-elixir">
+        <h2>🧪 药剂调配（Elixir Recipes）</h2>
+        <p>药剂使用<strong>昆虫/蜥蜴/青蛙 + 怪物素材</strong>制作。药剂的核心价值在于提供<strong>某些料理无法提供的效果</strong>（如防火），并且在添加稀有怪物素材后可以实现超长持续时间。</p>
+
+        <div class="guide-info">
+          📌 <strong>药剂公式：</strong>角色类食材（1-4只昆虫/蜥蜴/青蛙）+ 怪物素材（1个）= 药剂。角色食材决定药效类型和等级，怪物素材决定持续时间。多余的怪物素材位可以填角色食材来提高等级。
+        </div>
+
+        <h3>🦎 防火药剂（Fireproof Elixir）</h3>
+        <p><strong>核心食材：</strong>防火蜥蜴（Fireproof Lizard）<br>
+        <strong>效果：</strong>让你在死亡之山（Death Mountain）的熔岩区域安全行动，不会被高温点燃。<br>
+        <strong>最佳采集地：</strong>南部采矿场（Southern Mine）周边的岩石上大量出没。奥尔汀之塔周围的岩石上也有分布。<br>
+        <strong>配方：</strong></p>
+        <ul>
+          <li><strong>1只防火蜥蜴 + 波克布林的角：</strong>1级防火 · 2分30秒 — 基础款，够用</li>
+          <li><strong>3只防火蜥蜴 + 莫力布林的肝：</strong>2级防火 · 8分30秒 — 升级款</li>
+          <li><strong>4只防火蜥蜴 + 龙角碎片：</strong>2级防火 · 30分钟 — 终极款，一次管够</li>
+        </ul>
+
+        <div class="guide-tip">
+          💡 <strong>防火服装才是长久之计：</strong>在南部采矿场用<strong>10只防火蜥蜴</strong>与旅行商人交换<strong>防火铠甲</strong>，这是更经济的选择。之后可以到鼓隆城购买完整的防火套装。
+        </div>
+
+        <h3>🐸 精力药剂（Stamina Elixir）</h3>
+        <p><strong>核心食材：</strong>精力青蛙（Tireless Frog）<br>
+        <strong>效果：</strong>恢复精力圈并提供额外黄精力圈。在攀爬和滑翔时精力耗尽前台救急使用。<br>
+        <strong>最佳采集地：</strong>拉聂尔湿地（Lanayru Wetlands）和佐拉之里周边的水池中大量出没。割草也有低概率掉落。<br>
+        <strong>配方：</strong></p>
+        <ul>
+          <li><strong>1只精力青蛙 + 任意怪物素材：</strong>精力圈小回复</li>
+          <li><strong>4只精力青蛙 + 波克布林的角：</strong>恢复全部精力 + 额外黄精力圈</li>
+        </ul>
+
+        <h3>🐸 加速药剂（Hasty Elixir）</h3>
+        <p><strong>核心食材：</strong>热脚青蛙（Hot-Footed Frog）<br>
+        <strong>效果：</strong>提升移动速度。<br>
+        <strong>最佳采集地：</strong>海拉鲁各地的池塘和水边，割草也有概率获得。佐拉之里、海利亚湖周边较多。<br>
+        <strong>配方：</strong></p>
+        <ul>
+          <li><strong>3只热脚青蛙 + 波克布林的角：</strong>2级速度 · 约5分钟</li>
+          <li><strong>4只热脚青蛙 + 蜥蜴战士的尾巴：</strong>3级速度 · 约8分钟</li>
+        </ul>
+
+        <h3>🦎 其他实用药剂</h3>
+
+        <table class="guide-table">
+          <tr>
+            <th>药剂类型</th>
+            <th>核心食材</th>
+            <th>效果</th>
+            <th>采集地</th>
+          </tr>
+          <tr>
+            <td>攻击药剂</td>
+            <td>大剑独角仙（Bladed Rhino Beetle）</td>
+            <td>攻击力提升</td>
+            <td>阿克雷地区树干上（夜间）</td>
+          </tr>
+          <tr>
+            <td>防御药剂</td>
+            <td>铠甲独角仙（Rugged Rhino Beetle）</td>
+            <td>防御力提升</td>
+            <td>海拉鲁各地树干上（夜间）</td>
+          </tr>
+          <tr>
+            <td>潜行药剂</td>
+            <td>夕阳萤火虫（Sunset Firefly）</td>
+            <td>潜行提升</td>
+            <td>夜间草地（卡卡利科村周边）</td>
+          </tr>
+          <tr>
+            <td>耐热药剂</td>
+            <td>冰凉蜻蜓（Cold Darner）</td>
+            <td>耐热</td>
+            <td>海布拉山寒冷水域</td>
+          </tr>
+          <tr>
+            <td>耐寒药剂</td>
+            <td>温暖蜻蜓（Warm Darner）</td>
+            <td>耐寒</td>
+            <td>阿克雷地区温暖水域</td>
+          </tr>
+          <tr>
+            <td>抗电药剂</td>
+            <td>电蜻蜓（Electric Darner）</td>
+            <td>抗电</td>
+            <td>雷鸣平原水域</td>
+          </tr>
+        </table>
+
+        <div class="guide-warning">
+          ⚠️ <strong>昆虫采集技巧：</strong>穿<strong>潜行套装</strong>（Sheikah Stealth Set）可以让你靠近昆虫和蜥蜴而不惊动它们。没有潜行服的话，按住左摇杆缓慢推进（蹲下走最安全）。建议在包里常备一套潜行服。
+        </div>
+      </section>
+
+      <!-- ========== 材料最佳采集地点 ========== -->
+      <section class="guide-section" id="section-farming">
+        <h2>🗺️ 材料最佳采集地点</h2>
+        <p>以下是关键料理食材的<strong>最佳批量采集地点</strong>。标记这些位置到你的希卡石板地图上，每次血月刷新后都可以来收割一轮。</p>
+
+        <table class="guide-table">
+          <tr>
+            <th>食材</th>
+            <th>最佳采集地点</th>
+            <th>每次获取量</th>
+            <th>采集技巧</th>
+          </tr>
+          <tr>
+            <td>🍈 生命榴莲</td>
+            <td><strong>费罗尼之塔</strong>周边山坡 · <strong>撒托利山</strong></td>
+            <td>15-20颗</td>
+            <td>从塔上滑翔飞到下方山坡，榴莲树集中生长</td>
+          </tr>
+          <tr>
+            <td>🍌 大剑香蕉</td>
+            <td><strong>湖畔驿站</strong>周边香蕉林 · <strong>伊盖团基地</strong>内部</td>
+            <td>20-30根</td>
+            <td>湖畔驿站周围最安全，伊盖团基地需要潜行</td>
+          </tr>
+          <tr>
+            <td>🍄 铠甲蘑菇</td>
+            <td>初始台地 · 克洛格森林 · 各森林区域</td>
+            <td>几乎无限</td>
+            <td>任何树下、树荫处都有生长，举起希卡感应搜索</td>
+          </tr>
+          <tr>
+            <td>🎃 铠甲南瓜</td>
+            <td><strong>卡卡利科村</strong>南瓜田 · <strong>哈特诺村</strong>自家菜地</td>
+            <td>4-5个/血月</td>
+            <td>卡卡利科村杂货店也可购买</td>
+          </tr>
+          <tr>
+            <td>🍄 潜行蘑菇</td>
+            <td><strong>克洛格森林</strong>内外 · 海拉鲁大森林</td>
+            <td>15-20个</td>
+            <td>克洛格森林内部最多，跟随火把风向进入</td>
+          </tr>
+          <tr>
+            <td>🥕 速速胡萝卜</td>
+            <td><strong>卡卡利科村杂货店</strong>购买 · 海拉鲁各地</td>
+            <td>5个/次购买</td>
+            <td>在各驿站过夜刷新商店库存</td>
+          </tr>
+          <tr>
+            <td>🍄 速速蘑菇</td>
+            <td><strong>双子山</strong>岩壁 · <strong>海布拉山</strong>岩壁</td>
+            <td>10-15个</td>
+            <td>攀爬岩壁时观察橙色蘑菇，用弓箭射下来</td>
+          </tr>
+          <tr>
+            <td>🌶️ 暖暖香果</td>
+            <td><strong>初始台地</strong> · 海布拉山脚 · 格鲁德高地入口</td>
+            <td>10-15个</td>
+            <td>初始台地老人小屋附近就有，前期即可大量采集</td>
+          </tr>
+          <tr>
+            <td>🍄 冰蘑菇</td>
+            <td><strong>海布拉山</strong>山脚 · 拉聂尔山周边</td>
+            <td>10-12个</td>
+            <td>寒冷区域的树荫下，与暖蘑菇生长环境相反</td>
+          </tr>
+          <tr>
+            <td>🍄 暖蘑菇</td>
+            <td><strong>奥尔汀地区</strong> · 格鲁德高地</td>
+            <td>8-10个</td>
+            <td>温暖/火山区域边缘地带</td>
+          </tr>
+          <tr>
+            <td>🍄 电蘑菇</td>
+            <td><strong>雷鸣平原</strong>（Thundra Plateau）· 格鲁德沙漠</td>
+            <td>6-8个</td>
+            <td>雷暴多发区域，注意卸下金属装备</td>
+          </tr>
+          <tr>
+            <td>🦎 防火蜥蜴</td>
+            <td><strong>南部采矿场</strong>周边岩石 · 奥尔汀之塔</td>
+            <td>8-12只</td>
+            <td>穿潜行服蹲下靠近，岩石上有大量爬行</td>
+          </tr>
+          <tr>
+            <td>🐟 生命三文鱼</td>
+            <td><strong>海布拉山脚冰河</strong> · 利特村周边水域</td>
+            <td>5-8条</td>
+            <td>用冰柱顶鱼上岸或用炸弹炸鱼快速收集</td>
+          </tr>
+          <tr>
+            <td>🐟 大剑鲷鱼</td>
+            <td><strong>沃托里村</strong>周边海域 · 聂尔达海海岸</td>
+            <td>6-10条</td>
+            <td>游泳接近或从悬崖用弓箭射击水面</td>
+          </tr>
+          <tr>
+            <td>🌸 静谧公主</td>
+            <td>各大<strong>精灵之泉</strong>周边 · 回忆地点附近</td>
+            <td>3-5朵/泉</td>
+            <td>极其稀有！建议拍照后用希卡感应追踪</td>
+          </tr>
+        </table>
+
+        <div class="guide-tip">
+          💡 <strong>批量采集周期：</strong>所有可采集材料在每次<strong>血月</strong>后重新刷新。血月大约每隔<strong>2小时48分钟</strong>（现实时间）出现一次。每次血月后规划好路线，绕一圈把所有关键采集点跑一遍，大概30分钟就能收集到充足的料理储备。
+        </div>
+
+        <h3>🌍 推荐采集路线</h3>
+        <p>如果你想要一次性收集齐全套料理材料，推荐以下高效路线：</p>
+        <ol>
+          <li><strong>费罗尼之塔 →</strong>采集生命榴莲和大剑香蕉（15分钟）</li>
+          <li><strong>卡卡利科村 →</strong>购买速速胡萝卜，采集铠甲南瓜（5分钟）</li>
+          <li><strong>克洛格森林 →</strong>采集潜行蘑菇和铠甲蘑菇（10分钟）</li>
+          <li><strong>南部采矿场 →</strong>捕捉防火蜥蜴（5分钟）</li>
+        </ol>
+        <p>这条路线覆盖了<strong>全回复、攻击、防御、潜行、速度、防火</strong>六大核心需求的全部材料。</p>
+      </section>
+
+      <!-- 页脚导航 -->
+      <div class="guide-footer-nav">
+        <a href="equipment.html" class="footer-prev">← 装备收集攻略</a>
+        <a href="bosses.html" class="footer-next">BOSS指南 →</a>
+      </div>
+    </main>
+
+    <!-- 侧边栏 -->
+    <aside class="guide-sidebar">
+      <div class="sidebar-card">
+        <h4>🔥 热门攻略</h4>
+                <ul>
+                  <li><a href="great-plateau.html">· 🏔️ 初始台地新手教学</a></li>
+                  <li><a href="korok-seeds.html">· 🌱 呀哈哈全收集指南</a></li>
+                  <li><a href="regions.html">· 🗺️ 八大区域攻略</a></li>
+                </ul>
+                <h4 style="margin-top:16px">📚 攻略分类</h4>
+        <ul>
+          <li><a href="shrines.html">· 全120座神庙位置与解法</a></li>
+          <li><a href="great-plateau.html" class="nav-link">新手入门</a></li>
+                <li><a href="divine-beasts.html">· 解放四神兽完整攻略</a></li>
+          <li><a href="equipment.html">· 武器与防具收集指南</a></li>
+          <li><a href="bosses.html">· 全部BOSS打法详解</a></li>
+          <li><a href="secrets.html">· 隐藏要素与彩蛋大全</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>🍳 快捷导航</h4>
+        <ul>
+          <li><a href="#section-mechanics">· 烹饪系统详解</a></li>
+          <li><a href="#section-hearty">· 生命恢复料理</a></li>
+          <li><a href="#section-attack">· 攻击力提升料理</a></li>
+          <li><a href="#section-defense">· 防御力提升料理</a></li>
+          <li><a href="#section-stealth">· 潜行料理</a></li>
+          <li><a href="#section-speed">· 速度提升料理</a></li>
+          <li><a href="#section-elemental">· 元素抗性料理</a></li>
+          <li><a href="#section-elixir">· 药剂调配</a></li>
+          <li><a href="#section-farming">· 材料采集地点</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>💡 料理小贴士</h4>
+        <ul>
+          <li>🌕 血月烹饪必定大成功</li>
+          <li>🐉 龙角碎片 = 30分钟效果</li>
+          <li>🍈 1颗榴莲 = 1个全回复</li>
+          <li>🍌 4根香蕉 = 3级攻击力</li>
+          <li>🍄 5个潜行菇 = 10分钟潜行</li>
+          <li>⚠️ 同名效果会互相覆盖</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">▲</span>
+          <span>荒野之息攻略站</span>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>攻略分类</h4>
+            <a href="#">主线任务</a>
+            <a href="#">支线任务</a>
+            <a href="shrines.html">神庙攻略</a>
+            <a href="#">回忆收集</a>
+          </div>
+          <div class="footer-col">
+            <h4>装备系统</h4>
+            <a href="#">武器图鉴</a>
+            <a href="#">盾牌图鉴</a>
+            <a href="#">防具套装</a>
+            <a href="#">马具获取</a>
+          </div>
+          <div class="footer-col">
+            <h4>关于本站</h4>
+            <a href="../about.html">关于我们</a>
+            <a href="../about.html#contribute">贡献攻略</a>
+            <a href="#">GitHub</a>
+            <a href="../about.html#feedback">反馈建议</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 荒野之息攻略站 · 游戏版权归任天堂所有 · 本站为玩家自发攻略分享</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <radialGradient id="glow"><stop offset="0%" stop-color="#4fc3f7" stop-opacity="0.6"/><stop offset="100%" stop-color="#4fc3f7" stop-opacity="0"/></radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a2a3e"/><stop offset="100%" stop-color="#0a0e17"/></linearGradient>
+  </defs>
+  <rect fill="url(#floor)" width="800" height="400"/>
+  <circle cx="400" cy="200" r="150" fill="url(#glow)"/>
+  <!-- 希卡门框 -->
+  <rect x="300" y="100" width="200" height="250" rx="20" fill="none" stroke="#4fc3f7" stroke-width="4" opacity="0.8"/>
+  <rect x="310" y="110" width="180" height="230" rx="15" fill="none" stroke="#4fc3f7" stroke-width="1" opacity="0.4"/>
+  <!-- 符文装饰 -->
+  <circle cx="400" cy="100" r="15" fill="none" stroke="#c9a84c" stroke-width="2"/>
+  <circle cx="400" cy="100" r="8" fill="#c9a84c" opacity="0.6"/>
+  <line x1="300" y1="100" x2="500" y2="100" stroke="#c9a84c" stroke-width="2" opacity="0.3"/>
+  <!-- 底部符文文字样式 -->
+  <g transform="translate(400,310)" fill="#4fc3f7" opacity="0.3" text-anchor="middle" font-size="12">
+    <text>◈ S H R I N E ◈</text>
+  </g>
+  <!-- 希卡眼标志 -->
+  <g transform="translate(400,180)">
+    <circle r="25" fill="none" stroke="#4fc3f7" stroke-width="2" opacity="0.5"/>
+    <circle r="10" fill="#4fc3f7" opacity="0.3"/>
+    <text y="45" text-anchor="middle" fill="#c9a84c" font-size="14" opacity="0.6">试 炼</text>
+  </g>
+</svg>

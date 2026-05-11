@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="equipBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1a10"/><stop offset="100%" stop-color="#0d0d08"/></linearGradient>
+    <radialGradient id="swordGlow"><stop offset="0%" stop-color="#c9a84c" stop-opacity="0.3"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+  </defs>
+  <rect fill="url(#equipBg)" width="800" height="400"/>
+  <circle cx="320" cy="200" r="120" fill="url(#swordGlow)"/>
+  <!-- 大师之剑 -->
+  <g transform="translate(320,200) rotate(-15)">
+    <rect x="-3" y="-100" width="6" height="80" fill="#e8f0f8"/>
+    <rect x="-3" y="-100" width="6" height="80" fill="url(#swordGlow)" opacity="0.5"/>
+    <polygon points="-3,-100 0,-120 3,-100" fill="#e8f0f8"/>
+    <!-- 护手 -->
+    <path d="M-3,-20 Q-30,-15 -35,-5 Q-30,0 -3,-15" fill="#c9a84c"/>
+    <path d="M3,-20 Q30,-15 35,-5 Q30,0 3,-15" fill="#c9a84c"/>
+    <!-- 剑柄 -->
+    <rect x="-4" y="-15" width="8" height="20" rx="2" fill="#4a3020"/>
+    <circle cx="0" cy="-10" r="3" fill="#c9a84c"/>
+  </g>
+  <!-- 海利亚盾 -->
+  <g transform="translate(550,200)">
+    <path d="M0,-50 L30,-20 L30,30 L0,50 L-30,30 L-30,-20 Z" fill="#4fc3f7" opacity="0.5" stroke="#4fc3f7" stroke-width="2"/>
+    <!-- 三角力量标记 -->
+    <polygon points="0,-35 -15,-10 15,-10" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+    <circle cx="0" cy="-23" r="2" fill="#c9a84c" opacity="0.5"/>
+  </g>
+  <!-- 弓 -->
+  <g transform="translate(480,280) rotate(30)" stroke="#8B4513" fill="none">
+    <path d="M0,0 Q30,-40 0,-70" stroke-width="3"/>
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#5a3a1a" stroke-width="1.5"/>
+  </g>
+  <text x="400" y="360" text-anchor="middle" fill="#c9a84c" font-size="14" opacity="0.4">E Q U I P M E N T</text>
+</svg>
