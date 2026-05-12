@@ -18,20 +18,20 @@
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
         <span class="logo-icon">▲</span>
-        <span class="logo-text">荒野之息<span class="logo-sub">攻略站</span></span>
+        <span class="logo-text"><span data-i18n="logo.text">荒野之息</span><span class="logo-sub" data-i18n="logo.sub">攻略站</span></span>
       </a>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html" class="nav-link">首页</a></li>
-        <li><a href="guides/great-plateau.html" class="nav-link">新手入门</a></li>
-        <li><a href="guides/divine-beasts.html" class="nav-link">主线攻略</a></li>
-        <li><a href="guides/shrines.html" class="nav-link">神庙攻略</a></li>
-        <li><a href="guides/equipment.html" class="nav-link">装备收集</a></li>
-        <li><a href="guides/cooking.html" class="nav-link">料理配方</a></li>
-        <li><a href="guides/bosses.html" class="nav-link">BOSS指南</a></li>
-        <li><a href="guides/secrets.html" class="nav-link">隐藏要素</a></li>
+        <li><a href="index.html" class="nav-link" data-i18n="nav.home">首页</a></li>
+        <li><a href="guides/great-plateau.html" class="nav-link" data-i18n="nav.beginner">新手入门</a></li>
+        <li><a href="guides/divine-beasts.html" class="nav-link" data-i18n="nav.main">主线攻略</a></li>
+        <li><a href="guides/shrines.html" class="nav-link" data-i18n="nav.shrines">神庙攻略</a></li>
+        <li><a href="guides/equipment.html" class="nav-link" data-i18n="nav.equipment">装备收集</a></li>
+        <li><a href="guides/cooking.html" class="nav-link" data-i18n="nav.more_cooking">料理配方</a></li>
+        <li><a href="guides/bosses.html" class="nav-link" data-i18n="nav.bosses">BOSS指南</a></li>
+        <li><a href="guides/secrets.html" class="nav-link" data-i18n="nav.more_secrets">隐藏要素</a></li>
       </ul>
       <div class="nav-search">
-        <input type="text" placeholder="搜索攻略..." id="searchInput">
+        <input type="text" data-i18n-placeholder="search" placeholder="搜索攻略..." id="searchInput">
         <button class="search-btn" id="searchBtn">🔍</button>
       </div>
       <button class="menu-toggle" id="menuToggle">☰</button>
@@ -60,7 +60,7 @@
       <!-- 关于本站 -->
       <section class="guide-section" id="about">
         <h2>🏕️ 关于本站</h2>
-        <p><strong>荒野之息攻略站</strong>是一个由玩家社区驱动的中文《塞尔达传说：旷野之息》攻略站点。我们致力于为所有中文玩家提供<strong>最全面、最准确、最易于阅读</strong>的游戏攻略内容。</p>
+        <p><strong>荒野之息攻略站</strong>是一个由玩家社区驱动的《塞尔达传说：旷野之息》攻略站点。我们致力于为所有玩家提供<strong>最全面、最准确、最易于阅读</strong>的游戏攻略内容。</p>
 
         <div class="guide-info">
           🎯 <strong>我们的使命：</strong>让每一位踏入海拉鲁的勇者，无论语言障碍、无论游戏经验，都能在这片广袤的大陆上找到属于自己的冒险之路。
@@ -107,7 +107,7 @@
         </div>
         <ul>
           <li><strong>准确性</strong>——所有攻略信息需要经过实际游戏验证，请勿提交未经测试的内容</li>
-          <li><strong>中文优先</strong>——本站面向中文玩家，请使用简体中文撰写，术语尽量采用游戏官方中文译名</li>
+          <li><strong>多语言优先</strong>——本站支持五语言切换，撰写攻略时请尽量使用清晰简洁的表达以便翻译</li>
           <li><strong>清晰结构</strong>——使用合理的标题层级（h2/h3/h4），善用表格和列表提升可读性</li>
           <li><strong>尊重版权</strong>——配图请使用你自己的游戏截图，或确保图片来源符合使用许可</li>
           <li><strong>友善协作</strong>——Code Review 过程中我们可能会提出修改建议，请保持开放心态</li>
@@ -181,7 +181,7 @@
           <li>所有为《旷野之息》制作 Wiki 和攻略的前辈们——你们的工作为我们提供了宝贵的参考</li>
           <li>Zelda Universe、Zelda Dungeon 等英文攻略站——大量详实的资料是中文攻略的重要参照</li>
           <li>每一位在社区中热心回答新人问题的老玩家——你们的善意让这个社区更有温度</li>
-          <li>所有愿意花时间为中文玩家翻译、整理攻略的自由译者</li>
+          <li>所有愿意花时间为全球玩家翻译、整理多语言攻略的自由译者</li>
         </ul>
 
         <div class="guide-tip" style="text-align: center;">
@@ -243,30 +243,30 @@
         </div>
         <div class="footer-links">
           <div class="footer-col">
-            <h4>攻略分类</h4>
-            <a href="guides/divine-beasts.html">主线任务</a>
-            <a href="guides/shrines.html">神庙攻略</a>
-            <a href="guides/bosses.html">BOSS指南</a>
-            <a href="guides/secrets.html">隐藏要素</a>
+            <h4 data-i18n="footer.guides">攻略分类</h4>
+            <a href="guides/divine-beasts.html" data-i18n="footer.main_quest">主线任务</a>
+            <a href="guides/shrines.html" data-i18n="footer.shrines_quest">神庙攻略</a>
+            <a href="guides/bosses.html" data-i18n="footer.bosses_quest">BOSS指南</a>
+            <a href="guides/secrets.html" data-i18n="footer.secrets_quest">隐藏要素</a>
           </div>
           <div class="footer-col">
-            <h4>装备系统</h4>
-            <a href="guides/equipment.html">武器图鉴</a>
-            <a href="guides/equipment.html">盾牌图鉴</a>
-            <a href="guides/equipment.html">防具套装</a>
-            <a href="guides/cooking.html">料理配方</a>
+            <h4 data-i18n="footer.equipment">装备系统</h4>
+            <a href="guides/equipment.html" data-i18n="footer.weapons">武器图鉴</a>
+            <a href="guides/equipment.html" data-i18n="footer.shields">盾牌图鉴</a>
+            <a href="guides/equipment.html" data-i18n="footer.armor">防具套装</a>
+            <a href="guides/cooking.html" data-i18n="footer.cooking_footer">料理配方</a>
           </div>
           <div class="footer-col">
-            <h4>关于本站</h4>
-            <a href="about.html#about">关于我们</a>
-            <a href="about.html#contribute">贡献攻略</a>
-            <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-            <a href="about.html#feedback">反馈建议</a>
+            <h4 data-i18n="footer.about_site">关于本站</h4>
+            <a href="about.html#about" data-i18n="footer.about_us">关于我们</a>
+            <a href="about.html#contribute" data-i18n="footer.contribute">贡献攻略</a>
+            <a href="https://github.com" target="_blank" rel="noopener" data-i18n="footer.github">GitHub</a>
+            <a href="about.html#feedback" data-i18n="footer.feedback">反馈建议</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 荒野之息攻略站 · 游戏版权归任天堂所有 · 本站为玩家自发攻略分享</p>
+        <p data-i18n="footer.copyright">© 2026 荒野之息攻略站 · 游戏版权归任天堂所有 · 本站为玩家自发攻略分享</p>
       </div>
     </div>
   </footer>

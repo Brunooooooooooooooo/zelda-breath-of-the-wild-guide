@@ -1,6 +1,7 @@
 # 🗡️ 塞尔达传说：旷野之息 攻略站
 
-> 最全面的中文游戏攻略网站 — 神庙 · 主线 · 装备 · 料理 · BOSS · 呀哈哈 · 隐藏要素
+> 最全面的游戏攻略网站 — 神庙 · 主线 · 装备 · 料理 · BOSS · 呀哈哈 · 隐藏要素
+> 支持 简体中文 / 繁體中文 / English / 日本語 / Deutsch 五语言切换
 
 ## 在线预览
 
@@ -21,7 +22,14 @@
 │   ├── guide.css              攻略页样式
 │   └── illustrations.css      插图系统
 ├── js/
-│   └── main.js                搜索 + 交互
+│   ├── main.js                搜索 + 交互
+│   └── i18n.js                五语言国际化引擎
+├── i18n/
+│   ├── zh-CN.json             简体中文
+│   ├── zh-TW.json             繁體中文
+│   ├── en.json                English
+│   ├── ja.json                日本語
+│   └── de.json                Deutsch
 ├── images/                    11张自制SVG场景图
 └── guides/                    10个攻略页面
     ├── great-plateau.html     初始台地
@@ -72,6 +80,8 @@ git push -u origin main
 
 - 纯 HTML/CSS/JS（零依赖，零构建）
 - 响应式设计（手机/平板/桌面）
+- 五语言国际化引擎（zh-CN / zh-TW / en / ja / de）
+- data-i18n + JSON 驱动翻译
 - SVG 矢量场景插图
 - 深色主题 + 金色希卡风格
 

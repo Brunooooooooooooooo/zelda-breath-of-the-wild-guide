@@ -3,6 +3,10 @@
     "title": "Zelda: Breath of the Wild Guide | Hyrule Adventure Companion",
     "description": "The most comprehensive BOTW guide - shrine locations, main quests, boss strategies, equipment collection, cooking recipes"
   },
+  "logo": {
+    "text": "Breath of the Wild",
+    "sub": "Guide"
+  },
   "nav": {
     "home": "Home",
     "beginner": "Beginner",
@@ -10,18 +14,18 @@
     "shrines": "Shrines",
     "equipment": "Equipment",
     "bosses": "Bosses",
-    "more": "More \u25BE",
-    "more_korok": "Korok Seeds",
-    "more_cooking": "Cooking",
-    "more_secrets": "Secrets",
-    "more_regions": "Regions",
-    "more_locations": "Locations"
+    "more": "More ▾",
+    "more_korok": "🌱 Korok Seeds",
+    "more_cooking": "🍲 Cooking",
+    "more_secrets": "🔍 Secrets",
+    "more_regions": "🗺️ Regions",
+    "more_locations": "📍 Locations"
   },
   "search": "Search guides...",
   "hero": {
     "title": "Hyrule Adventure Guide",
     "subtitle": "The most comprehensive Breath of the Wild guide",
-    "desc": "Shrines, Main Quests, Equipment, Cooking, Bosses, Secrets \u2014 become a true hero",
+    "desc": "Shrines, Main Quests, Equipment, Cooking, Bosses, Secrets — become a true hero",
     "cta_primary": "Start Adventure",
     "cta_secondary": "View Map",
     "stat_shrines": "Shrines",
@@ -54,6 +58,55 @@
     "regions": "Regional Guides",
     "beginner": "Beginner Tips"
   },
+  "guide": {
+    "tag_main": "Main",
+    "tag_shrine": "Shrine",
+    "tag_gear": "Gear",
+    "tag_boss": "BOSS",
+    "tag_secret": "Collect",
+    "tag_secret2": "Secret",
+    "tag_location": "Location",
+    "tag_cook": "Cooking",
+    "tag_beginner": "Beginner",
+    "divine_beasts_title": "Free the Four Divine Beasts",
+    "divine_beasts_excerpt": "Vah Medoh, Vah Ruta, Vah Rudania, Vah Naboris — complete walkthrough routes and boss strategies.",
+    "shrines_title": "All 120 Shrine Locations & Solutions",
+    "shrines_excerpt": "Sorted by region, with detailed puzzle steps, treasure chest locations, and completion tips.",
+    "master_sword_title": "Master Sword: Complete Guide",
+    "master_sword_excerpt": "You need 13 hearts to pull the Master Sword! Full location, prerequisites, and upgrade path.",
+    "lynels_title": "Silver Lynel Speed-Kill Techniques",
+    "lynels_excerpt": "Flurry Rush timing, parry tutorial, best weapon recommendations for farming powerful gear.",
+    "koroks_title": "All 900 Korok Seeds Guide",
+    "koroks_excerpt": "15 puzzle types explained, Hestu's 3 locations, key seed distribution across 8 regions.",
+    "towers_title": "15 Sheikah Towers Unlock Guide",
+    "towers_excerpt": "All tower activation challenges, 15 stable locations, 4 Great Fairy Fountains, beginner route.",
+    "cooking_best_title": "Best Cooking Combinations",
+    "cooking_best_excerpt": "Attack boost, stealth, heat/cold resistance — all status recipes and ingredient locations.",
+    "secrets_all_title": "All Hidden Secrets Revealed",
+    "secrets_all_excerpt": "Dragon locations, secret hot springs, Phantom Armor, Hylian Shield — hidden content you might miss.",
+    "plateau_title": "Great Plateau Complete Tutorial",
+    "plateau_excerpt": "From awakening to departure — four shrine puzzles, warm doublet, paraglider, beginner FAQ."
+  },
+  "region": {
+    "central": "🏰 Central Hyrule",
+    "hebra": "❄️ Hebra",
+    "eldin": "🌋 Eldin",
+    "lanayru": "🌊 Lanayru",
+    "akkala": "🍂 Akkala",
+    "faron": "🌴 Faron",
+    "gerudo": "🏜️ Gerudo",
+    "hateno": "🌾 Hateno"
+  },
+  "beginner": {
+    "step1_title": "Great Plateau",
+    "step1_desc": "Four shrine puzzles, paraglider, basic controls tutorial",
+    "step2_title": "Begin the Journey",
+    "step2_desc": "Head to Kakariko Village, activate Sheikah Sensor, upgrade gear",
+    "step3_title": "Free Divine Beasts",
+    "step3_desc": "Recommended order, Champion abilities, heart container upgrades",
+    "step4_title": "Defeat Ganon",
+    "step4_desc": "Hyrule Castle walkthrough, Calamity Ganon strategy, true ending"
+  },
   "footer": {
     "guides": "Categories",
     "main_quest": "Main Quest",
@@ -70,13 +123,13 @@
     "contribute": "Contribute",
     "github": "GitHub",
     "feedback": "Feedback",
-    "copyright": "2026 BOTW Guide - Game copyright Nintendo - Fan-made guide"
+    "copyright": "© 2026 BOTW Guide · Game copyright Nintendo · Fan-made guide"
   },
   "common": {
     "back_to_top": "Back to top",
-    "hot": "Hot",
-    "recommended": "Recommended",
-    "new": "New",
+    "hot": "🔥 Hot",
+    "recommended": "📌 Recommended",
+    "new": "🆕 New",
     "read_time": "min"
   }
 }
