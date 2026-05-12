@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Zelda: Breath of the Wild Guide | Hyrule Adventure Companion",
+    "description": "The most comprehensive BOTW guide - shrine locations, main quests, boss strategies, equipment collection, cooking recipes"
+  },
+  "nav": {
+    "home": "Home",
+    "beginner": "Beginner",
+    "main": "Main Quest",
+    "shrines": "Shrines",
+    "equipment": "Equipment",
+    "bosses": "Bosses",
+    "more": "More \u25BE",
+    "more_korok": "Korok Seeds",
+    "more_cooking": "Cooking",
+    "more_secrets": "Secrets",
+    "more_regions": "Regions",
+    "more_locations": "Locations"
+  },
+  "search": "Search guides...",
+  "hero": {
+    "title": "Hyrule Adventure Guide",
+    "subtitle": "The most comprehensive Breath of the Wild guide",
+    "desc": "Shrines, Main Quests, Equipment, Cooking, Bosses, Secrets \u2014 become a true hero",
+    "cta_primary": "Start Adventure",
+    "cta_secondary": "View Map",
+    "stat_shrines": "Shrines",
+    "stat_quests": "Main Quests",
+    "stat_koroks": "Koroks",
+    "stat_beasts": "Divine Beasts"
+  },
+  "quick": {
+    "beginner": "Beginner Guide",
+    "beginner_desc": "Great Plateau tutorial, basic controls, first shrines",
+    "main": "Main Quest",
+    "main_desc": "Free four Divine Beasts, defeat Calamity Ganon, memories",
+    "shrines": "Shrine Guide",
+    "shrines_desc": "Complete 120 shrine walkthroughs, location map, treasures",
+    "equipment": "Equipment",
+    "equipment_desc": "Weapons, shields, bows, armor sets full collection",
+    "bosses": "Boss Guide",
+    "bosses_desc": "Divine Beast bosses, Lynels, Guardian tactics",
+    "korok": "Korok Seeds",
+    "korok_desc": "All 900 korok seeds, puzzle types, Hestu locations",
+    "cooking": "Cooking",
+    "cooking_desc": "50+ recipes, elixirs, ingredient farming locations",
+    "locations": "Locations",
+    "locations_desc": "Sheikah Towers, stables, fairy fountains, horse god",
+    "secrets": "Secrets",
+    "secrets_desc": "Dragons, Hylian Shield, easter eggs revealed"
+  },
+  "section": {
+    "popular": "Popular Guides",
+    "regions": "Regional Guides",
+    "beginner": "Beginner Tips"
+  },
+  "footer": {
+    "guides": "Categories",
+    "main_quest": "Main Quest",
+    "shrines_quest": "Shrines",
+    "bosses_quest": "Bosses",
+    "secrets_quest": "Secrets",
+    "equipment": "Equipment",
+    "weapons": "Weapons",
+    "shields": "Shields",
+    "armor": "Armor",
+    "cooking_footer": "Cooking",
+    "about_site": "About",
+    "about_us": "About Us",
+    "contribute": "Contribute",
+    "github": "GitHub",
+    "feedback": "Feedback",
+    "copyright": "2026 BOTW Guide - Game copyright Nintendo - Fan-made guide"
+  },
+  "common": {
+    "back_to_top": "Back to top",
+    "hot": "Hot",
+    "recommended": "Recommended",
+    "new": "New",
+    "read_time": "min"
+  }
+}

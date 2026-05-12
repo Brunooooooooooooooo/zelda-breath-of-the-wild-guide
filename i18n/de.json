@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Zelda: Breath of the Wild Guide | Hyrule Abenteuerf\u00fchrer",
+    "description": "Der umfassendste BOTW-Guide - Schreine, Hauptquests, Boss-Strategien, Ausr\u00fcstung, Kochrezepte"
+  },
+  "nav": {
+    "home": "Start",
+    "beginner": "Anf\u00e4nger",
+    "main": "Hauptquest",
+    "shrines": "Schreine",
+    "equipment": "Ausr\u00fcstung",
+    "bosses": "Bosse",
+    "more": "Mehr \u25be",
+    "more_korok": "Krogs-Samen",
+    "more_cooking": "Kochen",
+    "more_secrets": "Geheimnisse",
+    "more_regions": "Regionen",
+    "more_locations": "Orte"
+  },
+  "search": "Guide durchsuchen...",
+  "hero": {
+    "title": "Hyrule Abenteuerf\u00fchrer",
+    "subtitle": "Der umfassendste Breath of the Wild Guide",
+    "desc": "Schreine, Hauptquests, Ausr\u00fcstung, Kochen, Bosse, Geheimnisse \u2014 werde ein wahrer Held",
+    "cta_primary": "Abenteuer beginnen",
+    "cta_secondary": "Karte ansehen",
+    "stat_shrines": "Schreine",
+    "stat_quests": "Hauptquests",
+    "stat_koroks": "Krogs",
+    "stat_beasts": "Titanen"
+  },
+  "quick": {
+    "beginner": "Anf\u00e4nger-Guide",
+    "beginner_desc": "Gro\u00dfes Plateau Tutorial, Grundsteuerung, erste Schreine",
+    "main": "Hauptquest",
+    "main_desc": "Vier Titanen befreien, Ganon besiegen, Erinnerungen",
+    "shrines": "Schrein-Guide",
+    "shrines_desc": "Komplettl\u00f6sungen f\u00fcr 120 Schreine, Karte, Schatztruhen",
+    "equipment": "Ausr\u00fcstung",
+    "equipment_desc": "Waffen, Schilde, B\u00f6gen, R\u00fcstungssets",
+    "bosses": "Boss-Guide",
+    "bosses_desc": "Titanen-Bosse, Leunen, W\u00e4chter-Taktiken",
+    "korok": "Krogs-Samen",
+    "korok_desc": "Alle 900 Krogs-Samen, R\u00e4tseltypen, Maronus",
+    "cooking": "Kochen",
+    "cooking_desc": "50+ Rezepte, Elixiere, Zutaten-Fundorte",
+    "locations": "Orte",
+    "locations_desc": "Sheikah-T\u00fcrme, Stallungen, Feenquellen, Pferdegott",
+    "secrets": "Geheimnisse",
+    "secrets_desc": "Drachen, Hylia-Schild, Easter Eggs enth\u00fcllt"
+  },
+  "section": {
+    "popular": "Beliebte Guides",
+    "regions": "Regionen-Guides",
+    "beginner": "Anf\u00e4nger-Tipps"
+  },
+  "footer": {
+    "guides": "Kategorien",
+    "main_quest": "Hauptquest",
+    "shrines_quest": "Schreine",
+    "bosses_quest": "Bosse",
+    "secrets_quest": "Geheimnisse",
+    "equipment": "Ausr\u00fcstung",
+    "weapons": "Waffen",
+    "shields": "Schilde",
+    "armor": "R\u00fcstung",
+    "cooking_footer": "Kochen",
+    "about_site": "\u00dcber uns",
+    "about_us": "\u00dcber uns",
+    "contribute": "Mitwirken",
+    "github": "GitHub",
+    "feedback": "Feedback",
+    "copyright": "\u00a9 2026 BOTW Guide \u00b7 Nintendo \u00b7 Fan-Guide"
+  },
+  "common": {
+    "back_to_top": "Nach oben",
+    "hot": "Beliebt",
+    "recommended": "Empfohlen",
+    "new": "Neu",
+    "read_time": "Min"
+  }
+}

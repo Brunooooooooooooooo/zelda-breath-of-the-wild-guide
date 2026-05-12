@@ -1,32 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
   <defs>
-    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a1020"/><stop offset="100%" stop-color="#0a0510"/></linearGradient>
-    <radialGradient id="purpleGlow"><stop offset="0%" stop-color="#9b59b6" stop-opacity="0.4"/><stop offset="100%" stop-color="#9b59b6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a0510"/><stop offset="100%" stop-color="#1a0520"/></linearGradient>
+    <radialGradient id="evileye"><stop offset="0%" stop-color="#e74c3c" stop-opacity="0.9"/><stop offset="60%" stop-color="#c0392b" stop-opacity="0.4"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-  <rect fill="url(#bg1)" width="800" height="400"/>
-  <circle cx="400" cy="180" r="180" fill="url(#purpleGlow)"/>
-  <!-- BOSS 轮廓 -->
-  <g transform="translate(400,200)" fill="#2a1030" stroke="#9b59b6" stroke-width="2" opacity="0.9">
-    <!-- 身体 -->
-    <ellipse cx="0" cy="20" rx="60" ry="70"/>
+  <rect fill="url(#bg)" width="800" height="400"/>
+  <!-- 地面 -->
+  <ellipse cx="400" cy="350" rx="400" ry="60" fill="#0d0515"/>
+  <!-- 光柱 -->
+  <circle cx="400" cy="200" r="180" fill="url(#evileye)"/>
+  <!-- BOSS：盖侬形态 -->
+  <g transform="translate(420,200)" filter="url(#glow)">
+    <!-- 身体核心 -->
+    <ellipse cx="0" cy="10" rx="45" ry="55" fill="#1a0820" stroke="#e74c3c" stroke-width="3"/>
+    <ellipse cx="0" cy="10" rx="30" ry="40" fill="#2a0a30" opacity="0.5"/>
     <!-- 头部 -->
-    <circle cx="0" cy="-50" r="40"/>
-    <!-- 角 -->
-    <path d="M-25,-85 Q-30,-120 -15,-130 Q0,-140 5,-115" fill="#1a1020"/>
-    <path d="M25,-85 Q30,-120 15,-130 Q0,-140 -5,-115" fill="#1a1020"/>
-    <!-- 眼睛（发光） -->
-    <circle cx="-15" cy="-55" r="8" fill="#e74c3c"/>
-    <circle cx="15" cy="-55" r="8" fill="#e74c3c"/>
+    <circle cx="0" cy="-50" r="35" fill="#1a0820" stroke="#e74c3c" stroke-width="3"/>
+    <!-- 大角 -->
+    <path d="M-25,-75 Q-40,-120 -15,-130" fill="none" stroke="#e74c3c" stroke-width="4"/>
+    <path d="M25,-75 Q40,-120 15,-130" fill="none" stroke="#e74c3c" stroke-width="4"/>
+    <!-- 眼睛 -->
+    <circle cx="-14" cy="-52" r="10" fill="#ff0000"/>
+    <circle cx="14" cy="-52" r="10" fill="#ff0000"/>
+    <circle cx="-14" cy="-52" r="4" fill="#ff6666"/>
+    <circle cx="14" cy="-52" r="4" fill="#ff6666"/>
+    <!-- 嘴 -->
+    <path d="M-12,-38 Q0,-32 12,-38" fill="none" stroke="#e74c3c" stroke-width="2"/>
     <!-- 手臂 -->
-    <path d="M-55,10 Q-90,0 -100,30"/>
-    <path d="M55,10 Q90,0 100,30"/>
+    <path d="M-40,0 Q-80,-10 -85,15" fill="none" stroke="#e74c3c" stroke-width="5"/>
+    <path d="M40,0 Q80,-10 85,15" fill="none" stroke="#e74c3c" stroke-width="5"/>
+    <!-- 大剑 -->
+    <g transform="translate(85,15) rotate(-30)">
+      <rect x="-3" y="-40" width="6" height="35" fill="#ff6600"/>
+      <polygon points="-3,-40 0,-50 3,-40" fill="#ff6600"/>
+    </g>
   </g>
-  <!-- 玩家轮廓 -->
-  <g transform="translate(200,300)" fill="#c9a84c" opacity="0.6">
-    <circle cx="0" cy="-15" r="10"/>
-    <rect x="-8" y="-5" width="16" height="25" rx="3"/>
-    <line x1="5" y1="5" x2="25" y2="-10" stroke="#c9a84c" stroke-width="2"/>
-    <circle cx="25" cy="-10" r="4" fill="#4fc3f7"/>
+  <!-- 勇者（林克） -->
+  <g transform="translate(280,280)">
+    <!-- 身体 -->
+    <rect x="-6" y="-5" width="12" height="22" rx="3" fill="#2ecc71"/>
+    <!-- 头 -->
+    <circle cx="0" cy="-12" r="8" fill="#e8d0a0"/>
+    <!-- 帽子 -->
+    <path d="M-8,-16 Q0,-30 8,-16" fill="#2ecc71"/>
+    <!-- 盾牌 -->
+    <ellipse cx="8" cy="2" rx="7" ry="9" fill="#3498db" opacity="0.8"/>
+    <!-- 剑 -->
+    <rect x="-15" y="-10" width="3" height="20" fill="#e8f0f8"/>
+    <rect x="-17" y="-10" width="7" height="3" fill="#c9a84c"/>
   </g>
-  <text x="400" y="340" text-anchor="middle" fill="#9b59b6" font-size="16" opacity="0.5" font-family="Noto Sans SC">B O S S   B A T T L E</text>
+  <text x="400" y="380" text-anchor="middle" fill="#e74c3c" font-size="16" font-family="sans-serif" opacity="0.3">BOSS BATTLE</text>
 </svg>

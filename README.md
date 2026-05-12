@@ -4,9 +4,11 @@
 
 ## 在线预览
 
-部署后访问：`https://你的用户名.github.io/zelda-breath-of-the-wild-guide/`
+👉 [brunooooooooooooooo.github.io/zelda-breath-of-the-wild-guide](https://brunooooooooooooooo.github.io/zelda-breath-of-the-wild-guide/)
 
-项目示例：https://brunooooooooooooooo.github.io/zelda-breath-of-the-wild-guide/index.html
+## 仓库地址
+
+[https://github.com/Brunooooooooooooooo/zelda-breath-of-the-wild-guide](https://github.com/Brunooooooooooooooo/zelda-breath-of-the-wild-guide)
 
 ## 项目结构
 

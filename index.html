@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -38,7 +38,7 @@
         </li>
       </ul>
       <div class="nav-search">
-        <input type="text" placeholder="搜索攻略..." id="searchInput">
+        <input type="text" data-i18n-placeholder="search" placeholder="搜索攻略..." id="searchInput">
         <button class="search-btn" id="searchBtn">🔍</button>
       </div>
       <button class="menu-toggle" id="menuToggle">☰</button>
@@ -70,29 +70,29 @@
     <div class="pixel-decoration"></div>
     <div class="hero-content">
       <div class="triforce">▲</div>
-      <h1 class="hero-title">海拉鲁冒险指南</h1>
+      <h1 class="hero-title" data-i18n="hero.title">海拉鲁冒险指南</h1>
       <p class="hero-subtitle">《塞尔达传说：旷野之息》最全面的中文攻略站</p>
-      <p class="hero-desc">神庙 · 主线 · 装备 · 料理 · BOSS · 隐藏要素 — 助你成为真正的勇者</p>
+      <p class="hero-desc" data-i18n="hero.desc">神庙 · 主线 · 装备 · 料理 · BOSS · 隐藏要素 — 助你成为真正的勇者</p>
       <div class="hero-cta">
-        <a href="#guides" class="btn btn-primary">开始冒险</a>
-        <a href="guides/regions.html" class="btn btn-outline">查看地图</a>
+        <a href="#guides" class="btn btn-primary" data-i18n="hero.cta_primary">开始冒险</a>
+        <a href="guides/regions.html" class="btn btn-outline" data-i18n="hero.cta_secondary">查看地图</a>
       </div>
       <div class="hero-stats">
         <div class="stat-item">
           <span class="stat-num">120</span>
-          <span class="stat-label">神庙</span>
+          <span class="stat-label" data-i18n="hero.stat_shrines">神庙</span>
         </div>
         <div class="stat-item">
           <span class="stat-num">15</span>
-          <span class="stat-label">主线任务</span>
+          <span class="stat-label" data-i18n="hero.stat_quests">主线任务</span>
         </div>
         <div class="stat-item">
           <span class="stat-num">900</span>
-          <span class="stat-label">呀哈哈</span>
+          <span class="stat-label" data-i18n="hero.stat_koroks">呀哈哈</span>
         </div>
         <div class="stat-item">
           <span class="stat-num">4</span>
-          <span class="stat-label">神兽</span>
+          <span class="stat-label" data-i18n="hero.stat_beasts">神兽</span>
         </div>
       </div>
     </div>
@@ -160,7 +160,7 @@
   <!-- 热门攻略 -->
   <section class="popular-guides" id="guides">
     <div class="container">
-      <h2 class="section-title">
+      <h2 class="section-title" data-i18n="section.popular">
         <span class="title-icon">⭐</span>
         热门攻略
       </h2>
@@ -238,7 +238,7 @@
   <!-- 区域导航 -->
   <section class="regions">
     <div class="container">
-      <h2 class="section-title">
+      <h2 class="section-title" data-i18n="section.popular">
         <span class="title-icon">🗺️</span>
         区域攻略
       </h2>
@@ -261,7 +261,7 @@
   <!-- 新手引导 -->
   <section class="beginner-guide">
     <div class="container">
-      <h2 class="section-title">
+      <h2 class="section-title" data-i18n="section.popular">
         <span class="title-icon">🌱</span>
         新手指南
       </h2>
@@ -331,6 +331,7 @@
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

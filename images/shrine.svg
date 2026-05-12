@@ -1,25 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
   <defs>
-    <radialGradient id="glow"><stop offset="0%" stop-color="#4fc3f7" stop-opacity="0.6"/><stop offset="100%" stop-color="#4fc3f7" stop-opacity="0"/></radialGradient>
-    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a2a3e"/><stop offset="100%" stop-color="#0a0e17"/></linearGradient>
+    <radialGradient id="shrineGlow" cx="50%" cy="50%"><stop offset="0%" stop-color="#4fc3f7" stop-opacity="0.5"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+    <linearGradient id="shrineBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#050a14"/><stop offset="100%" stop-color="#0a1525"/></linearGradient>
+    <filter id="blueGlow"><feGaussianBlur stdDeviation="2"/></filter>
   </defs>
-  <rect fill="url(#floor)" width="800" height="400"/>
-  <circle cx="400" cy="200" r="150" fill="url(#glow)"/>
+  <rect fill="url(#shrineBg)" width="800" height="400"/>
+  <circle cx="400" cy="200" r="200" fill="url(#shrineGlow)"/>
   <!-- 希卡门框 -->
-  <rect x="300" y="100" width="200" height="250" rx="20" fill="none" stroke="#4fc3f7" stroke-width="4" opacity="0.8"/>
-  <rect x="310" y="110" width="180" height="230" rx="15" fill="none" stroke="#4fc3f7" stroke-width="1" opacity="0.4"/>
-  <!-- 符文装饰 -->
-  <circle cx="400" cy="100" r="15" fill="none" stroke="#c9a84c" stroke-width="2"/>
-  <circle cx="400" cy="100" r="8" fill="#c9a84c" opacity="0.6"/>
-  <line x1="300" y1="100" x2="500" y2="100" stroke="#c9a84c" stroke-width="2" opacity="0.3"/>
-  <!-- 底部符文文字样式 -->
-  <g transform="translate(400,310)" fill="#4fc3f7" opacity="0.3" text-anchor="middle" font-size="12">
-    <text>◈ S H R I N E ◈</text>
+  <g filter="url(#blueGlow)">
+    <rect x="250" y="80" width="300" height="280" rx="25" fill="none" stroke="#4fc3f7" stroke-width="3" opacity="0.7"/>
+    <rect x="265" y="95" width="270" height="250" rx="20" fill="none" stroke="#4fc3f7" stroke-width="1" opacity="0.3"/>
   </g>
-  <!-- 希卡眼标志 -->
-  <g transform="translate(400,180)">
-    <circle r="25" fill="none" stroke="#4fc3f7" stroke-width="2" opacity="0.5"/>
-    <circle r="10" fill="#4fc3f7" opacity="0.3"/>
-    <text y="45" text-anchor="middle" fill="#c9a84c" font-size="14" opacity="0.6">试 炼</text>
+  <!-- 希卡眼 -->
+  <g transform="translate(400,220)">
+    <circle r="30" fill="none" stroke="#4fc3f7" stroke-width="2" opacity="0.5"/>
+    <circle r="18" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.4"/>
+    <circle r="8" fill="#4fc3f7" opacity="0.3" filter="url(#blueGlow)"/>
+    <line x1="0" y1="-8" x2="0" y2="-22" stroke="#4fc3f7" stroke-width="1.5" opacity="0.4"/>
   </g>
+  <!-- 符文环绕 -->
+  <g opacity="0.15" stroke="#4fc3f7" stroke-width="1" fill="none">
+    <circle cx="400" cy="80" r="6"/>
+    <circle cx="340" cy="100" r="4"/>
+    <circle cx="460" cy="100" r="4"/>
+  </g>
+  <!-- 晋升阶梯 -->
+  <g opacity="0.1" fill="#4fc3f7">
+    <rect x="380" y="280" width="40" height="4" rx="2"/>
+    <rect x="370" y="290" width="60" height="4" rx="2"/>
+    <rect x="360" y="300" width="80" height="4" rx="2"/>
+    <rect x="350" y="310" width="100" height="4" rx="2"/>
+  </g>
+  <!-- 粒子 -->
+  <g fill="#4fc3f7" opacity="0.3">
+    <circle cx="300" cy="180" r="2"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="500" cy="160" r="2"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="350" cy="140" r="1.5"><animate attributeName="opacity" values="0.2;0.6;0.2" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="450" cy="200" r="1.5"><animate attributeName="opacity" values="0.3;0.1;0.3" dur="3.5s" repeatCount="indefinite"/></circle>
+  </g>
+  <text x="400" y="370" text-anchor="middle" fill="#4fc3f7" font-size="14" font-family="sans-serif" opacity="0.2">S H R I N E   O F   T R I A L S</text>
 </svg>
